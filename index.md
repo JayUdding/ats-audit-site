@@ -1,5 +1,5 @@
-\\$199vv---
-layout: default
+---
+layout:default
 ---
 
 ## Survival Before Optimization
@@ -11,7 +11,7 @@ fix the content.
 
 ### Services
 
-- **Hygiene Check (\$5 ):** Formatting audit + parse test
+- **Hygiene Check (\$5):** Formatting audit + parse test
 - **Technical Audit (\$49):** Hygiene + content + GitHub review  
 - **Rebuild (\$99):** Full reconstruction from scratch
 
