@@ -27,12 +27,12 @@ with subject line **"Checklist"**.
 
 ### Services
 
-**Technical Audit — \\$99**
+**Technical Audit — \$99**
 Complete formatting autopsy + content review + detailed GitHub profile 
 analysis. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
-**The Rebuild — \\$199**
+**The Rebuild — \$199**
 Full reconstruction from scratch using ATS-compliant architecture. 
 Includes the Audit + GitHub analysis and a complete rewrite optimized for 
 your target roles.
@@ -54,4 +54,5 @@ not survive an ATS.
 **Do not apply for jobs until you verify the machine can read your file.**
 
 [Email GitHubGuru](mailto:githubguru@proton.me)
+
 
