@@ -1,6 +1,8 @@
 ---
-layout:default
+layout: default
 ---
+
+# Technical Resume Auditor
 
 ## Survival Before Optimization
 
@@ -15,7 +17,7 @@ fix the content.
 - **Technical Audit (\$49):** Hygiene + content + GitHub review  
 - **Rebuild (\$99):** Full reconstruction from scratch
 
-### HowIt Works
+### How It Works
 
 1. Send your PDF and DOCX to: [TipTopResume@protonmail.com]
 2. I perform the Brutal Copy-Paste Test within 24 hours
