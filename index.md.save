@@ -1,4 +1,6 @@
-\\$199vv---
+- **Hygiene Check (\$49):** Formatting audit + parse test
+- **Technical Audit (\$99):** Hygiene + content + GitHub review  
+- **Rebuild (\$199):** Full reconstruction from scratch
 layout: default
 ---
 
@@ -11,11 +13,11 @@ fix the content.
 
 ### Services
 
-- **Hygiene Check (\$5 ):** Formatting audit + parse test
-- **Technical Audit (\$49):** Hygiene + content + GitHub review  
-- **Rebuild (\$99):** Full reconstruction from scratch
+- **Hygiene Check ($X):** Formatting audit + parse test
+- **Technical Audit ($Y):** Hygiene + content + GitHub review  
+- **Rebuild ($Z):** Full reconstruction from scratch
 
-### HowIt Works
+### How It Works
 
 1. Send your PDF and DOCX to: [TipTopResume@protonmail.com]
 2. I perform the Brutal Copy-Paste Test within 24 hours
