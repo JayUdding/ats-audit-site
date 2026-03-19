@@ -1,9 +1,6 @@
-
 ---
 layout: default
 ---
-
-# Technical Resume Auditor
 
 ## Survival Before Optimization
 
