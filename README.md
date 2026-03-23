@@ -1,1 +1,1 @@
-Jekyll site code to provide service
+Basic Jekyll site to offer a service.
