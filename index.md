@@ -19,7 +19,7 @@ An ATS is not artificial intelligence evaluating your worth. It is a database in
 
 3. **Retrieve** (recruiter searches). 
 
-Your goal is not to "impress" the machine (stoics don't like flattery). Your goal is to *survive* the **Parse** stage and carpe diem another day with your name, experience, and skills intact and correctly bucketed.
+Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and *carpe diem* another day with your name, experience, and skills intact and correctly bucketed.
 
 **The Defense**
 
@@ -27,11 +27,11 @@ Because there is no universal standard—because Taleo, Workday, and many legacy
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive what we call the **Brutal Stoic Cut and Paste Test**--brutal because it lays bare any weakness--it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
+If your resume cannot survive what we call the **Brutal Stoic Copy and Paste Test**-brutal because it lays bare any weakness-it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
  
- As Epictetus admonishes: 
+ As Marcus Aurelius admonishes: 
 
-**First say to yourself what you would be; and then do what you have to do**.
+**Do nothing, not even the smallest thing, randomly or carelessly**.
 
 So much for the philosophy; now here is the practical protocol! 
 
@@ -232,7 +232,7 @@ Before submitting, perform these three tests:
 
 **Windows**: Select all (Ctrl+A) → Copy → Paste into **Notepad**.
 
-**Mac**: Command+Av (⌘+A) – Select All;  text highlights in blue; Command+C (⌘+C) – Copy (Press twice to ensure clipboard updates); Open **TextEdit (not Notepad)**; Shift+Command+T - Convert to Plain Text (removes formatting);  Command+V (⌘+V) – Paste into TextEdit. 
+**Mac**: Command+A  (⌘+A) – Select All;  text highlights in blue; Command+C (⌘+C) – Copy (Press twice to ensure clipboard updates); Open **TextEdit (not Notepad)**; Shift+Command+T - Convert to Plain Text (removes formatting);  Command+V (⌘+V) – Paste into TextEdit. 
 
 *   **Pass:** Text flows top-to-bottom, left-to-right, chronologically. Dates follow titles. No missing sections.
 *   **Fail:** Text out of order, dates floating alone, missing contact info, gibberish characters.
