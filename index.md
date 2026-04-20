@@ -1,9 +1,7 @@
 ---
 layout: default
 ---
-
-GOOOOOOOOOD MORNING IZZY BEE!!!
-
+ 
 # Technical Resume Auditor
 
  **The Mechanical Reality**
