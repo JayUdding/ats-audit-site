@@ -1,0 +1,25 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+/* Hide the sidebar completely */
+aside, .sidebar, .site-footer {
+  display: none !important;
+}
+
+/* Make content full width */
+section {
+  width: 100% !important;
+  float: none !important;
+  margin: 0 auto !important;
+}
+
+/* Center the wrapper */
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
