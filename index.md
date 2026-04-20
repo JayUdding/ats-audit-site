@@ -21,6 +21,8 @@ This requires enforcing a **single-column linear text flow** with **zero floatin
 If your resume cannot survive a simple copy-paste into Notepad, it will not survive an ATS.
 Below is the technical specification for universal compliance. Deviate at any point, and you risk null fields or rejection.
 
+"I have given you the philosophy; now here is the protocol. As Epictetus wrote: 'First say to yourself what you would be; and then do what you have to do.' Below is the technical specification..."
+
 ### The Sudden Death Checklist (Free)
 
 Request the **5-point diagnostic PDF** and test your resume in 60 seconds.
