@@ -2,7 +2,7 @@
 layout: default
 ---
  
-# Survival Before Optimization--a Stoic Guide to Making your Resume ATS Compliant
+# Survival Before Optimization--a No-Nonsense Guide to Making Your Resume ATS Compliant
 
  **The Mechanical Reality**
 
@@ -12,24 +12,26 @@ Hard to believe in April 2026, but true: the majority of Applicant Tracking Syst
 
 An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: 
 
-**Parse** (extract text into structured fields), 
-**Store** (populate database tables), and 
+**Parse** (extract text into structured fields) 
+**Store** (populate database tables) and
 **Retrieve** (recruiter searches). 
 
 Your goal is not to "impress" the machine. Your goal is to survive the **Parse** stage with your name, your experience, and your skills intact and correctly bucketed.
 
 **The Defense**
 
-Because there is no universal standard—because Taleo, Workday, and others such as legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
+Because there is no universal standard—because Taleo, Workday, and many legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive the **Brutal Stoic Cut and Paste Test**--a simple copy-paste into Notepad--it will not survive an ATS.
+If your resume cannot survive what we call the **Brutal Stoic Cut and Paste Test**--brutal because it does not flatter us yet in reality a simple copy-paste test into Notepad--it will not survive an ATS.
 Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
 
-So much for the philosophy; now here is the practical protocol. 
+
 
 As Epictetus admonished: **First say to yourself what you would be; and then do what you have to do**.
+
+So much for the philosophy; now here is the practical protocol. 
 
 ### The Stoic Resume Checklist (No Flattery--Just Facts--Understanding First)
 
@@ -226,4 +228,4 @@ Bonus: Also submit a position you plan to apply for and we analyze if your skill
 return your diagnostic. No flattery.
 
  
-by GitHubGuru--Technical Auditor since 2016
+By GitHubGuru--Technical Auditor since 2016
