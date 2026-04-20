@@ -30,11 +30,13 @@ Below you find the technical specifications for universal compliance. Deviate at
 
 
 
-As Epictetus admonished: **First say to yourself what you would be; and then do what you have to do**.
+As Epictetus admonishes: 
+
+**First say to yourself what you would be; and then do what you have to do**.
 
 So much for the philosophy; now here is the practical protocol. 
 
-### The Stoic Resume Checklist (No Flattery--Just Facts--Understanding First)
+### The Stoic Resume Checklist (No Flattery--No Fluff--Understanding First)
 
 Learn to avoid: 
  
@@ -43,7 +45,6 @@ Learn to avoid:
 *   The Image-Only PDF (Print-to-PDF disasters)
 *   The Ghost Text Box (unparseable dates)
 *   The Column Bleed (scrambled skills)
-
  
 ---
 
