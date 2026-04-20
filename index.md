@@ -13,11 +13,13 @@ Hard to believe in April 2026, but true: the majority of Applicant Tracking Syst
 
 An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: 
 
-**Parse** (extract text into structured fields) 
-**Store** (populate database tables) and
+**Parse** (extract text into structured fields), 
+
+**Store** (populate database tables), and
+
 **Retrieve** (recruiter searches). 
 
-Your goal is not to "impress" the machine. Your goal is to survive the **Parse** stage with your name, your experience, and your skills intact and correctly bucketed.
+Your goal is not to "impress" the machine (stoics don't like flattery). Your goal is to survive the **Parse** stage and carpe diem another day with your name, your experience, and your skills intact and correctly bucketed.
 
 **The Defense**
 
