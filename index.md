@@ -212,9 +212,11 @@ Violate any one of these, and you are gambling with  data integrity.
 
 ### Services
 
-**ATS Compliance Audit — \$5**
+**ATS Compliance Audit — \$19.99**
 Complete ATS compliance autopsy. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
+
+Bonus: Also submit a position you plan to apply for and we analyze if your skills and experience are a good match.
  
 ### How It Works
 
