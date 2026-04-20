@@ -110,8 +110,8 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **5. Date Format Consistency**
 *   **Rule:** Use unambiguous, separable formats.
-*   **Compliant:** `Jan 2023 - Mar 2025`, `2023-2025`, `03/2023 - 03/2025` (though slashes can trigger date math errors in some systems).
-*   **Non-compliant:** `Present`, `Current`, `Till date` (parsers calculate tenure via date math; "Present" often parses as 1900-01-01 or null, destroying reverse-chronological sorting).
+*   **Compliant:** `Jan 2023 - Mar 2025`, `2023-2025`, `03/2023 - 03/2025` (though slashes can trigger date math errors in some systems). Also `Present` works fine. 
+*   **Non-compliant:**  `Current`, `Till date` (parsers calculate tenure via date math.  
 *   **Critical:** Dates must be on the same line as or immediately adjacent to the Job Title/Company. Dates floating in right-aligned table cells often attach to the wrong record.
 
 ---
@@ -122,11 +122,11 @@ Post-extraction, the parser attempts to map text to database fields:
 *   **Bullet Points:** Use standard hyphen `-` or ASCII asterisk `*`. Avoid Unicode bullets (•, ○, ●) which may render as � or be stripped entirely.
 *   **Accents:** José, résumé are safe in UTF-8, but verify the PDF embedding (some fonts subset poorly).
 *   **Symbols:** The "en dash" (–) in date ranges is safer than "em dash" (—) which can trigger line-break errors.
-*   **Mathematical Symbols:** Avoid using ≥, ≤, →, ⇒ in skills sections. Write "Proficient in Python" not "Python ⇒ Expert".
+*   **Math Symbols:** Avoid using ≥, ≤, →, ⇒ in skills sections. Write "Proficient in Python" not "Python ⇒ Expert".
 
 -----
 
-*   **A Detailed Note on Pipes:**
+*   #### A Detailed Note on Pipes
 
 *     **The Pipe `|` Rule: Metadata Only, Never Content**
 
