@@ -133,7 +133,7 @@ Post-extraction, the parser attempts to map text to database fields:
 The pipe is a **delimiter**, not a punctuation mark. It separates distinct data fields so the parser knows where one stops and another starts. Use it in **headers and metadata lines only**. Never use it inside bullet points or skills lists.
 
  
-##  WHERE PIPES WORK (Use Them Here)
+####  WHERE PIPES WORK (Use Them Here)
 
 **Job/Education Headers:**
 ```
@@ -150,7 +150,7 @@ San Francisco, CA | (415) 555-0199 | email@example.com
 
 ---
 
-##  WHERE PIPES FAIL (Never Do This)
+####  WHERE PIPES FAIL (Never Do This)
 
 **Inside Bullet Points:**
 ```
@@ -168,7 +168,7 @@ Technical Skills: Python | JavaScript | React | Node.js | SQL
 Technical Skills: Python, JavaScript, React, Node.js, SQL
 ```
  
-##  THE VISUAL TRAP
+####  THE VISUAL TRAP
 
 You think pipes look "cleaner" than commas in a skills list. They don't. They look like **table cells**, and tables are fatal.
 
