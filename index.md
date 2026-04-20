@@ -2,7 +2,9 @@
 layout: default
 ---
  
-# Survival Before Optimization--a No-Nonsense Guide to Making Your Resume ATS Compliant
+# Survival Before Optimization
+
+# a No-Nonsense Guide to Making Your Resume ATS Compliant
 
  **The Mechanical Reality**
 
