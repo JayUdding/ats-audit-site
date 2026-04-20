@@ -19,7 +19,7 @@ An ATS is not artificial intelligence evaluating your worth. It is a database in
 
 3. **Retrieve** (recruiter searches). 
 
-Your goal is not to "impress" the machine (stoics don't like flattery). Your goal is to survive the **Parse** stage and carpe diem another day with your name, your experience, and your skills intact and correctly bucketed.
+Your goal is not to "impress" the machine (stoics don't like flattery). Your goal is to *survive* the **Parse** stage and carpe diem another day with your name, experience, and skills intact and correctly bucketed.
 
 **The Defense**
 
@@ -27,13 +27,13 @@ Because there is no universal standard—because Taleo, Workday, and many legacy
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive what we call the **Brutal Stoic Cut and Paste Testº¡∞£**--brutal because it lays bare any weakness--it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
+If your resume cannot survive what we call the **Brutal Stoic Cut and Paste Test**--brutal because it lays bare any weakness--it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
  
  As Epictetus admonishes: 
 
 **First say to yourself what you would be; and then do what you have to do**.
 
-So much for the philosophy; now here is the practical protocol. 
+So much for the philosophy; now here is the practical protocol! 
 
 ### The Stoic Resume Checklist (No Flattery--No Fluff--Understanding First)
 
@@ -126,14 +126,14 @@ Post-extraction, the parser attempts to map text to database fields:
 
 -----
 
-*   **A Note on Pipes:**
+*   **A Detailed Note on Pipes:**
 
 *     **The Pipe `|` Rule: Metadata Only, Never Content**
 
 The pipe is a **delimiter**, not a punctuation mark. It separates distinct data fields so the parser knows where one stops and another starts. Use it in **headers and metadata lines only**. Never use it inside bullet points or skills lists.
 
  
-### WHERE PIPES WORK (Use Them Here)
+##  WHERE PIPES WORK (Use Them Here)
 
 **Job/Education Headers:**
 ```
@@ -150,7 +150,7 @@ San Francisco, CA | (415) 555-0199 | email@example.com
 
 ---
 
-### WHERE PIPES FAIL (Never Do This)
+##  WHERE PIPES FAIL (Never Do This)
 
 **Inside Bullet Points:**
 ```
@@ -168,7 +168,7 @@ Technical Skills: Python | JavaScript | React | Node.js | SQL
 Technical Skills: Python, JavaScript, React, Node.js, SQL
 ```
  
-### THE VISUAL TRAP
+##  THE VISUAL TRAP
 
 You think pipes look "cleaner" than commas in a skills list. They don't. They look like **table cells**, and tables are fatal.
 
@@ -182,7 +182,7 @@ Backend: Python, Django, PostgreSQL, Redis
 Backend: Python | Django | PostgreSQL | Redis
 ```
 
-**Bottom Line:** Pipes are for **structure** (separating Title from Company from Date). Commas are for **content** (listing tools within a bullet). Deviate and you risk null fields.
+**Bottom Line:** Pipes are for **structure** (separating Title from Company from Date). Commas are for **content** (listing tools within a bullet). Deviate and you risk null fields. 
 
 ----
 
