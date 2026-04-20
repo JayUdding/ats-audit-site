@@ -2,7 +2,7 @@
 layout: default
 ---
  
-# Technical Resume Auditor
+# Survival Before Optimization--a Stoic Guide to Making your Resume ATS Compliant
 
  **The Mechanical Reality**
 
