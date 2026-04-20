@@ -4,8 +4,7 @@ layout: default
  
 # Survival Before Optimization
 
-# a No-Nonsense Guide to Making Your Resume ATS Compliant
-
+ 
  **The Mechanical Reality**
 
 Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see. 
