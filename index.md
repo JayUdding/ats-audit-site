@@ -193,7 +193,7 @@ Open the final PDF. File > Save as Text (or use `pdftotext` command line).
   
 **3. The File Name Variable**
 While not parsing per se, ATS ingestion often uses filename OCR for initial routing. 
-*   **Compliant:** `Github_Guru_Computer_Engineer.pdf`
+*   **Compliant:** `GithubGuru_Computer_Engineer.pdf`
 *   **Non-compliant:** `Resume_Final_v3_(1).pdf` or `My Resume.pdf` (causes overwrite conflicts and identification failures).
 
 ---
