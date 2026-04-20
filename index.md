@@ -163,7 +163,7 @@ Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact r
 
 Before submitting, perform these three tests:
 
-**Test 1: The Stoic Brutal Copy-Paste**
+**Test 1: The Brutal Stoic Copy-Paste Test**
 
 **Windows**: Select all (Ctrl+A) → Copy → Paste into **Notepad**.
 
@@ -220,7 +220,8 @@ every parsing error.
 
 1.  Email 
 [githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit 
-2.  **Delivery:** I perform the Stoic Brutal Copy-Paste Test within 24 hours and 
+2.  **Delivery:** I perform the Brutal Stoic Copy-Paste Test for you within 24 hours and 
 return your diagnostic. No flattery.
 
  
+by GitHubGuru--Technical Auditor since 2016
