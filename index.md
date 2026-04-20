@@ -88,7 +88,7 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **1. The Single Column Imperative**
 *   **Rule:** One vertical text flow. No exceptions.
-*   **Why:** Multi-column layouts (newspaper style, side-by-side skills lists, columns) cause parsers to read Line 1 of Column 1, then Line 1 of Column 2, creating concatenated gibberish:  "Python | React.js | SQL | 2019-2020Manager | Analyst" 
+*   **Why:** Multi-column layouts (newspaper style, side-by-side skills lists, columns) cause parsers to read Line 1 of Column 1, then Line 1 of Column 2, creating concatenated gibberish.
 *   **Table Prohibition:** Never use tables for layout. The parser reads row-by-row, not cell-by-cell. A two-column table for contact info (left: phone, right: email) often parses as: *"(555) 123-4567john@email.com"* as a single string.
 
 **2. The Text Box Extermination**
