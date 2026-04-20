@@ -6,22 +6,30 @@ layout: default
 
  **The Mechanical Reality**
 
-It seems impossible, but it is true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see. 
+Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see. 
 
 **This is not a conspiracy. It is mechanics.**
 
-An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: **Parse** (extract text into structured fields), **Store** (populate database tables), and **Retrieve** (recruiter searches). Your goal is not to "impress" the machine. Your goal is to survive the **Parse** stage with your name, your experience, and your skills intact and correctly bucketed.
+An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: 
+
+**Parse** (extract text into structured fields), 
+**Store** (populate database tables), and 
+**Retrieve** (recruiter searches). 
+
+Your goal is not to "impress" the machine. Your goal is to survive the **Parse** stage with your name, your experience, and your skills intact and correctly bucketed.
 
 **The Defense**
 
-Because there is no universal standard—because Taleo, Workday, and legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
+Because there is no universal standard—because Taleo, Workday, and others such as legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive a simple copy-paste into Notepad, it will not survive an ATS.
+If your resume cannot survive the **Brutal Stoic Cut and Paste Test**--a simple copy-paste into Notepad--it will not survive an ATS.
 Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
 
-This was the philosophy; now here is the practical protocol. As Epictetus admonished: **First say to yourself what you would be; and then do what you have to do**.
+So much for the philosophy; now here is the practical protocol. 
+
+As Epictetus admonished: **First say to yourself what you would be; and then do what you have to do**.
 
 ### The Stoic Resume Checklist (No Flattery--Just Facts--Understanding First)
 
@@ -80,7 +88,7 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **1. The Single Column Imperative**
 *   **Rule:** One vertical text flow. No exceptions.
-*   **Why:** Multi-column layouts (newspaper style, side-by-side skills lists, columns) cause parsers to read Line 1 of Column 1, then Line 1 of Column 2, creating concatenated gibberish: *"Python | React.js | SQL | 2019-2020Manager | Analyst"*
+*   **Why:** Multi-column layouts (newspaper style, side-by-side skills lists, columns) cause parsers to read Line 1 of Column 1, then Line 1 of Column 2, creating concatenated gibberish:  "Python | React.js | SQL | 2019-2020Manager | Analyst" 
 *   **Table Prohibition:** Never use tables for layout. The parser reads row-by-row, not cell-by-cell. A two-column table for contact info (left: phone, right: email) often parses as: *"(555) 123-4567john@email.com"* as a single string.
 
 **2. The Text Box Extermination**
@@ -156,8 +164,11 @@ Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact r
 Before submitting, perform these three tests:
 
 **Test 1: The Stoic Brutal Copy-Paste**
+
 **Windows**: Select all (Ctrl+A) → Copy → Paste into **Notepad**.
+
 **Mac**: Command+Av (⌘+A) – Select All;  text highlights in blue; Command+C (⌘+C) – Copy (Press twice to ensure clipboard updates); Open **TextEdit (not Notepad)**; Shift+Command+T - Convert to Plain Text (removes formatting);  Command+V (⌘+V) – Paste into TextEdit. 
+
 *   **Pass:** Text flows top-to-bottom, left-to-right, chronologically. Dates follow titles. No missing sections.
 *   **Fail:** Text out of order, dates floating alone, missing contact info, gibberish characters.
 
@@ -197,7 +208,7 @@ Violate any one of these, and you are gambling with  data integrity.
 
 ---
 
-Or use our services and we verify the above for you:
+**Too much? Use our services and we verify the above for you!**
 
 ### Services
 
