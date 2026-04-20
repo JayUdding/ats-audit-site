@@ -13,11 +13,11 @@ Hard to believe in April 2026, but true: the majority of Applicant Tracking Syst
 
 An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: 
 
-**Parse** (extract text into structured fields), 
+1. **Parse** (extract text into structured fields), 
 
-**Store** (populate database tables), and
+2. **Store** (populate database tables), and
 
-**Retrieve** (recruiter searches). 
+3. **Retrieve** (recruiter searches). 
 
 Your goal is not to "impress" the machine (stoics don't like flattery). Your goal is to survive the **Parse** stage and carpe diem another day with your name, your experience, and your skills intact and correctly bucketed.
 
@@ -27,12 +27,9 @@ Because there is no universal standard—because Taleo, Workday, and many legacy
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive what we call the **Brutal Stoic Cut and Paste Test**--brutal because it does not flatter us yet in reality a simple copy-paste test into Notepad--it will not survive an ATS.
-Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
-
-
-
-As Epictetus admonishes: 
+If your resume cannot survive what we call the **Brutal Stoic Cut and Paste Testº¡∞£**--brutal because it lays bare any weakness--it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
+ 
+ As Epictetus admonishes: 
 
 **First say to yourself what you would be; and then do what you have to do**.
 
@@ -127,6 +124,68 @@ Post-extraction, the parser attempts to map text to database fields:
 *   **Symbols:** The "en dash" (–) in date ranges is safer than "em dash" (—) which can trigger line-break errors.
 *   **Mathematical Symbols:** Avoid using ≥, ≤, →, ⇒ in skills sections. Write "Proficient in Python" not "Python ⇒ Expert".
 
+-----
+
+*   **A Note on Pipes:**
+
+*     **The Pipe `|` Rule: Metadata Only, Never Content**
+
+The pipe is a **delimiter**, not a punctuation mark. It separates distinct data fields so the parser knows where one stops and another starts. Use it in **headers and metadata lines only**. Never use it inside bullet points or skills lists.
+
+ 
+### WHERE PIPES WORK (Use Them Here)
+
+**Job/Education Headers:**
+```
+Software Engineer | Google | Mountain View, CA | Jan 2023 - April 2026
+B.Sc. Computer Science | MIT | Cambridge, MA | 2019 - 2023
+```
+*Why:* The parser sees four distinct fields (Role, Company, Location, Date) separated by ASCII characters. It can bucket these correctly.
+
+**Contact Info:**
+```
+San Francisco, CA | (415) 555-0199 | email@example.com
+```
+*Why:* It prevents the "concatenation blob" where the parser merges your city with your phone number into `San Francisco(415)555-0199`.
+
+---
+
+### WHERE PIPES FAIL (Never Do This)
+
+**Inside Bullet Points:**
+```
+• Developed REST APIs | Python | Flask | reduced latency by 40%
+• Managed team | Agile | Scrum | Jira | Confluence
+```
+*Why:* This looks like a table row to the parser. It may read `Developed REST APIs Python` as one skill, then `Flask reduced latency` as another, destroying your achievement. Use **commas** or **semicolons** instead.
+
+**Skills Lists:**
+```
+Technical Skills: Python | JavaScript | React | Node.js | SQL
+```
+*Why:* The pipe suggests these are separate columns, not a list. The parser may alternate them with the next line (if two-column layout) creating `Python JavaScript` gibberish. Use **commas**:
+```
+Technical Skills: Python, JavaScript, React, Node.js, SQL
+```
+ 
+### THE VISUAL TRAP
+
+You think pipes look "cleaner" than commas in a skills list. They don't. They look like **table cells**, and tables are fatal.
+
+**Correct:**
+```
+Backend: Python, Django, PostgreSQL, Redis
+```
+
+**Incorrect (Table Trap):**
+```
+Backend: Python | Django | PostgreSQL | Redis
+```
+
+**Bottom Line:** Pipes are for **structure** (separating Title from Company from Date). Commas are for **content** (listing tools within a bullet). Deviate and you risk null fields.
+
+----
+
 **2. Font Specifications**
 *   **Safe:** Arial, Calibri, Georgia, Times New Roman, Garamond, Helvetica.
 *   **Risk:** Custom icon fonts (FontAwesome for email icons), barcode fonts, or decorative scripts. If the ATS lacks the font, it substitutes or omits the character.
@@ -214,15 +273,16 @@ Violate any one of these, and you are gambling with  data integrity.
 
 ---
 
-**Too much? Use our services and we verify the above for you!**
+ 
+### Services Offered
 
-### Services
+**Too much? Use our services and we verify the above for you and more!**
 
 **ATS Compliance Audit — \$19.99**
 Complete ATS compliance autopsy. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
-Bonus: Also submit a position you plan to apply for and we analyze if your skills and experience are a good match.
+Bonus: Also submit a position you plan to apply for and we analyze if your skills and experience are a good match for the job.
  
 ### How It Works
 
@@ -233,3 +293,6 @@ return your diagnostic. No flattery.
 
  
 By GitHubGuru--Technical Auditor since 2016
+
+**Theory is a good thing, but practice is better. For it is the test of theory, and the confirmation of it.**
+— Musonius Rufus 
