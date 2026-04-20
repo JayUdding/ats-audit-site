@@ -4,12 +4,22 @@ layout: default
 
 # Technical Resume Auditor
 
-## Survival Before Optimization
+ **The Mechanical Reality**
 
-Don't let your resume die in the machine before it reaches human eyes.
+It seems impossible, but it is true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see. 
 
-Verify ATS compliance using the **Brutal Copy-Paste Protocol**. Then I fix 
-the content.
+**This is not a conspiracy. It is mechanics.**
+
+An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: **Parse** (extract text into structured fields), **Store** (populate database tables), and **Retrieve** (recruiter searches). Your goal is not to "impress" the machine. Your goal is to survive the **Parse** stage with your name, your experience, and your skills intact and correctly bucketed.
+
+**The Defense**
+
+Because there is no universal standard—because Taleo, Workday, and legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
+
+This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
+
+If your resume cannot survive a simple copy-paste into Notepad, it will not survive an ATS.
+Below is the technical specification for universal compliance. Deviate at any point, and you risk null fields or rejection.
 
 ### The Sudden Death Checklist (Free)
 
