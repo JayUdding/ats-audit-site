@@ -2,11 +2,10 @@
   <rect width="64" height="64" rx="10" fill="#1F2937"/>
   <text
     x="32"
-    y="40"
+    y="43"
     text-anchor="middle"
-    font-family="Inter, Arial, Helvetica, sans-serif"
-    font-size="24"
-    font-weight="800"
-    letter-spacing="-2"
-    fill="#F5F1E8">SR</text>
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="34"
+    font-weight="700"
+    fill="#F5F1E8">S</text>
 </svg>
