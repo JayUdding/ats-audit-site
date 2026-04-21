@@ -110,8 +110,8 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **5. Date Format Consistency**
 *   **Rule:** Use unambiguous, separable formats.
-*   **Compliant:** `Jan 2023 - Mar 2025`, `2023-2025`, `03/2023 - 03/2025` (though slashes can trigger date math errors in some systems). Also `Present` works fine. 
-*   **Non-compliant:**  `Current`, `Till date` (parsers calculate tenure via date math.  
+*   **Compliant:** `Jan 2023 - Mar 2025`, `2023-2025`, `03/2023 - 03/2025` (though slashes can trigger date math errors in some systems). Also `Present` works... (Always be in the Here and Now.)
+*   **Non-compliant Risks:**  `Current`, `Till date` or `To date` (parsers calculate tenure via date math); better use April 2026 or `Present`.  
 *   **Critical:** Dates must be on the same line as or immediately adjacent to the Job Title/Company. Dates floating in right-aligned table cells often attach to the wrong record.
 
 ---
@@ -126,7 +126,7 @@ Post-extraction, the parser attempts to map text to database fields:
 
 -----
 
-*   #### A Detailed Note on Pipes
+*   **A Detailed Note on Pipes**
 
 *     **The Pipe `|` Rule: Metadata Only, Never Content**
 
@@ -250,7 +250,7 @@ Open the final PDF. File > Save as Text (or use `pdftotext` command line).
 ---
 
   
-**3. The File Name Variable**
+### VIII.The File Name Variable**
 While not parsing per se, ATS ingestion often uses filename OCR for initial routing. 
 *   **Compliant:** `GithubGuru_Computer_Engineer.pdf`
 *   **Non-compliant:** `Resume_Final_v3_(1).pdf` or `My Resume.pdf` (causes overwrite conflicts and identification failures).
@@ -292,7 +292,7 @@ Bonus: Also submit a position you plan to apply for and we analyze if your skill
 return your diagnostic. No flattery.
 
  
-By GitHubGuru--Technical Auditor since 2016
+By GitHubGuru -- Technical Auditor since 2016
 
 **Theory is a good thing, but practice is better. For it is the test of theory, and the confirmation of it.**
 — Musonius Rufus 
