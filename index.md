@@ -289,13 +289,13 @@ Violate any one of these, and you are gambling with  data integrity.
 Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
-**Bonus!**: Also submit a job posting you plan to apply for and we analyze if your skills and experience are a good match for the job and how you can better position yourself and align your resume.
+**Bonus!**: Also submit a job posting you plan to apply for. We analyze if your skills and experience are a good match: how to align your resume and better position yourself.
  
 ### How It Works
 
 1.  Email and send attachments: Resume in PDF or Word and Job Posting to:
 [githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit 
-2.  **Delivery:** I perform the Brutal Copy-Paste Test for you within 24 hours and 
+2.  **Delivery:** We perform the Brutal Copy-Paste Test for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 
  
