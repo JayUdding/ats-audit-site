@@ -111,7 +111,7 @@ Post-extraction, the parser attempts to map text to database fields:
 **5. Date Format Consistency**
 *   **Rule:** Use unambiguous, separable formats.
 *   **Compliant:** `Jan 2023 - Mar 2025`, `2023-2025`, `03/2023 - 03/2025` (though slashes can trigger date math errors in some systems). Also `Present` works... (Always be in the Here and Now.)
-*   **Non-compliant Risks:**  `Current`, `Till date` or `To date` (parsers calculate tenure via date math); better use April 2026 or `Present`.  
+*   **Non-compliant Risks:**  `Current`, `Till date` or `To date` (parsers calculate tenure via date math); better use April 2026 or simply (be) `Present`.  
 *   **Critical:** Dates must be on the same line as or immediately adjacent to the Job Title/Company. Dates floating in right-aligned table cells often attach to the wrong record.
 
 ---
