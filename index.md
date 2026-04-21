@@ -7,8 +7,7 @@ layout: default
  
  **The Mechanical Reality**
 
-Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see. 
-
+Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see.  
 **This is not a conspiracy. It is mechanics.**
 
 An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: 
@@ -19,11 +18,15 @@ An ATS is not artificial intelligence evaluating your worth. It is a database in
 
 3. **Retrieve** (recruiter searches). 
 
-Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and *carpe diem* another day with your name, experience, and skills intact and correctly bucketed.
+Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and *carpe diem* another day with your name, experience, and skills intact and correctly bucketed. 
+
+But do not trust shortcuts. Automated "ATS checker" apps can be misleading. They simulate one generic parser and give you a false percentage score, while the real world runs fifty different systems. An app counts keywords; it cannot see the invisible table structures that actually destroy your application.
+
+You need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who performs the audit across multiple parsing scenarios, not an algorithm guessing at compatibility.
 
 **The Defense**
 
-Because there is no universal standard—because Taleo, Workday, and many legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
+Because there is no universal standard—because Taleo, Workday, iCIMS, and many legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
@@ -279,23 +282,24 @@ Violate any one of these, and you are gambling with  data integrity.
 ### Services Offered
 
 **Too much? Want a second opinion?**
-**Use our services and we verify the above for you and more!**
+
+**Use our services to conduct the audit for you and more!**
 
 **ATS Compliance Audit — \$19.99**
-Complete ATS compliance autopsy. You receive a detailed pass/fail report with specific fixes for 
+Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
-**Bonus**: Also submit a job posting you plan to apply for and we analyze if your skills and experience are a good match for the job and how you can better position yourself and align your resume.
+**Bonus!**: Also submit a job posting you plan to apply for and we analyze if your skills and experience are a good match for the job and how you can better position yourself and align your resume.
  
 ### How It Works
 
 1.  Email and send attachments: Resume in PDF or Word and Job Posting to:
 [githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit 
 2.  **Delivery:** I perform the Brutal Copy-Paste Test for you within 24 hours and 
-return your diagnostic. No flattery. Just the facts.
+return your diagnostic. No flattery. Just facts.
 
  
 By GitHubGuru -- Technical Auditor since 2016
 
-**Theory is a good thing, but practice is better. For it is the test of theory, and the confirmation of it.**
+**Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus 
