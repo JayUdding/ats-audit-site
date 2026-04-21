@@ -27,13 +27,13 @@ Because there is no universal standard—because Taleo, Workday, and many legacy
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive what we call the **Brutal Stoic Copy and Paste Test**-brutal because it lays bare any weakness-it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
+If your resume cannot survive what we call the **Brutal Copy-Paste Test**-brutal because it lays bare any weakness-it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
  
  As Marcus Aurelius admonishes: 
 
 **Do nothing, not even the smallest thing, randomly or carelessly**.
 
-So much for the philosophy; now here is the practical protocol! 
+So much for philosophy; here is the practice! 
 
 ### The Stoic Resume Checklist (No Flattery--No Fluff--Understanding First)
 
@@ -126,7 +126,8 @@ Post-extraction, the parser attempts to map text to database fields:
 
 -----
 
-*   **A Detailed Note on Pipes**
+
+**A Detailed Note on Pipes**
 
 *     **The Pipe `|` Rule: Metadata Only, Never Content**
 
@@ -228,7 +229,7 @@ Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact r
 
 Before submitting, perform these three tests:
 
-**Test 1: The Brutal Stoic Copy-Paste Test**
+**Test 1: The Brutal Copy-Paste Test**
 
 **Windows**: Select all (Ctrl+A) → Copy → Paste into **Notepad**.
 
@@ -250,7 +251,8 @@ Open the final PDF. File > Save as Text (or use `pdftotext` command line).
 ---
 
   
-### VIII.The File Name Variable**
+### VIII.The File Name Variable 
+
 While not parsing per se, ATS ingestion often uses filename OCR for initial routing. 
 *   **Compliant:** `GithubGuru_Computer_Engineer.pdf`
 *   **Non-compliant:** `Resume_Final_v3_(1).pdf` or `My Resume.pdf` (causes overwrite conflicts and identification failures).
@@ -276,23 +278,24 @@ Violate any one of these, and you are gambling with  data integrity.
  
 ### Services Offered
 
-**Too much? Use our services and we verify the above for you and more!**
+**Too much? Want a second opinion?**
+**Use our services and we verify the above for you and more!**
 
 **ATS Compliance Audit — \$19.99**
 Complete ATS compliance autopsy. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
-Bonus: Also submit a position you plan to apply for and we analyze if your skills and experience are a good match for the job.
+**Bonus**: Also submit a job posting you plan to apply for and we analyze if your skills and experience are a good match for the job and how you can better position yourself and align your resume.
  
 ### How It Works
 
-1.  Email 
+1.  Email and send attachments: Resume in PDF or Word and Job Posting to:
 [githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit 
-2.  **Delivery:** I perform the Brutal Stoic Copy-Paste Test for you within 24 hours and 
-return your diagnostic. No flattery.
+2.  **Delivery:** I perform the Brutal Copy-Paste Test for you within 24 hours and 
+return your diagnostic. No flattery. Just the facts.
 
  
 By GitHubGuru -- Technical Auditor since 2016
 
 **Theory is a good thing, but practice is better. For it is the test of theory, and the confirmation of it.**
-— Musonius Rufus 
+-- Musonius Rufus 
