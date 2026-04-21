@@ -1,12 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="3" fill="#16202A"/>
+  <rect width="64" height="64" rx="4" fill="#232B36"/>
   <text
     x="32"
-    y="45"
+    y="44"
     text-anchor="middle"
-    font-family="'Times New Roman', Georgia, serif"
-    font-size="42"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="38"
     font-weight="700"
-    fill="#F6EFE2">S</text>
+    fill="#F5F1E8">S</text>
 </svg>
-
