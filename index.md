@@ -309,7 +309,7 @@ By GitHubGuru -- Technical Auditor since 2016
   .testimonials-section {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid #eff0f1;
+    border-top: 1px solid #d1d5da;
   }
   
   /* Creates the 3-column layout */
@@ -327,7 +327,7 @@ By GitHubGuru -- Technical Auditor since 2016
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #eff0f1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow like your screenshot */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Soft shadow like your screenshot */
   }
 
   .testimonial-text {
