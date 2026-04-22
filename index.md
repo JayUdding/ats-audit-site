@@ -304,22 +304,28 @@ By GitHubGuru -- Technical Auditor since 2016
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus 
 
-<!-- TESTIMONIALS CSS (3-COLUMN GRID) -->
+
+<!-- TESTIMONIALS CSS (HORIZONTAL SCROLL) -->
 <style>
   .testimonials-section {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid #d1d5da;
+    border-top: 1px solid #d1d5da; /* Kept your custom border! */
   }
   
-  /* Creates the 3-column layout */
-  .testimonials-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem; /* Space between the boxes */
+  /* This container handles the horizontal scrolling */
+  .testimonials-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding-bottom: 1.5rem; /* Leaves room so your dark shadow doesn't get cut off */
+    scroll-snap-type: x mandatory; /* Makes the cards snap into place */
+    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling on iPhones */
   }
 
   .testimonial-card {
+    flex: 0 0 300px; /* Forces every card to stay exactly 300px wide */
+    scroll-snap-align: start; /* Tells the scroll where to "snap" */
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Pushes the author name to the bottom */
@@ -327,7 +333,7 @@ By GitHubGuru -- Technical Auditor since 2016
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #eff0f1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Soft shadow like your screenshot */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Kept your bold shadow! */
   }
 
   .testimonial-text {
@@ -346,10 +352,26 @@ By GitHubGuru -- Technical Auditor since 2016
     font-size: 0.9rem;
   }
 
-  /* Makes it stack vertically on mobile phones and tablets */
-  @media (max-width: 768px) {
-    .testimonials-grid {
-      grid-template-columns: 1fr;
+  /* Styles the scrollbar to make it look clean and modern */
+  .testimonials-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  .testimonials-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 4px;
+  }
+  .testimonials-scroll::-webkit-scrollbar-thumb {
+    background: #d1d5da; 
+    border-radius: 4px;
+  }
+  .testimonials-scroll::-webkit-scrollbar-thumb:hover {
+    background: #a3a8ae; 
+  }
+
+  /* On small phones, slightly reduce width so the next card "peeks" out to hint that you can scroll */
+  @media (max-width: 500px) {
+    .testimonial-card {
+      flex: 0 0 85%; 
     }
   }
 </style>
@@ -358,7 +380,7 @@ By GitHubGuru -- Technical Auditor since 2016
 <div class="testimonials-section">
   <h3>What People Are Saying</h3>
 
-  <div class="testimonials-grid">
+  <div class="testimonials-scroll">
     
     <!-- Testimonial 1 -->
     <div class="testimonial-card">
@@ -382,6 +404,30 @@ By GitHubGuru -- Technical Auditor since 2016
         "5 stars for you! Very useful."
       </p>
       <span class="testimonial-author">- KF, Engineer </span>
+    </div>
+
+    <!-- Testimonial 4 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Placeholder text for review 4. This service was exactly what I needed."
+      </p>
+      <span class="testimonial-author">- AB, Designer</span>
+    </div>
+
+    <!-- Testimonial 5 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Placeholder text for review 5. Great experience, highly recommended."
+      </p>
+      <span class="testimonial-author">- XY, Developer</span>
+    </div>
+
+    <!-- Testimonial 6 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Placeholder text for review 6. Fast, reliable, and highly professional."
+      </p>
+      <span class="testimonial-author">- JQ, Manager</span>
     </div>
 
   </div>
