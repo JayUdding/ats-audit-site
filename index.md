@@ -303,3 +303,79 @@ By GitHubGuru -- Technical Auditor since 2016
 
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus 
+
+---
+
+<!-- TESTIMONIALS CSS -->
+<style>
+  .testimonials-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #eff0f1;
+  }
+  .testimonial-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05); /* Slight background for Cayman */
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .testimonial-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image a circle */
+    object-fit: cover;
+    margin-right: 1.5rem;
+    flex-shrink: 0; /* Prevents the image from squishing */
+  }
+  .testimonial-text {
+    margin: 0;
+    font-style: italic;
+    color: #606c71; /* Matches Cayman theme text */
+  }
+  .testimonial-author {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+    font-style: normal;
+    color: #159957; /* Matches Cayman theme green */
+  }
+
+  /* Makes it look good on mobile phones */
+  @media (max-width: 600px) {
+    .testimonial-card {
+      flex-direction: column;
+      text-align: center;
+    }
+    .testimonial-img {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+</style>
+
+<!-- TESTIMONIALS HTML -->
+<div class="testimonials-section">
+  <h2>What People Are Saying</h2>
+
+  <!-- Testimonial 1 -->
+  <div class="testimonial-card">
+    <img src="{{ site.baseurl }}/assets/images/person1.jpg" alt="Client 1" class="testimonial-img">
+    <p class="testimonial-text">
+      "This service absolutely changed the way we do business. Highly recommended!"
+      <span class="testimonial-author">- Jane Doe, CEO of ExampleCorp</span>
+    </p>
+  </div>
+
+  <!-- Testimonial 2 -->
+  <div class="testimonial-card">
+    <img src="{{ site.baseurl }}/assets/images/person2.jpg" alt="Client 2" class="testimonial-img">
+    <p class="testimonial-text">
+      "Fast, reliable, and exactly what I was looking for. I will definitely be a returning customer."
+      <span class="testimonial-author">- John Smith, Freelancer</span>
+    </p>
+  </div>
+
+</div>
