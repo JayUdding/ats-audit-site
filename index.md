@@ -2,8 +2,6 @@
 layout: default
 ---
  
-# Survival Before Optimization
-
  
  **The Mechanical Reality**
 
