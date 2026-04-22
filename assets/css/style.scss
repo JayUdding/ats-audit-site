@@ -5,7 +5,7 @@
 $header-bg-color: #1C2833;           
 $header-bg-color-secondary: #566573; 
 
-$section-headings-color: #C9A84C;    
+$section-headings-color: #2E7D8C;    
 $body-text-color: #333333;           
 $body-link-color: #2E86C1;           
 
@@ -15,6 +15,10 @@ $body-link-color: #2E86C1;
 .project-tagline {
   color: #ffffff !important;
 }
+
+<h2 class="project-tagline" style="color: #ffffff;">
+  {{ site.description | default: site.github.project_tagline }}
+</h2>
 
 /* --- Custom Fixes for Text Weight --- */
 
