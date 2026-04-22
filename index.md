@@ -356,7 +356,7 @@ By GitHubGuru -- Technical Auditor since 2016
 
 <!-- TESTIMONIALS HTML -->
 <div class="testimonials-section">
-  <h2>What People Are Saying</h2>
+  <h3>What People Are Saying</h3>
 
   <div class="testimonials-grid">
     
