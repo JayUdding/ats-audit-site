@@ -5,9 +5,9 @@
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
 
-$section-headings-color: #B5541F;
-$body-link-color: #B5541F;
-strong, b { color: #B5541F; }
+$section-headings-color: #2E7D8C;
+$body-link-color: #2E7D8C;
+strong, b { color: #2E7D8C; }
 
 /* Import the Cayman theme to apply these changes */
 @import "{{ site.theme }}";
@@ -18,7 +18,7 @@ strong, b { color: #B5541F; }
 }
  
 
-$section-headings-color: #B5541F;
+$section-headings-color: #2E7D8C;
 
  
 
@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 2. Slightly soften the bold text so it isn't so overpowering */
 strong, b {
-  color: #B5541F; /* A softer slate-navy instead of harsh black */
+  color: #2E7D8C; /* A softer slate-navy instead of harsh black */
   font-weight: 600; /* Slightly less bulky than default bold */
 }
 
