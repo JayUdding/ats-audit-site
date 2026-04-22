@@ -327,7 +327,7 @@ By GitHubGuru -- Technical Auditor since 2016
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid #eff0f1;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Soft shadow like your screenshot */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Soft shadow like your screenshot */
   }
 
   .testimonial-text {
