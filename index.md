@@ -110,8 +110,8 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **4. Section Header Standardization**
 *   **Rule:** Use conventional strings.
-*   **Compliant:** `EXPERIENCE`, `WORK EXPERIENCE`, `PROFESSIONAL EXPERIENCE`, `EMPLOYMENT`, `EDUCATION`, `PROJECTS`, `SKILLS`, `SUMMARY`
-*   **Non-compliant:** `My Journey`, `Career Highlights`, `What I Bring to the Table`, `Proficiencies` (parsers lack the NLP training to map these synonyms; they default to dumping the section into unsearchable text).
+*   **Compliant:** `EXPERIENCE`, `WORK EXPERIENCE`, `PROFESSIONAL EXPERIENCE`, `EMPLOYMENT`, `EDUCATION`, `PROJECTS`, `SKILLS`, `SUMMARY`, `PROFESSIONAL SUMMARY`
+*   **Non-compliant or Risky:** `My Journey`, `About Me`, `Career Highlights`, `What I Bring to the Table`, `Proficiencies` (parsers may lack the NLP training to map these synonyms; they default to dumping the section into unsearchable text).
 
 **5. Date Format Consistency**
 *   **Rule:** Use unambiguous, separable formats.
@@ -295,9 +295,9 @@ every parsing error.
  
 ### How It Works
 
-1.  Email and send attachments: Resume in PDF or Word and Job Posting to:
+1.  Email with attachments (Resume in PDF or Word and Job Posting) to:
 [githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit 
-2.  **Delivery:** We perform the Brutal Copy-Paste Test for you within 24 hours and 
+2.  **Delivery:** We perform the complete audit for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 
  
