@@ -16,11 +16,11 @@ $body-link-color: #2E86C1;
 
 /* 1. Make the headers thicker so they stand out more */
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700; 
+  font-weight: 800; 
 }
 
 /* 2. Slightly soften the bold text so it isn't so overpowering */
 strong, b {
   color: #34495e; /* A softer slate-navy instead of harsh black */
-  font-weight: 500; /* Slightly less bulky than default bold */
+  font-weight: 600; /* Slightly less bulky than default bold */
 }
