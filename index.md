@@ -434,3 +434,7 @@ By GitHubGuru -- Technical Auditor since 2016
 
   </div>
 </div>
+
+---
+
+### Next Up: Improve Projects and Your GitHub Commit Chart (Coming Soon)
