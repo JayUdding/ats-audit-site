@@ -363,7 +363,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 1 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Top! Best review I ever got. Highly recommended!"
+        "Top! A solid review. Glad I got it right now. Recommended!"
       </p>
       <span class="testimonial-author">- ML, Graduate Student </span>
     </div>
@@ -371,7 +371,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 2 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Thank you for the Brutal Truth. Fixed a lot of issues."
+        "Thanks for the "Brutal" Truth but I can handle it. Fixed a key issue."
       </p>
       <span class="testimonial-author">- DM, Student</span>
     </div>
@@ -381,7 +381,7 @@ By GitHubGuru -- Technical Auditor since 2016
       <p class="testimonial-text">
         "5 stars for you! Very useful."
       </p>
-      <span class="testimonial-author">- SL </span>
+      <span class="testimonial-author">- KF, Engineer </span>
     </div>
 
   </div>
