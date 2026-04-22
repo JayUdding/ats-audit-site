@@ -350,7 +350,7 @@ By GitHubGuru -- Technical Auditor since 2016
     display: block;
     font-weight: bold;
     font-style: normal;
-    color: #159957; /* Matches Cayman green */
+    color: #2E86C1; /* Matches the new stoic blue */
     font-size: 0.9rem;
   }
 
