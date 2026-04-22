@@ -26,6 +26,7 @@ strong, b {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-  font-weight: 700 !important; 
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-weight: normal !important; /* Serifs look most elegant when not overly bold */
+  letter-spacing: 0.5px; /* Adds a tiny bit of breathing room */
 }
