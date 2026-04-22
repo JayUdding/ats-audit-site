@@ -310,7 +310,7 @@ By GitHubGuru -- Technical Auditor since 2016
   .testimonials-section {
     margin-top: 3rem;
     padding-top: 2rem;
-    border-top: 1px solid #B5541F; /* Kept your custom border! */
+    border-top: 1px solid #2E7D8C; /* Kept your custom border! */
   }
   
   /* This container handles the horizontal scrolling */
@@ -339,7 +339,7 @@ By GitHubGuru -- Technical Auditor since 2016
   .testimonial-text {
     margin: 0 0 1rem 0; /* Adds space below the quote */
     font-style: italic;
-   color: #B5541F; /* Matches the new stoic blue */
+   color: #2E7D8C; /* Matches the new stoic blue */
     font-size: 0.95rem; /* Slightly smaller text to fit columns nicely */
     line-height: 1.5;
   }
@@ -348,7 +348,7 @@ By GitHubGuru -- Technical Auditor since 2016
     display: block;
     font-weight: bold;
     font-style: normal;
-    color: #B5541F; /* Matches the new stoic blue */
+    color: #2E7D8C; /* Matches the new stoic blue */
     font-size: 0.9rem;
   }
 
