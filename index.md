@@ -304,54 +304,52 @@ By GitHubGuru -- Technical Auditor since 2016
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus 
 
----
-
-<!-- TESTIMONIALS CSS -->
+<!-- TESTIMONIALS CSS (3-COLUMN GRID) -->
 <style>
   .testimonials-section {
     margin-top: 3rem;
     padding-top: 2rem;
     border-top: 1px solid #eff0f1;
   }
-  .testimonial-card {
-    display: flex;
-    align-items: center;
-    background: rgba(255, 255, 255, 0.05); /* Slight background for Cayman */
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  }
-  .testimonial-img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%; /* Makes the image a circle */
-    object-fit: cover;
-    margin-right: 1.5rem;
-    flex-shrink: 0; /* Prevents the image from squishing */
-  }
-  .testimonial-text {
-    margin: 0;
-    font-style: italic;
-    color: #606c71; /* Matches Cayman theme text */
-  }
-  .testimonial-author {
-    display: block;
-    margin-top: 0.5rem;
-    font-weight: bold;
-    font-style: normal;
-    color: #159957; /* Matches Cayman theme green */
+  
+  /* Creates the 3-column layout */
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem; /* Space between the boxes */
   }
 
-  /* Makes it look good on mobile phones */
-  @media (max-width: 600px) {
-    .testimonial-card {
-      flex-direction: column;
-      text-align: center;
-    }
-    .testimonial-img {
-      margin-right: 0;
-      margin-bottom: 1rem;
+  .testimonial-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pushes the author name to the bottom */
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eff0f1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Soft shadow like your screenshot */
+  }
+
+  .testimonial-text {
+    margin: 0 0 1rem 0; /* Adds space below the quote */
+    font-style: italic;
+    color: #606c71; /* Matches Cayman text */
+    font-size: 0.95rem; /* Slightly smaller text to fit columns nicely */
+    line-height: 1.5;
+  }
+
+  .testimonial-author {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    color: #159957; /* Matches Cayman green */
+    font-size: 0.9rem;
+  }
+
+  /* Makes it stack vertically on mobile phones and tablets */
+  @media (max-width: 768px) {
+    .testimonials-grid {
+      grid-template-columns: 1fr;
     }
   }
 </style>
@@ -360,22 +358,31 @@ By GitHubGuru -- Technical Auditor since 2016
 <div class="testimonials-section">
   <h2>What People Are Saying</h2>
 
-  <!-- Testimonial 1 -->
-  <div class="testimonial-card">
-    <img src="{{ site.baseurl }}/assets/images/person1.jpg" alt="Client 1" class="testimonial-img">
-    <p class="testimonial-text">
-      "This service absolutely changed the way we do business. Highly recommended!"
-      <span class="testimonial-author">- Jane Doe, CEO of ExampleCorp</span>
-    </p>
-  </div>
+  <div class="testimonials-grid">
+    
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Top! Best review I ever got. Highly recommended!"
+      </p>
+      <span class="testimonial-author">- ML, Graduate Student </span>
+    </div>
 
-  <!-- Testimonial 2 -->
-  <div class="testimonial-card">
-    <img src="{{ site.baseurl }}/assets/images/person2.jpg" alt="Client 2" class="testimonial-img">
-    <p class="testimonial-text">
-      "Fast, reliable, and exactly what I was looking for. I will definitely be a returning customer."
-      <span class="testimonial-author">- John Smith, Freelancer</span>
-    </p>
-  </div>
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Thank you for the Brutal Truth. Fixed a lot of issues."
+      </p>
+      <span class="testimonial-author">- DM, Student</span>
+    </div>
 
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "5 stars for you! Very useful."
+      </p>
+      <span class="testimonial-author">- SL </span>
+    </div>
+
+  </div>
 </div>
