@@ -341,7 +341,7 @@ By GitHubGuru -- Technical Auditor since 2016
   .testimonial-text {
     margin: 0 0 1rem 0; /* Adds space below the quote */
     font-style: italic;
-    color: #606c71; /* Matches Cayman text */
+   color: #2E86C1; /* Matches the new stoic blue */
     font-size: 0.95rem; /* Slightly smaller text to fit columns nicely */
     line-height: 1.5;
   }
