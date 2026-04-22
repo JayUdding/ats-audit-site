@@ -7,7 +7,7 @@ layout: default
  
  **The Mechanical Reality**
 
-Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see.  
+Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see and will never know about.  
 
 **This is not conspiracy. Just mechanics.**
 
@@ -19,7 +19,7 @@ An ATS is not artificial intelligence evaluating your worth. It is a database in
 
 3. **Retrieve** (recruiter searches). 
 
-Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and *carpe diem* another day with your name, experience, and skills intact and correctly bucketed. 
+Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and *carpe diem* another day with your name, experience, projects and skills intact and correctly bucketed. 
 
 But do not trust shortcuts. Automated "ATS checker" apps can be misleading. They simulate one generic parser and give you a false percentage score, while the real world runs fifty different systems. An app counts keywords; it cannot see the invisible table structures that actually destroy your application.
 
@@ -387,7 +387,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 1 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Solid review. Glad I got it right now. Recommended!"
+        "Solid review. Glad I got it right now."
       </p>
       <span class="testimonial-author">- ML, Graduate Student </span>
     </div>
@@ -395,7 +395,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 2 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Thanks for the "Brutal" Truth but I can handle it. Fixed a key error."
+        "Thanks for the "brutal" truth but I can handle it. Fixed a key error."
       </p>
       <span class="testimonial-author">- DM, Student</span>
     </div>
@@ -427,7 +427,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 6 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "The unexamined life is not worth living. Get back to work."
+        "The unexamined life is not worth living. Now get back to work!"
       </p>
       <span class="testimonial-author">- Aristotle</span>
     </div>
