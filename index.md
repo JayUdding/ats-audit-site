@@ -64,7 +64,8 @@ Post-extraction, the parser attempts to map text to database fields:
 *   **Contact:** Name, Phone, Email, LinkedIn, GitHub, Location
 *   **Experience:** Company, Job Title, Start Date, End Date, Description
 *   **Education:** Institution, Location, Degree, Field, Date
-*   **Skills:** Keyword tokens
+*   **Projects:** Keyword tokens, Description
+*   **Skills:** Keyword tokens 
 
 **Critical constraint:** The parser uses **section headers** and **date patterns** to trigger field mapping. If it cannot identify where Experience ends and Education begins, it dumps everything into a "Notes" field where it becomes unsearchable.
 
@@ -108,8 +109,8 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **4. Section Header Standardization**
 *   **Rule:** Use conventional strings.
-*   **Compliant:** `EXPERIENCE`, `WORK EXPERIENCE`, `PROFESSIONAL EXPERIENCE`, `EMPLOYMENT`, `EDUCATION`, `SKILLS`, `SUMMARY`
-*   **Non-compliant:** `My Journey`, `Career Highlights`, `What I Bring`, `Proficiencies` (parsers lack the NLP training to map these synonyms; they default to dumping the section into unsearchable text).
+*   **Compliant:** `EXPERIENCE`, `WORK EXPERIENCE`, `PROFESSIONAL EXPERIENCE`, `EMPLOYMENT`, `EDUCATION`, `PROJECTS`, `SKILLS`, `SUMMARY`
+*   **Non-compliant:** `My Journey`, `Career Highlights`, `What I Bring to the Table`, `Proficiencies` (parsers lack the NLP training to map these synonyms; they default to dumping the section into unsearchable text).
 
 **5. Date Format Consistency**
 *   **Rule:** Use unambiguous, separable formats.
@@ -197,7 +198,7 @@ Backend: Python | Django | PostgreSQL | Redis
 
 **3. Hyperlinks**
 *   **Rule:** Plain text URLs only.
-*   **Risk:** Hyperlinked text (blue underlined "LinkedIn" hiding `https://...`) often has the display text parsed, not the URL. Write: `linkedin.com/in/name` not "Connect with me".
+*   **Risk:** Hyperlinked text (blue underlined "LinkedIn" hiding `https://...`) often has the display text parsed, not the URL. Write: `linkedin.com/in/name` not "Connect with me". Idem for GitHub profile link.
 
 ---
 
@@ -209,7 +210,7 @@ ATS search functions use **Boolean and proximity operators**. Recruiters search:
 *   **Acronyms:** Provide both forms: `ASP.NET` and `Active Server Pages .NET` is unnecessary; `AWS (Amazon Web Services)` is safer if space permits, but parsers handle standard acronyms well. Do not use parenthetical exclusions: `React (preferred)` — the parser may include "(preferred)" as part of the skill token.
 
 **2. The "Keyword Stuffing" Fallacy**
-Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact repetition or white-text keyword blocks as spam. Do not list "Python" 15 times in white font at the bottom. You will be blacklisted.
+Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact repetition or white-text keyword blocks as spam. Do not list "Python" 15 times in white font at the bottom. You will be rejected.
 
 ---
 
@@ -279,17 +280,17 @@ Violate any one of these, and you are gambling with  data integrity.
 ---
 
  
-### Services Offered
+### Service Offered
 
-**Too much? Want a second opinion?**
+**Too much? Still unsure? Want a second opinion?**
 
-**Use our services to conduct the audit for you and more!**
+**Use our service to conduct the audit for you and more!**
 
 **ATS Compliance Audit — \$19.99**
 Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
-**Bonus!**: Also submit a job posting you plan to apply for. We analyze if your skills and experience are a good match: how to align your resume and better position yourself.
+**Bonus!** Also submit a job posting you plan to apply for. We analyze if your skills and experience are a good match: how to align your resume and better position yourself.
  
 ### How It Works
 
@@ -302,7 +303,7 @@ return your diagnostic. No flattery. Just facts.
 By GitHubGuru -- Technical Auditor since 2016
 
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
--- Musonius Rufus 
+-- Musonius Rufus (Teacher of Epictetus) 
 
 
 <!-- TESTIMONIALS CSS (HORIZONTAL SCROLL) -->
@@ -385,7 +386,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 1 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Top! A solid review. Glad I got it right now. Recommended!"
+        "Solid review. Glad I got it right now. Recommended!"
       </p>
       <span class="testimonial-author">- ML, Graduate Student </span>
     </div>
@@ -393,7 +394,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 2 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Thanks for the "Brutal" Truth but I can handle it. Fixed a key issue."
+        "Thanks for the "Brutal" Truth but I can handle it. Fixed a key error."
       </p>
       <span class="testimonial-author">- DM, Student</span>
     </div>
@@ -409,7 +410,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 4 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "5 Stars!! Thank you."
+        "5 Stars. Thank you."
       </p>
       <span class="testimonial-author">- NA, Designer</span>
     </div>
@@ -425,7 +426,7 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 6 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "The unexamined life is not worth living"
+        "The unexamined life is not worth living. Get back to work."
       </p>
       <span class="testimonial-author">- Aristotle</span>
     </div>
