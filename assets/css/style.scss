@@ -10,11 +10,14 @@ $body-text-color: #333333;
 $body-link-color: #2E86C1;           
 
 /* Import the Cayman theme to apply these changes */
+/* Import the Cayman theme */
 @import "{{ site.theme }}";
 
 .project-tagline {
   color: #ffffff !important;
 }
+
+$section-headings-color: #2E7D8C;
 
 <h2 class="project-tagline" style="color: #ffffff;">
   {{ site.description | default: site.github.project_tagline }}
