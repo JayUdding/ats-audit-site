@@ -409,25 +409,25 @@ By GitHubGuru -- Technical Auditor since 2016
     <!-- Testimonial 4 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Placeholder text for review 4. This service was exactly what I needed."
+        "5 Stars!! Thank you."
       </p>
-      <span class="testimonial-author">- AB, Designer</span>
+      <span class="testimonial-author">- NA, Designer</span>
     </div>
 
     <!-- Testimonial 5 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Placeholder text for review 5. Great experience, highly recommended."
+        "Your review here? "
       </p>
-      <span class="testimonial-author">- XY, Developer</span>
+      <span class="testimonial-author">- You Hopefully</span>
     </div>
 
     <!-- Testimonial 6 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Placeholder text for review 6. Fast, reliable, and highly professional."
+        "The unexamined life is not worth living"
       </p>
-      <span class="testimonial-author">- JQ, Manager</span>
+      <span class="testimonial-author">- Aristotle</span>
     </div>
 
   </div>
