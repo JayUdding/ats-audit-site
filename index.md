@@ -8,7 +8,8 @@ layout: default
  **The Mechanical Reality**
 
 Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see.  
-**This is not a conspiracy. It is mechanics.**
+
+**This is not conspiracy. Just mechanics.**
 
 An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: 
 
