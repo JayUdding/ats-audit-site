@@ -294,8 +294,9 @@ every parsing error.
 ### How It Works
 
 1.  Email with attachments (Resume in PDF or Word and Job Posting) to:
-[githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit 
-2.  **Delivery:** We perform the complete audit for you within 24 hours and 
+[githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit.
+2.  Payment Button on the bottom of this page.
+3.  **Delivery:** We perform the complete audit for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 
  
@@ -443,9 +444,9 @@ By GitHubGuru -- Technical Auditor since 2016
 <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-btn">
   <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="18" height="18" style="vertical-align: middle; margin-right: 6px; margin-bottom: 3px;">
-      Get My Resume Reviewed
+      Do the ATS AUDIT
     </div>
-    <div class="btn-sub-text">Save 50% when you pay with Bitcoin</div>
+    <div class="btn-sub-text">Save 50% Using Bitcoin</div>
   </a>
 
 </div>
