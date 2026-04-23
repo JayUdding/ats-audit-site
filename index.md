@@ -257,7 +257,7 @@ Open the final PDF. File > Save as Text (or use `pdftotext` command line).
 ### VIII.The File Name Variable 
 
 While not parsing per se, ATS ingestion often uses filename OCR for initial routing. 
-*   **Compliant:** `GithubGuru_Computer_Engineer.pdf`
+*   **Compliant:** `FirstName_LastName_Computer_Engineer.pdf`
 *   **Non-compliant:** `Resume_Final_v3_(1).pdf` or `My Resume.pdf` (causes overwrite conflicts and identification failures).
 
 ---
@@ -301,7 +301,7 @@ every parsing error.
 return your diagnostic. No flattery. Just facts.
 
  
-By Stoic Resume Staff -- Technical Auditors since 2016
+By StoicResume -- Technical Auditors since 2016
 
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus (Teacher of Epictetus) 
@@ -442,7 +442,7 @@ By Stoic Resume Staff -- Technical Auditors since 2016
   <!-- The Bitcoin Button -->
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="18" height="18" style="vertical-align: middle; margin-right: 6px; margin-bottom: 3px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="30" height="30" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
       YES! PERFORM MY ATS AUDIT
     </div>
     <div class="btn-sub-text">Save 50% Using Bitcoin</div>
