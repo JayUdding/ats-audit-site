@@ -435,4 +435,28 @@ By GitHubGuru -- Technical Auditor since 2016
 
 ---
 
-### Next Up: Improve Projects and Your GitHub Commit Chart (Coming Soon)
+<!-- The Bitcoin Button -->
+<a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?amount=0.001&message=Donation" class="btc-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
+  Pay with Bitcoin
+</a>
+
+<!-- The Styling (Put this in your CSS file or inside a <style> tag) -->
+<style>
+  .btc-btn {
+    display: inline-block;
+    background-color: #F7931A; /* Official Bitcoin Orange */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .btc-btn:hover {
+    background-color: #e08316;
+  }
+</style>
