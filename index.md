@@ -297,7 +297,7 @@ every parsing error.
 [githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit.
 2.  Payment Button to pay via Bitcoin wallet on the bottom of this page. 
 3.  Email Bitcoin transaction ID (or a screenshot) for correct routing.
-3.  **Delivery:** We perform the complete audit for you within 24 hours and 
+4.  **Delivery:** We perform the complete audit for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 
  
@@ -436,15 +436,11 @@ By GitHubGuru -- Technical Auditor since 2016
 </div>
 
 ---
-
 <!-- Wrapper div to center the button -->
 <div style="text-align: center; width: 100%; padding-bottom: 40px;">
-
-
-<!-- The Bitcoin Button -->
-<a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn">
-  id="btc-button"
-     onclick="handleBitcoinClick(event)">
+  
+  <!-- The Bitcoin Button -->
+  <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="18" height="18" style="vertical-align: middle; margin-right: 6px; margin-bottom: 3px;">
       Do the ATS AUDIT
@@ -458,10 +454,10 @@ By GitHubGuru -- Technical Auditor since 2016
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
-    <h2>Pay with Bitcoin</h2>
+    <h2 style="margin-top: 0;">Pay with Bitcoin</h2>
     <p>Send <strong>\$10 USD worth of Bitcoin</strong> to this address:</p>
     
-    <!-- QR Code (Generated via free API) -->
+    <!-- QR Code -->
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <!-- Copyable Address -->
@@ -477,9 +473,9 @@ By GitHubGuru -- Technical Auditor since 2016
   </div>
 </div>
 
-<!-- Styles -->
-
+<!-- ALL CSS STYLES (Button + Modal) -->
 <style>
+  /* Button Styles */
   .btc-promo-btn {
     display: inline-block;
     background-color: #F7931A;
@@ -487,45 +483,116 @@ By GitHubGuru -- Technical Auditor since 2016
     font-family: Arial, sans-serif;
     text-decoration: none;
     padding: 12px 24px;
-    border-radius: 8px; /* Keeps the rounded rectangle look from your screenshot */
+    border-radius: 8px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
   }
-  
   .btc-promo-btn:hover {
     background-color: #e08316;
     transform: translateY(-2px);
   }
-
   .btn-main-text {
     font-size: 18px;
     font-weight: bold;
   }
-
   .btn-sub-text {
     font-size: 13px;
     font-weight: normal;
-    opacity: 0.9; /* Makes the bottom text slightly softer */
+    opacity: 0.9;
     margin-top: 4px;
   }
-</style>
 
-<!-- The Styling (Put this in your CSS file or inside a <style> tag) -->
-<style>
-  .btc-btn {
-    display: inline-block;
-    background-color: #F7931A; /* Official Bitcoin Orange */
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  /* Modal Styles */
+  .btc-modal {
+    display: none; /* This is what hides it by default! */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6); /* Darkens the background */
   }
-  .btc-btn:hover {
+  .btc-modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 400px;
+    margin: 10% auto; /* Centers it perfectly */
+    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  .btc-modal-close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    line-height: 1;
+  }
+  .btc-modal-close:hover {
+    color: #333;
+  }
+  .btc-address-box {
+    background-color: #f4f4f4;
+    padding: 12px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  .btc-address-box code {
+    font-size: 11px;
+    word-break: break-all;
+    color: #333;
+  }
+  .copy-btn {
+    background-color: #F7931A;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .copy-btn:hover {
     background-color: #e08316;
   }
 </style>
+
+<!-- JAVASCRIPT (Makes the modal pop up if no wallet is found) -->
+<script>
+  function handleBitcoinClick(event) {
+    var start = Date.now();
+    
+    // Check if the link failed to open a wallet after 1 second
+    setTimeout(function() {
+      if (Date.now() - start < 1500) {
+        document.getElementById('btc-modal').style.display = 'block';
+      }
+    }, 1000);
+  }
+
+  function closeModal() {
+    document.getElementById('btc-modal').style.display = 'none';
+  }
+
+  function copyAddress() {
+    var address = document.getElementById('btc-address').innerText;
+    navigator.clipboard.writeText(address);
+    alert('Bitcoin address copied to clipboard!');
+  }
+
+  // Closes the modal if user clicks outside of the white box
+  window.onclick = function(event) {
+    var modal = document.getElementById('btc-modal');
+    if (event.target == modal) {
+      modal.style.display = 'none';
+    }
+  }
+</script>
