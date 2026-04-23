@@ -441,9 +441,45 @@ By GitHubGuru -- Technical Auditor since 2016
 
 <!-- The Bitcoin Button -->
 <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-btn">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-  Save 50% by Using Bitcoin
-</a>
+  <div class="btn-main-text">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="18" height="18" style="vertical-align: middle; margin-right: 6px; margin-bottom: 3px;">
+      Get My Resume Reviewed
+    </div>
+    <div class="btn-sub-text">Save 50% when you pay with Bitcoin</div>
+  </a>
+
+</div>
+
+<style>
+  .btc-promo-btn {
+    display: inline-block;
+    background-color: #F7931A;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px; /* Keeps the rounded rectangle look from your screenshot */
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .btc-promo-btn:hover {
+    background-color: #e08316;
+    transform: translateY(-2px);
+  }
+
+  .btn-main-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .btn-sub-text {
+    font-size: 13px;
+    font-weight: normal;
+    opacity: 0.9; /* Makes the bottom text slightly softer */
+    margin-top: 4px;
+  }
+</style>
 
 <!-- The Styling (Put this in your CSS file or inside a <style> tag) -->
 <style>
