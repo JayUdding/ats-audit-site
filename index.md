@@ -442,15 +442,42 @@ By GitHubGuru -- Technical Auditor since 2016
 
 
 <!-- The Bitcoin Button -->
-<a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-btn">
-  <div class="btn-main-text">
+<a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn">
+  id="btc-button"
+     onclick="handleBitcoinClick(event)">
+    <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="18" height="18" style="vertical-align: middle; margin-right: 6px; margin-bottom: 3px;">
-      YES! PERFORM MY ATS AUDIT
+      Do the ATS AUDIT
     </div>
     <div class="btn-sub-text">Save 50% Using Bitcoin</div>
   </a>
 
 </div>
+
+<!-- The Fallback Modal (Hidden by default) -->
+<div id="btc-modal" class="btc-modal">
+  <div class="btc-modal-content">
+    <span class="btc-modal-close" onclick="closeModal()">&times;</span>
+    <h2>Pay with Bitcoin</h2>
+    <p>Send <strong>\$10 USD worth of Bitcoin</strong> to this address:</p>
+    
+    <!-- QR Code (Generated via free API) -->
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
+    
+    <!-- Copyable Address -->
+    <div class="btc-address-box">
+      <code id="btc-address">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
+      <button onclick="copyAddress()" class="copy-btn">Copy</button>
+    </div>
+    
+    <p style="font-size: 13px; color: #666; margin-top: 15px;">
+      After sending, email your resume + transaction ID to:<br>
+      <strong>githubguru@proton.me</strong>
+    </p>
+  </div>
+</div>
+
+<!-- Styles -->
 
 <style>
   .btc-promo-btn {
