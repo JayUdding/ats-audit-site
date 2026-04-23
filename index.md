@@ -294,14 +294,14 @@ every parsing error.
 ### How It Works
 
 1.  Email with attachments (Resume in PDF or Word and Job Posting) to:
-[githubguru@proton.me](mailto:githubguru@proton.me) to order the Audit.
+[audit@stoicresume.com](mailto:audit@stoicresume.com) to order the Audit.
 2.  Payment Button to pay via Bitcoin wallet on the bottom of this page. 
 3.  Email Bitcoin transaction ID (or a screenshot) for correct routing.
 4.  **Delivery:** We perform the complete audit for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 
  
-By GitHubGuru -- Technical Auditor since 2016
+By Stoic Resume Staff -- Technical Auditors since 2016
 
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus (Teacher of Epictetus) 
@@ -468,7 +468,7 @@ By GitHubGuru -- Technical Auditor since 2016
     
     <p style="font-size: 13px; color: #666; margin-top: 15px;">
       After sending, email your resume + transaction ID to:<br>
-      <strong>githubguru@proton.me</strong>
+      <strong>audit@stoicresume.com</strong>
     </p>
   </div>
 </div>
