@@ -435,6 +435,10 @@ By GitHubGuru -- Technical Auditor since 2016
 
 ---
 
+<!-- Wrapper div to center the button -->
+<div style="text-align: center; width: 100%; padding-bottom: 40px;">
+
+
 <!-- The Bitcoin Button -->
 <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?" class="btc-btn">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
