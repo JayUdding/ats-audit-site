@@ -443,7 +443,7 @@ By: StoicResume.com -- Technical Auditors since 2016
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="32" height="32" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
-      YES! PERFORM MY ATS AUDIT
+      Start My ATS Audit
     </div>
     <div class="btn-sub-text">Save 50% Using Bitcoin</div>
   </a>
