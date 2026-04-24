@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free ATS Tester Prompt | StoicResume</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #fafafa;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px; 
+            margin: 0 auto; 
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 { color: #347b85; margin-top: 0; }
+        .instructions { font-size: 16px; margin-bottom: 25px; }
+        
+        /* The Prompt Box */
+        .prompt-box { 
+            background-color: #f4f6f8; 
+            padding: 25px; 
+            border-radius: 8px; 
+            border: 1px solid #e1e4e8; 
+            white-space: pre-wrap; 
+            font-family: Consolas, Monaco, monospace; 
+            font-size: 14px; 
+            margin-bottom: 25px; 
+            color: #24292e;
+        }
+        
+        /* Copy Button */
+        .copy-btn { 
+            background-color: #347b85; 
+            color: white; 
+            border: none; 
+            padding: 14px 28px; 
+            font-size: 16px; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            font-weight: bold; 
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .copy-btn:hover { background-color: #275e66; transform: translateY(-2px); }
+        
+        /* Upsell Box */
+        .upsell { 
+            background-color: #fff9f0; 
+            padding: 25px; 
+            border-radius: 8px; 
+            border-left: 5px solid #F7931A; 
+            margin-top: 40px; 
+        }
+        .upsell h3 { margin-top: 0; color: #333; }
+        .upsell-link { 
+            color: #F7931A; 
+            font-weight: bold; 
+            font-size: 18px; 
+            text-decoration: none; 
+        }
+        .upsell-link:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>The StoicResume ATS Master Prompt</h1>
+    <div class="instructions">
+        <p><strong>Step 1:</strong> Click the copy button below.</p>
+        <p><strong>Step 2:</strong> Paste the text into ChatGPT, Claude, or your favorite AI.</p>
+        <p><strong>Step 3:</strong> Open your resume PDF, press <code>Ctrl+A</code> (Select All), copy the text, and paste it directly beneath the prompt in the AI chat.</p>
+        <p><em>Note: Do not upload an image or screenshot of your resume! You must paste the plain text to see if your layout contains hidden ATS errors.</em></p>
+    </div>
+
+    <button class="copy-btn" onclick="copyPrompt()" id="copyBtn">
+        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+        Copy Prompt to Clipboard
+    </button>
+
+    <div class="prompt-box" id="promptText">Act as an enterprise-grade Applicant Tracking System (ATS) parser (Workday, Taleo, Greenhouse) combined with a Senior Technical Recruiter. 
+
+Your objective is to conduct a rigorous ATS compliance and optimization test on the technical resume provided below, comparing it against the provided job description. 
+
+You must strictly adhere to the following parsing rules and constraints when evaluating the resume:
+
+### ATS PARSING STRICT RULES:
+1. SECTION HEADERS: Parsers only understand standard strings (e.g., EXPERIENCE, EDUCATION, SKILLS, PROJECTS). Flag anything unconventional.
+2. DATE PATTERNS: Dates must be standard (e.g., Jan 2023 - Mar 2025) and adjacent to the job title/company. 
+3. THE PIPE RULE (|): The pipe `|` is a metadata delimiter, NOT a punctuation mark. It is ONLY allowed in headers/metadata. It is strictly FORBIDDEN inside bullet points or skills lists. Skills must be comma-separated.
+4. BULLET POINTS: Only standard hyphens (-) or ASCII asterisks (*) are allowed. Flag Unicode bullets, math symbols, or graphic checkboxes. 
+
+### YOUR TASKS:
+1. ATS PARSING & STRUCTURE ANALYSIS
+- Scan text for inappropriate use of the pipe character `|`.
+- Verify standard section headers and date formatting.
+- Warn the user if the pasted text appears scrambled (indicates "Column Bleed").
+
+2. KEYWORD MATCHING & SCHEMA MAPPING
+- Extract core skills from the Job Description and compare against the resume.
+- List exact matched keywords and high-priority MISSING keywords.
+
+3. RESUME CONTENT 
+- Flag bullets lacking quantifiable metrics (%, $, time, scale).
+- Check for strong, active tech-oriented verbs.
+
+### OUTPUT DELIVERABLES:
+Format exactly as follows:
+- OVERALL ATS MATCH SCORE: [0-100%]
+- FATAL PARSING ERRORS: [List rule violations. If none, write "None detected."]
+- KEYWORD MATCH LIST: [Found keywords]
+- CRITICAL MISSING KEYWORDS: [Missing keywords]
+- WEAK BULLET POINTS TO REWRITE: [Provide rewritten, ATS-optimized versions].
+
+---
+INPUT DATA:
+
+JOB TITLE: [Insert Job Title]
+JOB DESCRIPTION: 
+[Insert Job Description]
+
+RESUME TEXT:
+[Paste Resume Text Here - Note: If text pastes in scrambled, leave it scrambled so the AI can diagnose the failure]</div>
+
+    <div class="upsell">
+        <h3>Did the AI say your resume text is scrambled?</h3>
+        <p>If your text pasted out of order, or the AI found fatal parsing errors (like table traps or ghost text boxes), real ATS software is automatically rejecting your application before a human ever sees it. Don't risk your job search on bad formatting.</p>
+        <a href="index.html" class="upsell-link">← Return to StoicResume to start your human-led ATS Audit.</a>
+    </div>
+</div>
+
+<script>
+    function copyPrompt() {
+        var promptText = document.getElementById("promptText").innerText;
+        navigator.clipboard.writeText(promptText).then(function() {
+            var btn = document.getElementById("copyBtn");
+            btn.innerHTML = "✅ Copied Successfully!";
+            btn.style.backgroundColor = "#4CAF50";
+            setTimeout(function() {
+                btn.innerHTML = '<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>Copy Prompt to Clipboard';
+                btn.style.backgroundColor = "#347b85";
+            }, 3000);
+        });
+    }
+</script>
+
+</body>
+</html>
