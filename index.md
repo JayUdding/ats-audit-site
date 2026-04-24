@@ -293,9 +293,9 @@ every parsing error.
  
 ### How It Works
 
-1.  Email with attachments (Resume in PDF or Word and Job Posting) to:
+1.  **Audit:** Email with attachments (Resume in PDF or Word and Job Posting) to:
 [audit@stoicresume.com](mailto:audit@stoicresume.com) to order the Audit.
-2.  50% Discount if you pay with Bitcoin / email transaction ID or screenshot for correct routing.
+2.  **BTC Friendly:** 50% Discount if you pay with Bitcoin / email transaction ID or screenshot for correct routing.
 3.  **Delivery:** We perform a complete HIL audit for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 4. **Helpful?** email us a brief review at [reviews@stoicresume.com](mailto:reviews@stoicresume.com) and we will post it with your initials and role.
