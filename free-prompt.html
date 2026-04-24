@@ -54,7 +54,7 @@
         }
         .copy-btn:hover { background-color: #275e66; transform: translateY(-2px); }
         
-        /* Upsell Box */
+        /* Upsell Box (The part that was missing!) */
         .upsell { 
             background-color: #fff9f0; 
             padding: 25px; 
@@ -142,3 +142,30 @@ JOB DESCRIPTION:
 
 RESUME TEXT:
 [Paste Resume Text Here - Note: If text pastes in scrambled, leave it scrambled so the AI can diagnose the parsing failure]</div>
+
+    <!-- THE MISSING UPSELL BOX -->
+    <div class="upsell">
+        <h3>Did the AI say your resume text is scrambled?</h3>
+        <p>If your text pasted out of order, or the AI found fatal parsing errors (like table traps or ghost text boxes), real ATS software is automatically rejecting your application before a human ever sees it. Don't risk your job search on bad formatting.</p>
+        <a href="index.html" class="upsell-link">← Return to StoicResume to start your human-led ATS Audit.</a>
+    </div>
+
+</div>
+
+<script>
+    function copyPrompt() {
+        var promptText = document.getElementById("promptText").innerText;
+        navigator.clipboard.writeText(promptText).then(function() {
+            var btn = document.getElementById("copyBtn");
+            btn.innerHTML = "✅ Copied Successfully!";
+            btn.style.backgroundColor = "#4CAF50";
+            setTimeout(function() {
+                btn.innerHTML = '<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>Copy Prompt to Clipboard';
+                btn.style.backgroundColor = "#347b85";
+            }, 3000);
+        });
+    }
+</script>
+
+</body>
+</html>
