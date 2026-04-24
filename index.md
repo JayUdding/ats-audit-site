@@ -450,7 +450,7 @@ By: StoicResume.com -- Technical Auditors since 2016
   <div style="color: #999; font-size: 14px;">— or —</div>
 
   <!-- 2. The Free Download Button -->
-  <a href="./assets/StoicResume_Free_Prompt.pdf" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
+ <a href="./free-prompt.html" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
     <div style="font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 8px;">
       <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
       Get the Free AI Prompt
