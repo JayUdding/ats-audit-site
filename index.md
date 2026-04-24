@@ -434,12 +434,10 @@ By: StoicResume.com -- Technical Auditors since 2016
 
   </div>
 </div>
-
----
-<!-- Wrapper div to center the button -->
-<div style="text-align: center; width: 100%; padding-bottom: 40px;">
+<!-- === MAIN CALL-TO-ACTION SECTION === -->
+<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%; padding-bottom: 40px; font-family: Arial, sans-serif;">
   
-  <!-- The Bitcoin Button -->
+  <!-- 1. The Bitcoin Button -->
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="34" height="34" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
@@ -448,14 +446,27 @@ By: StoicResume.com -- Technical Auditors since 2016
     <div class="btn-sub-text">Save 50% Using Bitcoin</div>
   </a>
 
+  <!-- Optional Divider (Looks great for visual hierarchy) -->
+  <div style="color: #999; font-size: 14px;">— or —</div>
+
+  <!-- 2. The Free Download Button -->
+  <a href="./assets/StoicResume_Free_Prompt.pdf" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
+    <div style="font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      Get the Free AI Prompt
+    </div>
+    <div class="free-btn-sub">Test your own resume in ChatGPT</div>
+  </a>
+
 </div>
 
-<!-- The Fallback Modal (Hidden by default) -->
+
+<!-- === THE BITCOIN FALLBACK MODAL === -->
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> $10 USD worth of Bitcoin</strong> to this address:</p>
+    <p>Please Send <strong> \$10 USD worth of Bitcoin</strong> to this address:</p>
     
     <!-- QR Code -->
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
@@ -473,20 +484,23 @@ By: StoicResume.com -- Technical Auditors since 2016
   </div>
 </div>
 
-<!-- ALL CSS STYLES (Button + Modal) -->
+
+<!-- === ALL CSS STYLES === -->
 <style>
-  /* Button Styles */
+  /* --- Bitcoin Button Styles --- */
   .btc-promo-btn {
     display: inline-block;
     background-color: #F7931A;
     color: white;
-    font-family: Arial, sans-serif;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 14px 32px;
     border-radius: 8px;
     transition: all 0.3s ease;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     cursor: pointer;
+    text-align: center;
+    width: 280px; /* Matched width for both buttons */
+    box-sizing: border-box;
   }
   .btc-promo-btn:hover {
     background-color: #e08316;
@@ -503,16 +517,48 @@ By: StoicResume.com -- Technical Auditors since 2016
     margin-top: 4px;
   }
 
-  /* Modal Styles */
+  /* --- Free Prompt Button Styles --- */
+  .free-prompt-btn {
+    display: inline-block;
+    background-color: transparent;
+    color: #347b85;
+    border: 2px solid #347b85;
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-align: center;
+    width: 280px; /* Matched width */
+    box-sizing: border-box;
+  }
+  .free-btn-sub {
+    font-size: 13px; 
+    margin-top: 6px; 
+    color: #666;
+    transition: color 0.2s ease;
+  }
+  
+  /* Hover Effect for Free Button */
+  .free-prompt-btn:hover {
+    background-color: #347b85;
+    color: white;
+    transform: translateY(-2px);
+  }
+  .free-prompt-btn:hover .free-btn-sub {
+    color: white; /* Makes the subtext white on hover too */
+  }
+
+  /* --- Modal Styles --- */
   .btc-modal {
-    display: none; /* This is what hides it by default! */
+    display: none; 
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.6); /* Darkens the background */
+    background-color: rgba(0,0,0,0.6); 
   }
   .btc-modal-content {
     background-color: #fff;
@@ -520,9 +566,8 @@ By: StoicResume.com -- Technical Auditors since 2016
     border-radius: 12px;
     text-align: center;
     max-width: 400px;
-    margin: 10% auto; /* Centers it perfectly */
+    margin: 10% auto; 
     box-shadow: 0 5px 30px rgba(0,0,0,0.3);
-    font-family: Arial, sans-serif;
     color: #333;
   }
   .btc-modal-close {
@@ -565,12 +610,11 @@ By: StoicResume.com -- Technical Auditors since 2016
   }
 </style>
 
-<!-- JAVASCRIPT (Makes the modal pop up if no wallet is found) -->
+
+<!-- === JAVASCRIPT === -->
 <script>
   function handleBitcoinClick(event) {
     var start = Date.now();
-    
-    // Check if the link failed to open a wallet after 1 second
     setTimeout(function() {
       if (Date.now() - start < 1500) {
         document.getElementById('btc-modal').style.display = 'block';
@@ -588,7 +632,6 @@ By: StoicResume.com -- Technical Auditors since 2016
     alert('Bitcoin address copied to clipboard!');
   }
 
-  // Closes the modal if user clicks outside of the white box
   window.onclick = function(event) {
     var modal = document.getElementById('btc-modal');
     if (event.target == modal) {
@@ -596,29 +639,3 @@ By: StoicResume.com -- Technical Auditors since 2016
     }
   }
 </script>
-
-<!-- Free Download Button -->
-<div style="display: flex; justify-content: center; margin-top: 20px; font-family: sans-serif;">
-  <a href="./assets/StoicResume_Free_Prompt.pdf" target="_blank" rel="noopener noreferrer" style="background-color: transparent; color: #347b85; border: 2px solid #347b85; text-decoration: none; padding: 14px 32px; border-radius: 8px; text-align: center; width: 280px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: inline-block;">
-    
-    <div style="font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 8px;">
-      <!-- Download Icon -->
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-      Get the Free AI Prompt
-    </div>
-    
-    <div style="font-size: 13px; margin-top: 6px; color: #666;">
-      Test your own resume in ChatGPT
-    </div>
-    
-  </a>
-
-  /* Add to your CSS file if you want a hover effect */
-.free-prompt-btn:hover {
-  background-color: #347b85 !important;
-  color: white !important;
-}
-.free-prompt-btn:hover div {
-  color: white !important;
-}
-</div>
