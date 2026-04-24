@@ -435,24 +435,21 @@ By: StoicResume.com -- Technical Auditors since 2016
   </div>
 </div>
 <!-- === MAIN CALL-TO-ACTION SECTION === -->
-<div style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%; padding-bottom: 40px; font-family: Arial, sans-serif;">
+<div class="action-buttons-wrapper">
   
-  <!-- 1. The Bitcoin Button -->
+  <!-- 1. The Bitcoin Button (Primary) -->
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="34" height="34" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="24" height="24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
       Start My ATS Audit
     </div>
     <div class="btn-sub-text">Save 50% Using Bitcoin</div>
   </a>
 
-  <!-- Optional Divider (Looks great for visual hierarchy) -->
-  <div style="color: #999; font-size: 14px;">— or —</div>
-
-  <!-- 2. The Free Download Button -->
- <a href="./free-prompt.html" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
-    <div style="font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 8px;">
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+  <!-- 2. The Free Download Button (Secondary) -->
+  <a href="./free-prompt.html" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
+    <div class="btn-main-text" style="color: inherit;">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
       Get the Free AI Prompt
     </div>
     <div class="free-btn-sub">Test your own resume in ChatGPT</div>
@@ -460,23 +457,18 @@ By: StoicResume.com -- Technical Auditors since 2016
 
 </div>
 
-
 <!-- === THE BITCOIN FALLBACK MODAL === -->
+<!-- (Keep your exact modal HTML here, no changes needed) -->
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0;">Pay with Bitcoin</h2>
     <p>Please Send <strong> \$10 USD worth of Bitcoin</strong> to this address:</p>
-    
-    <!-- QR Code -->
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
-    
-    <!-- Copyable Address -->
     <div class="btc-address-box">
       <code id="btc-address">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
       <button onclick="copyAddress()" class="copy-btn">Copy</button>
     </div>
-    
     <p style="font-size: 13px; color: #666; margin-top: 15px;">
       After sending, email your resume + transaction ID to:<br>
       <strong>audit@stoicresume.com</strong>
@@ -487,131 +479,112 @@ By: StoicResume.com -- Technical Auditors since 2016
 
 <!-- === ALL CSS STYLES === -->
 <style>
-  /* --- Bitcoin Button Styles --- */
+  /* --- Layout Wrapper (Controls the side-by-side and spacing) --- */
+  .action-buttons-wrapper {
+    display: flex;
+    flex-direction: row;         /* Puts them side by side */
+    flex-wrap: wrap;             /* Allows stacking on small screens */
+    justify-content: center;     /* Centers them on the page */
+    align-items: stretch;        /* Forces them to be the exact same height */
+    gap: 25px;                   /* Space BETWEEN the buttons */
+    margin-top: 50px;            /* ADDED SPACE above the buttons */
+    margin-bottom: 60px;         /* ADDED SPACE below the buttons */
+    padding: 0 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  /* --- General Button Styles --- */
+  .btc-promo-btn, .free-prompt-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    width: 320px;                /* Made slightly wider so text fits on one line */
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* --- Bitcoin Button Specifics --- */
   .btc-promo-btn {
-    display: inline-block;
     background-color: #F7931A;
     color: white;
-    text-decoration: none;
-    padding: 14px 32px;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    cursor: pointer;
-    text-align: center;
-    width: 280px; /* Matched width for both buttons */
-    box-sizing: border-box;
+    border: 2px solid #F7931A;
+    box-shadow: 0 4px 10px rgba(247, 147, 26, 0.2);
   }
   .btc-promo-btn:hover {
     background-color: #e08316;
+    border-color: #e08316;
     transform: translateY(-2px);
-  }
-  .btn-main-text {
-    font-size: 18px;
-    font-weight: bold;
+    box-shadow: 0 6px 15px rgba(247, 147, 26, 0.3);
   }
   .btn-sub-text {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     opacity: 0.9;
-    margin-top: 4px;
+    margin-top: 6px;
   }
 
-  /* --- Free Prompt Button Styles --- */
+  /* --- Free Prompt Button Specifics --- */
   .free-prompt-btn {
-    display: inline-block;
     background-color: transparent;
     color: #347b85;
     border: 2px solid #347b85;
-    text-decoration: none;
-    padding: 12px 32px;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    text-align: center;
-    width: 280px; /* Matched width */
-    box-sizing: border-box;
   }
   .free-btn-sub {
-    font-size: 13px; 
+    font-size: 14px; 
     margin-top: 6px; 
     color: #666;
     transition: color 0.2s ease;
   }
-  
-  /* Hover Effect for Free Button */
   .free-prompt-btn:hover {
     background-color: #347b85;
     color: white;
     transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(52, 123, 133, 0.2);
   }
   .free-prompt-btn:hover .free-btn-sub {
-    color: white; /* Makes the subtext white on hover too */
+    color: white; 
   }
 
-  /* --- Modal Styles --- */
-  .btc-modal {
-    display: none; 
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.6); 
-  }
-  .btc-modal-content {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: center;
-    max-width: 400px;
-    margin: 10% auto; 
-    box-shadow: 0 5px 30px rgba(0,0,0,0.3);
-    color: #333;
-  }
-  .btc-modal-close {
-    float: right;
-    font-size: 28px;
+  /* Shared Text Style */
+  .btn-main-text {
+    font-size: 18px;
     font-weight: bold;
-    color: #aaa;
-    cursor: pointer;
-    line-height: 1;
-  }
-  .btc-modal-close:hover {
-    color: #333;
-  }
-  .btc-address-box {
-    background-color: #f4f4f4;
-    padding: 12px;
-    border-radius: 6px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    gap: 10px;
-    margin-top: 10px;
+    justify-content: center;
   }
-  .btc-address-box code {
-    font-size: 11px;
-    word-break: break-all;
-    color: #333;
-  }
-  .copy-btn {
-    background-color: #F7931A;
-    color: white;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  .copy-btn:hover {
-    background-color: #e08316;
+
+  /* --- Modal Styles (Unchanged) --- */
+  .btc-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.6); }
+  .btc-modal-content { background-color: #fff; padding: 30px; border-radius: 12px; text-align: center; max-width: 400px; margin: 10% auto; box-shadow: 0 5px 30px rgba(0,0,0,0.3); color: #333; }
+  .btc-modal-close { float: right; font-size: 28px; font-weight: bold; color: #aaa; cursor: pointer; line-height: 1; }
+  .btc-modal-close:hover { color: #333; }
+  .btc-address-box { background-color: #f4f4f4; padding: 12px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px; }
+  .btc-address-box code { font-size: 11px; word-break: break-all; color: #333; }
+  .copy-btn { background-color: #F7931A; color: white; border: none; padding: 8px 14px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+  .copy-btn:hover { background-color: #e08316; }
+
+  /* --- Mobile Responsiveness --- */
+  @media (max-width: 700px) {
+    .action-buttons-wrapper {
+      flex-direction: column;      /* Stacks them on mobile */
+      align-items: center;
+      gap: 15px;
+    }
+    .btc-promo-btn, .free-prompt-btn {
+      width: 100%;                 /* Takes up full width on mobile */
+      max-width: 320px;
+    }
   }
 </style>
 
-
 <!-- === JAVASCRIPT === -->
+<!-- (Keep your exact Javascript here, no changes needed) -->
 <script>
   function handleBitcoinClick(event) {
     var start = Date.now();
@@ -621,21 +594,14 @@ By: StoicResume.com -- Technical Auditors since 2016
       }
     }, 1000);
   }
-
-  function closeModal() {
-    document.getElementById('btc-modal').style.display = 'none';
-  }
-
+  function closeModal() { document.getElementById('btc-modal').style.display = 'none'; }
   function copyAddress() {
     var address = document.getElementById('btc-address').innerText;
     navigator.clipboard.writeText(address);
     alert('Bitcoin address copied to clipboard!');
   }
-
   window.onclick = function(event) {
     var modal = document.getElementById('btc-modal');
-    if (event.target == modal) {
-      modal.style.display = 'none';
-    }
+    if (event.target == modal) { modal.style.display = 'none'; }
   }
 </script>
