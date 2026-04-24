@@ -88,19 +88,12 @@
         Copy Prompt to Clipboard
     </button>
 
-    <div class="prompt-box" id="promptText">Act as an enterprise-grade Applicant Tracking System (ATS) parser (Workday, Taleo, Greenhouse) combined with a Senior Technical Recruiter. 
+   <div class="prompt-box" id="promptText">Act as an enterprise-grade Applicant Tracking System (ATS) parser (Workday, Taleo, Greenhouse) combined with a Senior Technical Recruiter. 
 
-        Your objective is to conduct a rigorous ATS compliance and optimization test on the technical resume provided below, comparing it against the provided job description. Alert me to possible blindspots or issues I may overlook or may not even  know about. Above all I do not want guesses, vagueness, platitudes or cliches. Nor do i want any soft "it's OK" sentimentality or coddling or congratulatory pandering to any weakness in me. Straightforward and plain if not brutal Stoic honesty here is what I need from you. 
+Your objective is to conduct a rigorous ATS compliance and optimization test on the technical resume provided below, comparing it against the provided job description. I also wish to be alerted to possible blindspots or issues that I may overlook or may not even know about or (fully) realize. 
 
-      
+Above all, I do not want guesses, vagueness, platitudes or cliches. Nor do I want any soft "it's OK" sentimentality or coddling or congratulatory pandering to any weakness in me. Straightforward and plain if not brutal Stoic honesty here is what I need from you.
 
-
-
-         
-
-      
-        
-        
 You must strictly adhere to the following parsing rules and constraints when evaluating the resume:
 
 ### ATS PARSING STRICT RULES:
@@ -140,29 +133,3 @@ JOB DESCRIPTION:
 
 RESUME TEXT:
 [Paste Resume Text Here - Note: If text pastes in scrambled, leave it scrambled so the AI can diagnose the failure]</div>
-
-    <div class="upsell">
-        <h3>Did the AI say your resume text is scrambled or less than 100% ATS-compliant?</h3>
-        <p>Real ATS software is automatically rejecting your application before a human ever sees it. 
-            Don't risk your job search on bad formatting.</p>
-        <a href="index.html" class="upsell-link">← Return to StoicResume for your ATS Audit.</a>
-    </div>
-</div>
-
-<script>
-    function copyPrompt() {
-        var promptText = document.getElementById("promptText").innerText;
-        navigator.clipboard.writeText(promptText).then(function() {
-            var btn = document.getElementById("copyBtn");
-            btn.innerHTML = "✅ Copied Successfully!";
-            btn.style.backgroundColor = "#4CAF50";
-            setTimeout(function() {
-                btn.innerHTML = '<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align:middle; margin-right:8px;"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>Copy Prompt to Clipboard';
-                btn.style.backgroundColor = "#347b85";
-            }, 3000);
-        });
-    }
-</script>
-
-</body>
-</html>
