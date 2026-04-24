@@ -411,9 +411,9 @@ By: StoicResume.com -- Technical Auditors since 2016
     <!-- Testimonial 4 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "5 Stars. Thank you."
+        "This document is incredibly useful. In fact it is absolute gold."
       </p>
-      <span class="testimonial-author">- NA, Designer</span>
+      <span class="testimonial-author">- Claude</span>
     </div>
 
     <!-- Testimonial 5 -->
