@@ -299,7 +299,7 @@ every parsing error.
 3.  **Delivery:** We perform a complete HIL audit for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 4. **Helpful?** email us a brief review at [reviews@stoicresume.com](mailto:reviews@stoicresume.com) and we will post it with your initials and role.
-5. **Questions?** email at [info@stoicresume.com](mailto:info@stoicresume.com). 
+5. **Questions or Suggestions?** email at [info@stoicresume.com](mailto:info@stoicresume.com). 
 
  
 By: StoicResume.com -- Technical Auditors since 2016
