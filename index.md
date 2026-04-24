@@ -285,7 +285,7 @@ Violate any one of these, and you are gambling with  data integrity.
 
 **Use our service to conduct the audit for you and more!**
 
-**ATS Compliance Audit — \$19.99**
+**ATS Compliance Audit — \$20.00**
 Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
@@ -295,9 +295,8 @@ every parsing error.
 
 1.  Email with attachments (Resume in PDF or Word and Job Posting) to:
 [audit@stoicresume.com](mailto:audit@stoicresume.com) to order the Audit.
-2.  Payment Button to pay via Bitcoin wallet on the bottom of this page. 
-3.  Email Bitcoin transaction ID (or a screenshot) for correct routing.
-4.  **Delivery:** We perform the complete audit for you within 24 hours and 
+2.  50% Discount if you pay with Bitcoin / email transaction ID or screenshot for correct routing.
+3.  **Delivery:** We perform a complete HIL audit for you within 24 hours and 
 return your diagnostic. No flattery. Just facts.
 
  
@@ -387,7 +386,7 @@ By: StoicResume.com -- Technical Auditors since 2016
     <!-- Testimonial 1 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Solid review. Glad I got it right now."
+        "Solid review. Glad I got my resume correct."
       </p>
       <span class="testimonial-author">- ML, Graduate Student </span>
     </div>
