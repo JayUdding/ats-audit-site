@@ -596,3 +596,29 @@ By: StoicResume.com -- Technical Auditors since 2016
     }
   }
 </script>
+
+<!-- Free Download Button -->
+<div style="display: flex; justify-content: center; margin-top: 20px; font-family: sans-serif;">
+  <a href="./assets/StoicResume_Free_Prompt.pdf" target="_blank" rel="noopener noreferrer" style="background-color: transparent; color: #347b85; border: 2px solid #347b85; text-decoration: none; padding: 14px 32px; border-radius: 8px; text-align: center; width: 280px; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05); display: inline-block;">
+    
+    <div style="font-weight: bold; font-size: 18px; display: flex; align-items: center; justify-content: center; gap: 8px;">
+      <!-- Download Icon -->
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      Get the Free AI Prompt
+    </div>
+    
+    <div style="font-size: 13px; margin-top: 6px; color: #666;">
+      Test your own resume in ChatGPT
+    </div>
+    
+  </a>
+
+  /* Add to your CSS file if you want a hover effect */
+.free-prompt-btn:hover {
+  background-color: #347b85 !important;
+  color: white !important;
+}
+.free-prompt-btn:hover div {
+  color: white !important;
+}
+</div>
