@@ -293,13 +293,21 @@ every parsing error.
  
 ### How It Works
 
-1.  **Audit:** Email with attachments (Resume in PDF or Word and Job Posting) to:
-[audit@stoicresume.com](mailto:audit@stoicresume.com) to order the Audit.
-2.  **BTC Friendly:** 50% Discount if you pay with Bitcoin / email transaction ID or screenshot for correct routing.
-3.  **Delivery:** We perform a complete HIL audit for you within 24 hours and 
-return your diagnostic. No flattery. Just facts.
-4. **Helpful?** email us a brief review at [reviews@stoicresume.com](mailto:reviews@stoicresume.com) and we will post it with your initials and role.
-5. **Questions or Suggestions?** email at [info@stoicresume.com](mailto:info@stoicresume.com). 
+1.  **Order:** Pay securely via Stripe ($20) or Bitcoin ($10).
+2.  **Submit:** Email your Resume (PDF/Word) and target Job Posting to [audit@stoicresume.com](mailto:audit@stoicresume.com)  (If paying via BTC, include your transaction ID).
+3.  **Delivery:** Within 24 hours, receive your complete HIL diagnostic report. No flattery. Just facts.
+
+ 
+<div style="background-color: #f8f9fa; border-left: 4px solid #4a90e2; padding: 15px; margin-top: 20px;">
+  <h4 style="margin-top: 0;">🔒 The Stoic Promise: Privacy & Guarantee</h4>
+  <p><strong>Zero Data Hoarding:</strong> We use fully encrypted services. Your resume and email are <strong>permanently deleted 7 days</strong> after delivery. We never sell or share your data.</p>
+  <p><strong>7-Day Refund:</strong> If our audit doesn't meet your expectations, email us within 7 days for a full, no-questions-asked refund.</p>
+</div>
+
+
+
+
+ 
 
  
 By: StoicResume.com -- Technical Auditors since 2016
@@ -606,3 +614,17 @@ By: StoicResume.com -- Technical Auditors since 2016
     if (event.target == modal) { modal.style.display = 'none'; }
   }
 </script>
+
+<!-- START: GLOBAL FOOTER (Place this at the very bottom of your body tag) -->
+<footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
+  <p>
+    Have questions or success stories? Email us at <a href="mailto:info@stoicresume.com" style="color: #2c6c75;">info@stoicresume.com</a>
+  </p>
+  <p>
+    &copy; 2026 StoicResume | 
+    <a href="privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy & Terms</a> | 
+    7-Day Refund Guarantee
+  </p>
+</footer>
+<!-- END: GLOBAL FOOTER -->
+
