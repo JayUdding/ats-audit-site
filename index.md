@@ -273,12 +273,15 @@ While not parsing per se, ATS ingestion often uses filename OCR for initial rout
 7.  **Dates adjacent.** Never right-align dates via tables or tabs.
 8.  **Plain text only.** Graphics are invisible; skill bars are useless.
 
-Violate any one of these, and you are gambling with  data integrity.
+**Violate any one of these, and you are gambling with  data integrity.**
 
 
 ---
 
-   ### Service Offered
+   
+   
+### Service Offered
+
 
 **The Alternative: Let Us Do It**
 
@@ -311,28 +314,29 @@ Complete ATS compliance audit. You receive a detailed pass/fail report with spec
   <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
     <div class="btn-main-text" style="color: white;">
       <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-      Pay with Card
+      Order Full Audit — \$20
     </div>
-    <div class="btn-sub-text" style="color: #e0e0e0;">Secure checkout via Stripe (\$20)</div>
+    <div class="btn-sub-text" style="color: #e0e0e0;">Secure checkout via Stripe</div>
   </a>
-  
-  <!-- 1. The Bitcoin Button (Primary) -->
+
+  <!-- 1. The Bitcoin Button (Discount Purchase) -->
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="24" height="24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
-      Start My ATS Audit
+      Order Full Audit — \$10
     </div>
-    <div class="btn-sub-text">Save 50% Using Bitcoin</div>
+    <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
 
   <!-- 2. The Free Download Button (Secondary) -->
   <a href="./free-prompt.html" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
     <div class="btn-main-text" style="color: inherit;">
       <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-      Get the Free AI Prompt
+      Get the Free Prompt
     </div>
     <div class="free-btn-sub">Test your own resume in ChatGPT</div>
   </a>
+  
 
 </div>
 
