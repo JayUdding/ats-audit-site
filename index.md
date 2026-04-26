@@ -312,9 +312,9 @@ Complete ATS compliance audit. You receive a detailed pass/fail report with spec
 
   <!-- 0. The Stripe/Fiat Button (Primary Purchase) -->
   <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
-    <div class="btn-main-text" style="color: white;">
+    <div class="btn-main-text" style="color: white; text-decoration: none;">
       <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-      Order Full Audit — \$20
+      Order Full Audit — $20
     </div>
     <div class="btn-sub-text" style="color: #e0e0e0;">Secure checkout via Stripe</div>
   </a>
@@ -323,7 +323,7 @@ Complete ATS compliance audit. You receive a detailed pass/fail report with spec
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="24" height="24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
-      Order Full Audit — \$10
+      Order Full Audit — $10
     </div>
     <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
