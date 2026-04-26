@@ -197,7 +197,7 @@ Backend: Python | Django | PostgreSQL | Redis
 
 **3. Hyperlinks**
 *   **Rule:** Plain text URLs only.
-*   **Risk:** Hyperlinked text (blue underlined "LinkedIn" hiding `https://...`) often has the display text parsed, not the URL. Write: `linkedin.com/in/name` not "Connect with me". Idem for GitHub profile link.
+*   **Risk:** Hyperlinked text (blue underlined "LinkedIn" hiding `https://...`) often has the display text parsed, not the URL. Write: `linkedin.com/in/name` not "Connect with me". The same applies to your GitHub profile link.
 
 ---
 
@@ -206,8 +206,8 @@ Backend: Python | Django | PostgreSQL | Redis
 **1. Keyword Matching Mechanics**
 ATS search functions use **Boolean and proximity operators**. Recruiters search: `("React.js" OR "React") AND ("Node.js" OR "Node")`.
 *   **Rule:** List skills as comma-separated or line-broken plain text. Do not use tables, graphs, or "skill bars."
-*   **Acronyms & Parentheses:** Legacy parsers rely on **exact string matching.** If the system searches for "Amazon Web Services" and you only wrote    "AWS", you fail the match.
-     **The Acronym Rule:** Mirror the exact phrasing used in the target job description. If space permits, the safest defensive structure is to provide both: "Amazon Web Services (AWS)."
+*   **Acronyms & Parentheses:** Legacy parsers rely on **exact string matching.** If the system searches for `Amazon Web Services` and you only wrote    `AWS`, you fail the match.
+     **The Acronym Rule:** Mirror the exact phrasing used in the target job description. If space permits, the safest defensive structure is to provide both: `Amazon Web Services (AWS)`.
      **The Modifier Trap:** Never use parentheses to describe your proficiency. If you write "React (expert)", dumb parsers extract the entire phrase as a single skill. When the recruiter searches for "React", your profile will return a null match.
 
 **2. The "Keyword Stuffing" Fallacy**
