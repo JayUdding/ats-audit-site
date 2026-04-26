@@ -29,7 +29,7 @@ Because there is no universal standard—because Taleo, Workday, iCIMS, and many
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive what we call the **Brutal Copy-Paste Test**, it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point and risk null fields or rejection.
+If your resume cannot survive the **Brutal Copy-Paste Test**, it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point and risk null fields or rejection.
  
  As Marcus Aurelius admonishes: 
 
@@ -254,7 +254,7 @@ Open the final PDF. File > Save as Text (or use `pdftotext` command line).
 ---
 
   
-### VIII.The File Name Variable 
+### VIII. The File Name Variable 
 
 While not parsing per se, ATS ingestion often uses filename OCR for initial routing. 
 *   **Compliant:** `FirstName_LastName_Computer_Engineer.pdf`
@@ -285,7 +285,7 @@ Violate any one of these, and you are gambling with  data integrity.
 
 **Your time is valuable. If you don't want to manually autopsy your own resume, let us do it.**
 
-**ATS Compliance Audit — \$20.00**
+**ATS Compliance Audit — $20.00**
 Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
@@ -403,7 +403,7 @@ every parsing error.
     <!-- Testimonial 2 -->
     <div class="testimonial-card">
       <p class="testimonial-text">
-        "Thanks for the "brutal" truth but I can handle it. Fixed a key error."
+        "Thanks for the 'brutal' truth but I can handle it. Fixed a key error."
       </p>
       <span class="testimonial-author">- DM, Student</span>
     </div>
@@ -431,6 +431,29 @@ every parsing error.
 </div>
 <!-- === MAIN CALL-TO-ACTION SECTION === -->
 <div class="action-buttons-wrapper">
+
+  <!-- 0. The Stripe/Fiat Button (Primary Purchase) -->
+  <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
+    <div class="btn-main-text" style="color: white;">
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+      Pay with Card
+    </div>
+    <div class="btn-sub-text" style="color: #e0e0e0;">Secure checkout via Stripe (\$20)</div>
+  </a>
+
+    /* --- Stripe Button Specifics --- */
+  .stripe-promo-btn {
+    background-color: #2c6c75;
+    color: white;
+    border: 2px solid #2c6c75;
+    box-shadow: 0 4px 10px rgba(44, 108, 117, 0.2);
+  }
+  .stripe-promo-btn:hover {
+    background-color: #1f4f56;
+    border-color: #1f4f56;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(44, 108, 117, 0.3);
+  }
   
   <!-- 1. The Bitcoin Button (Primary) -->
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
