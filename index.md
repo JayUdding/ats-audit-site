@@ -19,9 +19,14 @@ An ATS is not artificial intelligence evaluating your worth. It is a database in
 
 Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and advance to human review with your name, experience, projects and skills intact and correctly bucketed. 
 
-Do not rely on automated ATS checkers. They offer a false sense of security. They simulate one generic parser and give you an arbitrary percentage score, while the real world runs fifty different systems. An app counts keywords; it cannot see the invisible table structure that actually destroys your application.
+Do not rely on automated ATS score checkers. They offer a false sense of security. They simulate one generic parser and give you an arbitrary percentage—85% compatible!—while the real world runs fifty different systems with fifty different failure modes. An app counts keywords; it cannot see the invisible table structure that actually destroys your application.
 
-You need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who performs the audit across multiple parsing scenarios, not an algorithm guessing at compatibility.
+A well-designed diagnostic prompt can help you identify *likely* structural failures. But diagnosis is not the same as judgment. Knowing something might be wrong is not the same as knowing what to fix, what to ignore, and whether you will actually do it.
+
+For that, you need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who tests your resume across multiple parsing scenarios and tells you exactly what is broken and how to repair it.
+
+**Theory is good but practice is better. It is the test of theory, the confirmation of it.**
+-- Musonius Rufus (Teacher of Epictetus) 
 
 **The Defense**
 
@@ -281,33 +286,86 @@ While not parsing per se, ATS ingestion often uses filename OCR for initial rout
 ---
 
    
-   
-### Service Offered
+ ---
 
+### The Free Prompt
 
-**The Alternative: Let Us Do It**
+We offer a free diagnostic prompt you can run in ChatGPT, Claude, or any capable LLM. Upload your resume, paste the prompt, and it will flag likely ATS failures: tables, text boxes, header graveyards, column bleed, encoding errors.
 
-The free AI prompt is a great diagnostic tool—it will tell you *if* your resume is broken. But if you want a human expert to tell you exactly *how to fix it*, and how to align your keywords to a specific job, let us do it.
+It works. It will catch real problems.
 
-**ATS Compliance Audit — \$20**
-Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for every parsing error.
+But here is what it cannot do: make you act on the findings.
 
-**Includes Free Bonus:** Submit a target job posting with your resume. We will analyze the keywords and tell you exactly how to align your resume to match the recruiter's exact search queries. 
- 
+---
+
+### The Limit of Self-Diagnosis
+
+Most people cannot audit their own resume objectively. They look at their document the way they look in a mirror at 45 and still see 30.
+
+They run the prompt. They see the warnings. And then they rationalize:
+
+- *"My columns are fine, the text still flows."*
+- *"The header looks better up there."*
+- *"This template came from a professional site."*
+- *"I'll keep the icons, they add personality."*
+
+They want the resume to stand out. So they ignore the warning and keep the failure in place.
+
+This is not stupidity. It is human nature. We are poor judges of our own work. We defend what we built. We minimize what we do not want to fix. We confuse aesthetics with function.
+
+The Stoics called it *philautia*—excessive self-love. It blinds.
+
+A prompt can tell you something is wrong. It cannot tell you what matters, what does not, and whether you are being honest with yourself. It cannot rewrite the sentence, fix the date format, or align your skills to the Boolean query a recruiter will actually run.
+
+A human auditor can.
+
+---
+
+### The Service
+
+**ATS Compliance Audit —  $20**
+
+A complete forensic audit of your resume for ATS compliance. Not a score. Not a percentage. A detailed pass/fail report listing every parsing failure, every structural risk, and the exact fix for each.
+
+**What you receive:**
+
+- Structural analysis: tables, text boxes, floating objects, header/footer content, column detection.
+- Encoding audit: character rendering, bullet consistency, date format compliance, font safety.
+- Section mapping review: whether your headers trigger correct field mapping or dump into unsearchable text
+- The Brutal Copy-Paste Test: performed manually, with annotation of every failure point
+- Specific corrections: not "consider revising" - exact changes, line by line
+
+**Included: Keyword Alignment Analysis**
+
+Submit one target job posting with your resume. We extract the likely recruiter search queries and show you how to align your resume to match—correct placement, correct phrasing, correct field mapping so the terms land where the Boolean search will find them.
+
+---
+
 ### How It Works
 
-1.  **Order:** Pay securely via Stripe (\$20) or Bitcoin (\$10).
-2.  **Submit:** Email your Resume (PDF/Word) and target Job Posting to <a href="mailto:audit@stoicresume.com">audit@stoicresume.com</a> (If paying via BTC, include your transaction ID).
-3.  **Delivery:** Within 24 hours, receive your complete HIL diagnostic report. No flattery. Just facts.
+1. **Pay:**  $20 via Stripe, or  $10 via Bitcoin.
+2. **Submit:** Email your resume (PDF or Word) and one target job posting to audit@stoicresume.com. If paying via Bitcoin, include your transaction ID.
+3. **Receive:** Within 24 hours, your full HIL diagnostic report. No flattery. No filler. Just findings and fixes.
 
-<div style="background-color: #f8f9fa; border-left: 4px solid #4a90e2; padding: 15px; margin-top: 20px;">
-  <h4 style="margin-top: 0;">🔒  Privacy & Guarantee -  StoicResume Promise</h4>
-  <p><strong>Strict Privacy Promise:</strong> Fully encrypted services used. Your resume and email are <strong>permanently deleted 7 days</strong> after delivery. Zero data retention. We never sell or share your data.</p>
-  <p><strong>7-Day Refund:</strong> If our audit doesn't meet your expectations for any reason, email us within 7 days for a full, no-questions-asked refund.</p>
-</div>
+---
 
-**Theory is good but practice is better. It is the test of theory, the confirmation of it.**
--- Musonius Rufus (Teacher of Epictetus) 
+### The Guarantee
+
+**7-Day Refund.** If the audit does not meet your expectations, email within 7 days. Full refund. No questions.
+
+**Privacy.** Your resume and email are permanently deleted 7 days after delivery. We do not retain, sell, or share your data.
+
+---
+
+### The Choice
+
+Use the free prompt if you trust yourself to judge your own work without bias.
+
+Use the audit if you want the truth from someone who has no attachment to your formatting.
+
+As Epictetus observed: *"It is impossible for a man to learn what he thinks he already knows."*
+
+---
 
 <!-- === MAIN CALL-TO-ACTION SECTION === -->
 <div class="action-buttons-wrapper">
