@@ -290,35 +290,9 @@ While not parsing per se, ATS ingestion often uses filename OCR for initial rout
 
 ### The Free Prompt
 
-We offer a free diagnostic prompt you can run in ChatGPT, Claude, or any capable LLM. Upload your resume, paste the prompt, and it will flag likely ATS failures: tables, text boxes, header graveyards, column bleed, encoding errors.
+We offer a free diagnostic prompt you can run in any capable LLM. Upload your resume, paste the prompt, and it will likely flag ATS failures: tables, text boxes, header graveyards, column bleed, encoding errors. It works. It will catch real problems but it cannot make you act on these findings. Most people simply cannot audit their own resume objectively. AI models - *unless specifically instructed not to* - will flatter us some more.
 
-It works. It will catch real problems.
-
-But here is what it cannot do: make you act on the findings.
-
----
-
-### The Limit of Self-Diagnosis
-
-Most people cannot audit their own resume objectively. They look at their document the way they look in a mirror at 45 and still see 30.
-
-They run the prompt. They see the warnings. And then they rationalize:
-
-- *"My columns are fine, the text still flows."*
-- *"The header looks better up there."*
-- *"This template came from a professional site."*
-- *"I'll keep the icons, they add personality."*
-
-They want the resume to stand out. So they ignore the warning and keep the failure in place.
-
-This is not stupidity. It is human nature. We are poor judges of our own work. We defend what we built. We minimize what we do not want to fix. We confuse aesthetics with function.
-
-The Stoics called it *philautia*—excessive self-love. It blinds.
-
-A prompt can tell you something is wrong. It cannot tell you what matters, what does not, and whether you are being honest with yourself. It cannot rewrite the sentence, fix the date format, or align your skills to the Boolean query a recruiter will actually run.
-
-A human auditor can.
-
+  
 ---
 
 ### The Service
