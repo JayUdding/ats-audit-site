@@ -25,7 +25,7 @@ A well-designed diagnostic prompt can help you identify *likely* structural fail
 
 For that, you need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who tests your resume across multiple parsing scenarios and tells you exactly what is broken and how to repair it.
 
-*Theory is good but practice is better. It is the test of theory, the confirmation of it.* 
+***Theory is good but practice is better. It is the test of theory, the confirmation of it.*** 
 -- Musonius Rufus (Teacher of Epictetus) 
 
 **The Defense**
@@ -38,7 +38,7 @@ If your resume cannot survive the **Brutal Copy-Paste Test**, it will not surviv
  
  As Marcus Aurelius admonished: 
 
-*Do nothing, not even the smallest thing, randomly or carelessly*.
+***Do nothing, not even the smallest thing, randomly or carelessly*.**
 
 Philosophy provides the principle; here is the practice.  
 
@@ -332,12 +332,11 @@ You may submit one target job posting *along* with your resume. We extract the l
 
 ### The Choice
 
-Use the free prompt if you trust yourself to judge your own work without bias.
+Use the free prompt if you trust your own judgment.
+Use the audit if you want an objective verdict.
 
-Use the audit if you want the truth from someone who has no attachment to your formatting.
 
-
-As Epictetus observed: *"It is impossible for a man to learn what he thinks he already knows."*
+**As Epictetus observed: *"It is impossible for a man to learn what he thinks he already knows."***
 
 
 
@@ -352,6 +351,11 @@ As Epictetus observed: *"It is impossible for a man to learn what he thinks he a
     padding-top: 2rem;
     border-top: 1px solid #2E7D8C;
   }
+
+ .testimonials-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5da #f1f1f1;
+}
   .testimonials-scroll {
     display: flex;
     gap: 1.5rem;
@@ -404,6 +408,8 @@ As Epictetus observed: *"It is impossible for a man to learn what he thinks he a
     .testimonial-card {
       flex: 0 0 85%;
     }
+
+   
   }
 </style>
 
@@ -515,6 +521,9 @@ As Epictetus observed: *"It is impossible for a man to learn what he thinks he a
     font-family: Arial, sans-serif;
   }
 
+
+
+ 
   /* --- General Button Styles --- */
   .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
     display: flex;
@@ -605,6 +614,25 @@ As Epictetus observed: *"It is impossible for a man to learn what he thinks he a
   .copy-btn { background-color: #F7931A; color: white; border: none; padding: 8px 14px; border-radius: 5px; cursor: pointer; font-weight: bold; }
   .copy-btn:hover { background-color: #e08316; }
 
+pre, code {
+  font-family: Consolas, Monaco, monospace;
+}
+
+pre {
+  background: #f7f7f7;
+  padding: 12px 14px;
+  border-radius: 6px;
+  overflow-x: auto;
+  border: 1px solid #e5e5e5;
+}
+
+code {
+  background: #f7f7f7;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+ 
   /* --- Mobile Responsiveness --- */
   @media (max-width: 700px) {
     .action-buttons-wrapper {
