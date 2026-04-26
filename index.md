@@ -5,9 +5,9 @@ layout: default
  
  **The Mechanical Reality**
 
-Hard to believe in April 2026, but true: the majority of Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you cannot see and will never know about.  
+Hard to believe in 2026, but true: many Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you will never know about.  
 
-**This is not conspiracy. Just mechanics.**
+**This is not a conspiracy. Just mechanics.**
 
 An ATS is not artificial intelligence evaluating your worth. It is a database ingestion pipeline with three stages: 
 
@@ -17,38 +17,38 @@ An ATS is not artificial intelligence evaluating your worth. It is a database in
 
 3. **Retrieve** (recruiter searches). 
 
-Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and advance to human review with your name, experience, projects and skills intact and correctly bucketed. 
+Your goal is not to "impress" the machine--Stoics don't like flattery. Your goal is to *survive* the **Parse** stage and advance to human review with your name, experience, projects, and skills intact and correctly bucketed. 
 
-Do not rely on automated ATS score checkers. They offer a false sense of security. They simulate one generic parser and give you an arbitrary percentage—85% compatible!—while the real world runs fifty different systems with fifty different failure modes. An app counts keywords; it cannot see the invisible table structure that actually destroys your application.
+Do not rely on ATS score checkers. They offer a false sense of security. They simulate one generic parser and give you an arbitrary percentag—85% compatible!—but the real world runs fifty different systems with fifty different failure modes. An app counts keywords; it cannot see the invisible table structure that actually destroys your application.
 
-A well-designed diagnostic prompt can help you identify *likely* structural failures. But diagnosis is not the same as judgment. Knowing something might be wrong is not the same as knowing what to fix, what to ignore, and whether you will actually do it.
+A well-designed diagnostic prompt can help you identify *likely* structural failures. But *diagnosis* is not the same as *judgment*. Knowing something might be wrong is not the same as knowing what to fix, what to ignore, and whether you will actually do it.
 
 For that, you need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who tests your resume across multiple parsing scenarios and tells you exactly what is broken and how to repair it.
 
-**Theory is good but practice is better. It is the test of theory, the confirmation of it.**
+*Theory is good but practice is better. It is the test of theory, the confirmation of it.* 
 -- Musonius Rufus (Teacher of Epictetus) 
 
 **The Defense**
 
-Because there is no universal standard—because Taleo, Workday, iCIMS, and many legacy government systems each speak a different mechanical dialect—we must optimize for the **lowest common denominator**. We must build defensively. 
+Because there is no universal standard—because Taleo, Workday, iCIMS, and many legacy government systems each speak a different mechanical dialect--you must optimize for the **lowest common denominator**. You must build defensively. 
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive the **Brutal Copy-Paste Test**, it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point and risk null fields or rejection.
+If your resume cannot survive the **Brutal Copy-Paste Test**, it will not survive an ATS. Below are the technical specifications for universal compliance. Deviate at any point and risk null fields or rejection.
  
- As Marcus Aurelius admonishes: 
+ As Marcus Aurelius admonished: 
 
-**Do nothing, not even the smallest thing, randomly or carelessly**.
+*Do nothing, not even the smallest thing, randomly or carelessly*.
 
-So much for philosophy; here is the practice! 
+Philosophy provides the principle; here is the practice.  
 
-### The Stoic Resume Checklist (No Flattery--No Fluff--Understanding First)
+### The Stoic Resume Checklist (No Flattery—No Fluff—Understanding First)
 
-Learn to avoid: 
+You will learn to avoid: 
  
 *   The Table Trap (invisible layout killers)
 *   The Header Graveyard (lost contact info)
-*   The Image-Only PDF (Print-to-PDF disasters)
+*   The Image-Only PDF (`Print-to-PDF` disasters)
 *   The Ghost Text Box (unparseable dates)
 *   The Column Bleed (scrambled skills)
  
@@ -68,8 +68,8 @@ Post-extraction, the parser attempts to map text to database fields:
 *   **Contact:** Name, Phone, Email, LinkedIn, GitHub, Location
 *   **Experience:** Company, Job Title, Start Date, End Date, Description
 *   **Education:** Institution, Location, Degree, Field, Date
-*   **Projects:** Keyword tokens, Description
-*   **Skills:** Keyword tokens 
+*   **Projects:** Project Names, Descriptions, Keywords
+*   **Skills:** Keyword tokens, Categories 
 
 **Critical constraint:** The parser uses **section headers** and **date patterns** to trigger field mapping. If it cannot identify where Experience ends and Education begins, it dumps everything into a "Notes" field where it becomes unsearchable.
 
@@ -85,10 +85,10 @@ Post-extraction, the parser attempts to map text to database fields:
 **PDF**
 *   **Standard:** PDF/A-1a or PDF/A-1b (archival standard with embedded fonts and structure tags).
 *   **Prohibition:** Never use "Print to PDF." This creates a PostScript rasterization. Use **File > Save As > PDF** or **Export > Create PDF/XPS**.
-*   **Text Layer Verification:** Open PDF. Try to select a single word. If you cannot highlight text, it is an image and will OCR poorly.
+*   **Text Layer Verification:** Open the PDF in a viewer like Adobe Acrobat. Try to select a single word. If you cannot highlight text, it is an image and will OCR poorly.
 
 **Prohibited Formats:** 
-*   .TXT (loses bold/section hierarchy, often triggers spam filters)
+*   .TXT (loses all formatting and appears unprofessional)
 *   .RTF (formatting inconsistencies across parsers)
 *   .HTML (security stripping removes all formatting)
 *   .JPG/.PNG (image resumes = instant rejection)
@@ -107,7 +107,7 @@ Post-extraction, the parser attempts to map text to database fields:
 *   **Detection:** In Word, press Ctrl+A. If any text remains unselected or shows separate selection handles, it is a text box, shape, or grouped object.
 *   **Consequence:** Text boxes parse as metadata artifacts or null values. Contact info in a header text box is often the first casualty.
 
-**3. Header/Footer Prohibition**
+**3. MS Header/Footer Prohibition**
 *   **Rule:** No essential data in Word headers or footers.
 *   **Consequence:** Many ATS strip headers/footers to remove "Page 1 of 2" metadata. If your name and phone number are there, they vanish.
 
@@ -118,8 +118,8 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **5. Date Format Consistency**
 *   **Rule:** Use unambiguous, separable formats.
-*   **Compliant:** `Jan 2023 - Mar 2025`, `2023-2025`, `03/2023 - 03/2025` (though slashes can trigger date math errors in some systems). Also `Present` works... (Always be in the Here and Now.)
-*   **Non-compliant Risks:**  `Current`, `Till date` or `To date` (parsers calculate tenure via date math); better use April 2026 or simply (be) `Present`.  
+*   **Compliant:** `Jan 2023 - Mar 2025`, `2023-2025`, `03/2023 - 03/2025` (though slashes can trigger date math errors in some systems). Also `Present` works...  
+*   **Non-compliant Risks:**  `Current`, `Till date` or `To date` (parsers calculate tenure via date math); better to use `April 2026` or simply `Present`.  
 *   **Critical:** Dates must be on the same line as or immediately adjacent to the Job Title/Company. Dates floating in right-aligned table cells often attach to the wrong record.
 
 ---
@@ -128,7 +128,7 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **1. Special Characters & Encoding**
 *   **Bullet Points:** Use standard hyphen `-` or ASCII asterisk `*`. Avoid Unicode bullets (•, ○, ●) which may render as � or be stripped entirely.
-*   **Accents:** José, résumé are safe in UTF-8, but verify the PDF embedding (some fonts subset poorly).
+*   **Accents:** José, résumé are generally safe in UTF-8, but verify the PDF embedding (some fonts subset poorly).
 *   **Symbols:** The "en dash" (–) in date ranges is safer than "em dash" (—) which can trigger line-break errors.
 *   **Math Symbols:** Avoid using ≥, ≤, →, ⇒ in skills sections. Write "Proficient in Python" not "Python ⇒ Expert".
 
@@ -157,7 +157,7 @@ San Francisco, CA | (415) 555-0199 | email@example.com
 ```
 *Why:* It prevents the "concatenation blob" where the parser merges your city with your phone number into `San Francisco(415)555-0199`.
 
----
+<hr> 
 
 **Where Pipes Fail (Never Do This)**
 
@@ -216,7 +216,7 @@ ATS search functions use **Boolean and proximity operators**. Recruiters search:
     *   **The Modifier Trap:** Never use parentheses to describe your proficiency. If you write "React (expert)", dumb parsers extract the entire phrase as a single skill. When the recruiter searches for "React", your profile will return a null match.
 
 **2. The "Keyword Stuffing" Fallacy**
-Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact repetition or white-text keyword blocks as spam. Do not list "Python" 15 times in white font at the bottom. You will be rejected.
+Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact repetition or white-text keyword blocks as spam. Do not list "Python" 15 times in white text at the bottom. You will be rejected.
 
 ---
 
@@ -243,7 +243,7 @@ Before submitting, perform these three tests:
 
 **Windows**: Select all (Ctrl+A) → Copy → Paste into **Notepad**.
 
-**Mac**: Command+A  (⌘+A) – Select All;  text highlights in blue; Command+C (⌘+C) – Copy (Press twice to ensure clipboard updates); Open **TextEdit (not Notepad)**; Shift+Command+T - Convert to Plain Text (removes formatting);  Command+V (⌘+V) – Paste into TextEdit. 
+**Mac**: Command+A  (⌘+A)—Select All;  text highlights in blue; Command+C (⌘+C)—Copy (Press twice to ensure clipboard updates); Open **TextEdit (not Notepad)**; Shift+Command+T—Convert to Plain Text (removes formatting); Command+V (⌘+V)—Paste into TextEdit. 
 
 *   **Pass:** Text flows top-to-bottom, left-to-right, chronologically. Dates follow titles. No missing sections.
 *   **Fail:** Text out of order, dates floating alone, missing contact info, gibberish characters.
@@ -253,7 +253,7 @@ Open the final PDF. File > Save as Text (or use `pdftotext` command line).
 *   **Pass:** Readable, linear output matching the Word doc.
 *   **Fail:** Blank file, image warnings, scrambled text order.
 
-**Test 3: The .docx Autopsy (If you have Word)**
+**Test 3: The .docx Autopsy (If you have Word or use LibreOffice Writer's equivalent view)**
 *   Enable "Show Formatting Marks" (¶). Look for table gridlines, text box borders, or section breaks.
 *   Check Headers/Footers (Double-click margins) for hidden contact info.
 *   Select All: Ensure everything highlights uniformly.
@@ -290,7 +290,7 @@ While not parsing per se, ATS ingestion often uses filename OCR for initial rout
 
 ### The Free Prompt
 
-We offer a free diagnostic prompt you can run in any capable LLM. Upload your resume, paste the prompt, and it will likely flag ATS failures: tables, text boxes, header graveyards, column bleed, encoding errors. It works. It will catch real problems but it cannot make you act on these findings. Most people simply cannot audit their own resume objectively. AI models - *unless specifically instructed not to* - will flatter us some more.
+We offer a free diagnostic prompt you can run in any capable LLM. Upload your resume, paste the prompt, and it will likely flag ATS failures: tables, text boxes, header graveyards, column bleed, encoding errors. It works. It will catch real problems but it cannot make you act on these findings. Most people simply cannot audit their own resume objectively. AI models—*unless specifically instructed not to*—will flatter you.
 
   
 ---
@@ -303,22 +303,22 @@ A complete forensic audit of your resume for ATS compliance. Not a score. Not a 
 
 **What you receive:**
 
-- Structural analysis: tables, text boxes, floating objects, header/footer content, column detection.
-- Encoding audit: character rendering, bullet consistency, date format compliance, font safety.
-- Section mapping review: whether your headers trigger correct field mapping or dump into unsearchable text
-- The Brutal Copy-Paste Test: performed manually, with annotation of every failure point
-- Specific corrections: not "consider revising" - exact changes, line by line
+- **Structural analysis**: tables, text boxes, floating objects, header/footer content, column detection.
+- **Encoding audit**: character rendering, bullet consistency, date format compliance, font safety.
+- **Section mapping review**: whether your headers trigger correct field mapping or dump into unsearchable text.
+- **The Brutal Copy-Paste Test**: performed manually, with annotation of every failure point.
+- **Specific Corrections**: not "consider revising"—exact changes, line by line.
 
 **Included: Keyword Alignment Analysis**
 
-Submit one target job posting with your resume. We extract the likely recruiter search queries and show you how to align your resume to match—correct placement, correct phrasing, correct field mapping so the terms land where the Boolean search will find them.
+You may submit one target job posting *along* with your resume. We extract the likely recruiter search queries and show you how to align your resume to match—correct placement, correct phrasing, correct field mapping so the terms land where the Boolean search will find them.
 
 ---
 
 ### How It Works
 
-1. **Pay:**  $20 via Stripe, or  $10 via Bitcoin.
-2. **Submit:** Email your resume (PDF or Word) and one target job posting to audit@stoicresume.com. If paying via Bitcoin, include your transaction ID.
+1. **Pay:** via Stripe or Bitcoin using the buttons below.
+2. **Submit:**  your resume (PDF or Word) and one target job posting to audit@stoicresume.com. If paying via Bitcoin, include your transaction ID.
 3. **Receive:** Within 24 hours, your full HIL diagnostic report. No flattery. No filler. Just findings and fixes.
 
 ---
@@ -336,6 +336,7 @@ Submit one target job posting with your resume. We extract the likely recruiter 
 Use the free prompt if you trust yourself to judge your own work without bias.
 
 Use the audit if you want the truth from someone who has no attachment to your formatting.
+
 
 As Epictetus observed: *"It is impossible for a man to learn what he thinks he already knows."*
 
@@ -464,7 +465,7 @@ As Epictetus observed: *"It is impossible for a man to learn what he thinks he a
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="24" height="24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
-      Order Full Audit — $10
+      Order Full Audit — <s>\$20</s> <strong>\$10</strong>
     </div>
     <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
@@ -486,7 +487,7 @@ As Epictetus observed: *"It is impossible for a man to learn what he thinks he a
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> \$10 USD worth of Bitcoin</strong> to this address:</p>
+    <p>Please Send <strong>  $10 USD worth of Bitcoin</strong> to this address:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     <div class="btc-address-box">
       <code id="btc-address">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
