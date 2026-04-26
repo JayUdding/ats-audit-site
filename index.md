@@ -300,7 +300,7 @@ every parsing error.
  
 <div style="background-color: #f8f9fa; border-left: 4px solid #4a90e2; padding: 15px; margin-top: 20px;">
   <h4 style="margin-top: 0;">🔒 The Stoic Promise: Privacy & Guarantee</h4>
-  <p><strong>Zero Data Hoarding:</strong> We use fully encrypted services. Your resume and email are <strong>permanently deleted 7 days</strong> after delivery. We never sell or share your data.</p>
+  <p><strong>Strict Privacy Promise:</strong> We use fully encrypted services. Your resume and email are <strong>permanently deleted 7 days</strong> after delivery. We never sell or share your data.</p>
   <p><strong>7-Day Refund:</strong> If our audit doesn't meet your expectations, email us within 7 days for a full, no-questions-asked refund.</p>
 </div>
 
