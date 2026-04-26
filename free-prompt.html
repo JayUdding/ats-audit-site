@@ -92,60 +92,64 @@
         Copy Prompt to Clipboard
     </button>
 
-<div class="prompt-box" id="promptText">Act as an enterprise-grade Applicant Tracking System (ATS) parser (Workday, Taleo, Greenhouse) combined with a Senior Technical Recruiter. 
+<div class="prompt-box" id="promptText">Your prompt is already exceptionally clear, structured, and actionable. It effectively sets the role, constraints, tasks, and output format. It leaves no room for vague or unhelpful responses.
 
-Your objective is to conduct a rigorous ATS compliance and optimization test on the technical resume provided below, comparing it against the provided job description. I also wish to be alerted to possible blindspots or issues that I may overlook or may not even know about or (fully) realize. 
-
-Above all, I do not want guesses, vagueness, platitudes or cliches. Nor do I want any soft "it's OK" sentimentality or coddling or congratulatory pandering to any weakness in me. Straightforward and plain if not brutal Stoic honesty here is what I need from you.
-
-You must strictly adhere to the following parsing rules and constraints when evaluating the resume:
-
-### ATS PARSING KNOWLEDGE BASE (STRICT RULES):
-1. SECTION HEADERS: Parsers only understand standard strings (e.g., EXPERIENCE, EDUCATION, SKILLS, PROJECTS). Flag anything unconventional (e.g., "My Journey", "Proficiencies").
-2. DATE PATTERNS: Dates must be standard (e.g., Jan 2023 - Mar 2025, 2023-2025) and adjacent to the job title/company. Flag "Current", "Till date", or dates that seem disconnected from roles.
-3. THE PIPE RULE (|): The pipe `|` is a metadata delimiter, NOT a punctuation mark. It is ONLY allowed in headers/metadata (e.g., Software Engineer | Google | 2023). It is strictly FORBIDDEN inside bullet points or skills lists, as it triggers table-cell parsing errors. Skills must be comma-separated.
-4. BULLET POINTS: Only standard hyphens (-) or ASCII asterisks (*) are allowed. Flag Unicode bullets, math symbols (=>), or other special characters. 
-5. ACRONYMS & KEYWORDS: Evaluate if acronyms and full names are used appropriately. Flag keyword stuffing (unnatural repetition). 
-
-### YOUR TASKS:
-
-1. ATS PARSING & STRUCTURE ANALYSIS
-- Scan the text for inappropriate use of the pipe character `|` inside bullet points or skill arrays.
-- Verify standard section headers are present.
-- Check date formatting and adjacency to titles.
-- Warn the user if the pasted text appears scrambled, as this indicates a "Column Bleed" or "Table Trap" in their original file.
-
-2. KEYWORD MATCHING & SCHEMA MAPPING
-- Extract core hard skills, frameworks, and tools from the Job Description.
-- Compare them against the resume. 
-- List the exact matched keywords.
-- List high-priority MISSING keywords.
-- Note any "implied" skills in the resume that should be explicitly stated.
-
-3. RESUME CONTENT (The "Recruiter Eye")
-- Analyze bullet points under Experience/Projects. 
-- Flag bullets lacking quantifiable metrics (%, $, time, scale).
-- Check for strong, active tech-oriented verbs.
-
-### OUTPUT DELIVERABLES:
-Format your response EXACTLY as follows:
-
-- OVERALL ATS MATCH SCORE: [0-100%]
-- FATAL PARSING ERRORS: [List any violations of the Pipe Rule, weird dates, non-standard headers, or text-scrambling. If none, write "None detected in text layer."]
-- KEYWORD MATCH LIST: [Bullet points of found keywords]
-- CRITICAL MISSING KEYWORDS: [Bullet points of missing keywords]
-- WEAK BULLET POINTS TO REWRITE: [Quote 2-3 specific bullet points from the resume that lack impact or use wrong delimiters, and provide a rewritten, ATS-optimized version].
-- STRUCTURAL REMINDER: [Briefly remind the user to ensure their source file is a single-column DOCX/PDF with no text boxes, invisible tables, or headers/footers, as you cannot verify visual layout].
+For maximum clarity and to prevent any potential deviation, here is a **slightly refined version** that tightens the language and adds one explicit instruction to guarantee the brutal honesty you requested:
 
 ---
-INPUT DATA:
+
+**Refined Prompt:**
+
+Act as an enterprise-grade Applicant Tracking System (ATS) parser (Workday, Taleo, Greenhouse) combined with a Senior Technical Recruiter.
+
+**Your Objective:** Conduct a rigorous ATS compliance and optimization test on the provided technical resume, comparing it against the provided job description. Identify blindspots, unknown issues, and parsing failures.
+
+**Tone & Mandate:** You must provide straightforward, plain, and brutally honest feedback. No guesses, vagueness, platitudes, cliches, sentimentality, coddling, or congratulatory pandering. If a resume section is weak, state it plainly. If a keyword is missing, state it. Do not soften criticism.
+
+**Strict ATS Parsing Rules (Adhere Exactly):**
+1.  **SECTION HEADERS:** Only standard strings (e.g., EXPERIENCE, EDUCATION, SKILLS, PROJECTS). Flag unconventional headers (e.g., "My Journey").
+2.  **DATE PATTERNS:** Must be standard (e.g., Jan 2023 - Mar 2025). Flag "Current", "Till date", or disconnected dates.
+3.  **THE PIPE RULE (`|`):** This is a metadata delimiter **only**. It is **forbidden** inside bullet points or skills lists. Skills must be comma-separated.
+4.  **BULLET POINTS:** Only standard hyphens (`-`) or asterisks (`*`). Flag Unicode bullets or special characters.
+5.  **KEYWORDS:** Evaluate acronym use and flag keyword stuffing.
+
+**Your Tasks (Execute in Order):**
+
+1.  **ATS Parsing & Structure Analysis**
+    *   Scan for illegal use of the pipe character (`|`).
+    *   Verify standard section headers.
+    *   Check date formatting and adjacency.
+    *   Warn if pasted text is scrambled (indicates "Column Bleed" or "Table Trap").
+
+2.  **Keyword Matching & Schema Mapping**
+    *   Extract core hard skills, frameworks, and tools from the Job Description.
+    *   Compare against the resume.
+    *   List **exact matched keywords**.
+    *   List **high-priority MISSING keywords**.
+    *   Note any "implied" skills that should be explicit.
+
+3.  **Resume Content ("Recruiter Eye")**
+    *   Analyze Experience/Projects bullet points.
+    *   Flag bullets lacking quantifiable metrics (%, $, time, scale).
+    *   Check for strong, active, tech-oriented verbs.
+
+**Output Deliverables (Format EXACTLY as follows):**
+
+*   **OVERALL ATS MATCH SCORE:** [0-100%]
+*   **FATAL PARSING ERRORS:** [List violations. If none: "None detected in text layer."]
+*   **KEYWORD MATCH LIST:** [Bullet points of found keywords]
+*   **CRITICAL MISSING KEYWORDS:** [Bullet points of missing keywords]
+*   **WEAK BULLET POINTS TO REWRITE:** [Quote 2-3 weak points and provide ATS-optimized versions]
+*   **STRUCTURAL REMINDER:** [Brief reminder about single-column DOCX/PDF, no tables/text boxes]
+
+---
+**INPUT DATA:**
 
 JOB TITLE: [Insert Job Title]
-JOB DESCRIPTION: 
-[Insert Job Description Here]
+JOB DESCRIPTION: [Insert Job Description Here]
+RESUME TEXT: [Paste Resume Text Here]
 
-RESUME TEXT:
-[Paste Resume Text Here - Note: If text pastes in scrambled, leave it scrambled so the AI can diagnose the parsing failure]</div>
+You may proceed to insert your `JOB TITLE`, `JOB DESCRIPTION`, and `RESUME TEXT` into the input section.</div>
 
     <!-- THE MISSING UPSELL BOX -->
     <div class="upsell">
