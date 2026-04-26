@@ -29,7 +29,7 @@ Because there is no universal standard—because Taleo, Workday, iCIMS, and many
 
 This requires enforcing a **single-column linear text flow** with **zero floating objects**. No tables. No text boxes. No "visual alignment" that destroys machine readability. 
 
-If your resume cannot survive what we call the **Brutal Copy-Paste Test**-brutal because it lays bare any weakness-it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point, and you risk null fields or rejection.
+If your resume cannot survive what we call the **Brutal Copy-Paste Test** ("brutal" because it lays bare any weakness) it will not survive an ATS. Below you find the technical specifications for universal compliance. Deviate at any point and risk null fields or rejection.
  
  As Marcus Aurelius admonishes: 
 
