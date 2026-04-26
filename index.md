@@ -208,8 +208,8 @@ ATS search functions use **Boolean and proximity operators**. Recruiters search:
 *   **Rule:** List skills as comma-separated or line-broken plain text. Do not use tables, graphs, or "skill bars."
 *   **Acronyms & Parentheses:** Legacy parsers rely on exact string matching. If the system searches for "Amazon Web Services" and you only wrote "AWS", you fail the match.
 
-*   **The Acronym Rule:** Mirror the exact phrasing used in the target job description. If space permits, the safest defensive structure is to provide both: Amazon Web Services (AWS).
-*   **The Modifier Trap:** Never use parentheses to describe your proficiency. If you write React (expert), dumb parsers extract the entire phrase as a single skill. When the recruiter searches for "React", your profile will return a null match.
+ *   **The Acronym Rule:** Mirror the exact phrasing used in the target job description. If space permits, the safest defensive structure is to provide both: Amazon Web Services (AWS).
+ *   **The Modifier Trap:** Never use parentheses to describe your proficiency. If you write React (expert), dumb parsers extract the entire phrase as a single skill. When the recruiter searches for "React", your profile will return a null match.
 
 **2. The "Keyword Stuffing" Fallacy**
 Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact repetition or white-text keyword blocks as spam. Do not list "Python" 15 times in white font at the bottom. You will be rejected.
