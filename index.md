@@ -206,7 +206,10 @@ Backend: Python | Django | PostgreSQL | Redis
 **1. Keyword Matching Mechanics**
 ATS search functions use **Boolean and proximity operators**. Recruiters search: `("React.js" OR "React") AND ("Node.js" OR "Node")`.
 *   **Rule:** List skills as comma-separated or line-broken plain text. Do not use tables, graphs, or "skill bars."
-*   **Acronyms:** Provide both forms: `ASP.NET` and `Active Server Pages .NET` is unnecessary; `AWS (Amazon Web Services)` is safer if space permits, but parsers handle standard acronyms well. Do not use parenthetical exclusions: `React (preferred)` — the parser may include "(preferred)" as part of the skill token.
+*   **Acronyms & Parentheses:** Legacy parsers rely on exact string matching. If the system searches for "Amazon Web Services" and you only wrote "AWS", you fail the match.
+
+-The Acronym Rule: Mirror the exact phrasing used in the target job description. If space permits, the safest defensive structure is to provide both: Amazon Web Services (AWS).
+-The Modifier Trap: Never use parentheses to describe your proficiency. If you write React (expert), dumb parsers extract the entire phrase as a single skill. When the recruiter searches for "React", your profile will return a null match.
 
 **2. The "Keyword Stuffing" Fallacy**
 Early 2000s ATS counted keyword density. Modern systems (post-2015) flag exact repetition or white-text keyword blocks as spam. Do not list "Python" 15 times in white font at the bottom. You will be rejected.
@@ -287,7 +290,7 @@ While not parsing per se, ATS ingestion often uses filename OCR for initial rout
 
 The free AI prompt is a great diagnostic tool—it will tell you *if* your resume is broken. But if you want a human expert to tell you exactly *how to fix it*, and how to align your keywords to a specific job, let us do it.
 
-**ATS Compliance Audit — \$20.00**
+**ATS Compliance Audit — \$20**
 Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for every parsing error.
 
 **Includes Free Bonus:** Submit a target job posting with your resume. We will analyze the keywords and tell you exactly how to align your resume to match the recruiter's exact search queries. 
