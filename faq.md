@@ -1,7 +1,7 @@
 ---
 layout: default
 title: FAQ — StoicResume
-permalink: /faq
+permalink: /faq/
 ---
 
 <div class="faq-container">
