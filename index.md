@@ -285,8 +285,7 @@ While not parsing per se, ATS ingestion often uses filename OCR for initial rout
 
 ---
 
-   
- ---
+ 
 
 ### The Free Prompt
 
@@ -465,7 +464,7 @@ As Epictetus observed: *"It is impossible for a man to learn what he thinks he a
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="24" height="24" style="vertical-align: middle; margin-right: 8px; margin-bottom: 3px;">
-      Order Full Audit — <s>\$20</s> <strong>\$10</strong>
+      Order Full Audit — $10 
     </div>
     <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
