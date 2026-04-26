@@ -365,7 +365,114 @@ Use the audit if you want the truth from someone who has no attachment to your f
 
 As Epictetus observed: *"It is impossible for a man to learn what he thinks he already knows."*
 
+
+
+
+
 ---
+
+
+<style>
+  .testimonials-section {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #2E7D8C;
+  }
+  .testimonials-scroll {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding-bottom: 1.5rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .testimonial-card {
+    flex: 0 0 300px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eff0f1;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  }
+  .testimonial-text {
+    margin: 0 0 1rem 0;
+    font-style: italic;
+    color: #2E7D8C;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  .testimonial-author {
+    display: block;
+    font-weight: bold;
+    font-style: normal;
+    color: #2E7D8C;
+    font-size: 0.9rem;
+  }
+  .testimonials-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  .testimonials-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  .testimonials-scroll::-webkit-scrollbar-thumb {
+    background: #d1d5da;
+    border-radius: 4px;
+  }
+  .testimonials-scroll::-webkit-scrollbar-thumb:hover {
+    background: #a3a8ae;
+  }
+  @media (max-width: 500px) {
+    .testimonial-card {
+      flex: 0 0 85%;
+    }
+  }
+</style>
+
+<div class="testimonials-section">
+  <h3>What People Are Saying</h3>
+  <div class="testimonials-scroll">
+
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Solid review. Glad I got my resume correct."
+      </p>
+      <span class="testimonial-author">— ML, Graduate Student</span>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Thanks for the 'brutal' truth but I can handle it. Fixed a key error."
+      </p>
+      <span class="testimonial-author">— DM, Student</span>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "5 stars for you! Very useful."
+      </p>
+      <span class="testimonial-author">— KF, Engineer</span>
+    </div>
+
+    <!-- Testimonial 4 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "This document is incredibly useful. In fact it is absolute gold."
+      </p>
+      <span class="testimonial-author">— Claude</span>
+    </div>
+
+   
+
+  
+</div>
 
 <!-- === MAIN CALL-TO-ACTION SECTION === -->
 <div class="action-buttons-wrapper">
