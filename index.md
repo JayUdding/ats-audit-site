@@ -677,9 +677,9 @@ code {
   </p>
   <p>
     &copy; 2026 StoicResume.com | 
+    <a href="/faq" style="color: #666; text-decoration: underline;">FAQ</a> | 
     <a href="privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy & Terms</a> | 
     7-Day Refund Guarantee
   </p>
 </footer>
 <!-- END: GLOBAL FOOTER -->
-
