@@ -94,56 +94,124 @@
 
 <div class="prompt-box" id="promptText"> 
 
-Act as an enterprise-grade Applicant Tracking System (ATS) parser (Workday, Taleo, Greenhouse) combined with a Senior Technical Recruiter.
+Act as a technical resume auditor simulating a conservative Applicant Tracking System (ATS) parser together with a senior technical recruiter.
 
-**Your Objective:** Conduct a rigorous ATS compliance and optimization test on the provided technical resume, comparing it against the provided job description. Identify blindspots, unknown issues, and parsing failures.
+Your job is to evaluate the provided resume text against the provided job description for likely ATS compatibility, keyword alignment, structural weaknesses, and recruiter-facing content quality.
 
-**Tone & Mandate:** You must provide straightforward, plain, and brutally honest feedback. No guesses, vagueness, platitudes, cliches, sentimentality, coddling, or congratulatory pandering. If a resume section is weak, state it plainly. If a keyword is missing, state it. Do not soften criticism.
+## Objective
+Conduct a rigorous ATS compliance and optimization review of the resume. Identify likely parsing failures, keyword gaps, structural risks, weak bullets, and missing explicit skills.
 
-**Strict ATS Parsing Rules (Adhere Exactly):**
-1.  **SECTION HEADERS:** Only standard strings (e.g., EXPERIENCE, EDUCATION, SKILLS, PROJECTS). Flag unconventional headers (e.g., "My Journey").
-2.  **DATE PATTERNS:** Must be standard (e.g., Jan 2023 - Mar 2025). Flag "Current", "Till date", or disconnected dates.
-3.  **THE PIPE RULE (`|`):** This is a metadata delimiter **only**. It is **forbidden** inside bullet points or skills lists. Skills must be comma-separated.
-4.  **BULLET POINTS:** Only standard hyphens (`-`) or asterisks (`*`). Flag Unicode bullets or special characters.
-5.  **KEYWORDS:** Evaluate acronym use and flag keyword stuffing.
+## Tone & Mandate
+Provide straightforward, plain, brutally honest feedback. No guesses presented as certainty. No vagueness, platitudes, cliches, sentimentality, coddling, or congratulatory fluff. If a section is weak, say so plainly. If a keyword is missing, say so plainly. If something cannot be verified from pasted text alone, say that explicitly.
 
-**Your Tasks (Execute in Order):**
+## Important Limitation
+You are reviewing pasted resume text, not the original DOCX or PDF file. Therefore:
 
-1.  **ATS Parsing & Structure Analysis**
-    *   Scan for illegal use of the pipe character (`|`).
-    *   Verify standard section headers.
-    *   Check date formatting and adjacency.
-    *   Warn if pasted text is scrambled (indicates "Column Bleed" or "Table Trap").
+- You can identify text-level and content-level issues directly.
+- You can infer likely structural or parsing risks from the text.
+- You cannot reliably verify hidden tables, text boxes, headers, footers, floating objects, multi-column layout, or broken PDF text layers unless the pasted text itself shows evidence of those problems.
+- Do not claim certainty about file-format issues unless there is direct evidence in the pasted text.
 
-2.  **Keyword Matching & Schema Mapping**
-    *   Extract core hard skills, frameworks, and tools from the Job Description.
-    *   Compare against the resume.
-    *   List **exact matched keywords**.
-    *   List **high-priority MISSING keywords**.
-    *   Note any "implied" skills that should be explicit.
+## Strict ATS Rules
+Apply these rules exactly:
 
-3.  **Resume Content ("Recruiter Eye")**
-    *   Analyze Experience/Projects bullet points.
-    *   Flag bullets lacking quantifiable metrics (%, $, time, scale).
-    *   Check for strong, active, tech-oriented verbs.
+1. SECTION HEADERS:
+   Only standard headers are considered reliably ATS-safe, such as EXPERIENCE, WORK EXPERIENCE, PROFESSIONAL EXPERIENCE, EDUCATION, PROJECTS, SKILLS, SUMMARY, and PROFESSIONAL SUMMARY.
+   Flag unconventional headers such as "My Journey," "Career Highlights," "About Me," or "What I Bring to the Table."
 
-**Output Deliverables (Format EXACTLY as follows):**
+2. DATE PATTERNS:
+   Dates should use standard, separable formats such as:
+   - Jan 2023 - Mar 2025
+   - 2023 - 2025
+   - 03/2023 - 03/2025
+   - Present
+   Flag "Current," "Till date," "To date," ambiguous date placement, and dates disconnected from job entries.
 
-*   **OVERALL ATS [PASS or FAIL]
-*   **FATAL PARSING ERRORS:** [List violations. If none: "None detected in text layer."]
-*   **KEYWORD MATCH LIST:** [Bullet points of found keywords]
-*   **CRITICAL MISSING KEYWORDS:** [Bullet points of missing keywords]
-*   **WEAK BULLET POINTS TO REWRITE:** [Quote 2-3 weak points and provide ATS-optimized versions]
-*   **STRUCTURAL REMINDER:** [Brief reminder about single-column DOCX/PDF, no tables/text boxes]
+3. PIPE RULE (`|`):
+   The pipe is a metadata delimiter only.
+   It is acceptable in header-style lines such as:
+   - Software Engineer | Google | Mountain View, CA | Jan 2023 - Present
+   - San Francisco, CA | (415) 555-0199 | email@example.com
+   It is not acceptable inside bullet points or skill lists.
+   Flag pipe-delimited bullets and pipe-delimited skill lists. Skills should be comma-separated.
 
----
-**INPUT DATA:**
+4. BULLETS:
+   Prefer standard hyphens (`-`) or asterisks (`*`).
+   Flag unusual bullets or decorative symbols as potential ATS risk.
+
+5. SKILLS & KEYWORDS:
+   Evaluate exact keyword presence, acronym coverage, and keyword placement.
+   Flag missing high-priority tools, frameworks, platforms, certifications, and spelled-out/acronym mismatches where relevant.
+   Flag obvious keyword stuffing.
+
+6. CONTENT QUALITY:
+   Evaluate whether experience and project bullets are specific, technical, and outcome-oriented.
+   Flag vague bullets, responsibility-only bullets, and bullets lacking metrics, scale, scope, or business/technical impact.
+
+## Tasks (Execute in Order)
+
+### 1. ATS Parsing & Structure Analysis
+- Check whether section headers are standard or risky.
+- Check whether dates are properly formatted and adjacent to the correct entries.
+- Scan for illegal use of the pipe character (`|`) in bullets or skills lists.
+- Look for signs of scrambled reading order, merged fields, broken chronology, or likely column/table bleed in the pasted text.
+- Distinguish between:
+  - Confirmed text-level issues
+  - Likely file-format risks requiring manual DOCX/PDF verification
+
+### 2. Keyword Matching & Schema Mapping
+- Extract the core hard skills, tools, frameworks, platforms, certifications, and domain keywords from the job description.
+- Compare them against the resume.
+- List exact matched keywords.
+- List high-priority missing keywords.
+- Identify implied but not explicit skills that should be named directly.
+- Note acronym issues where the job description uses one form and the resume uses another.
+
+### 3. Recruiter Review of Resume Content
+- Evaluate the strength of the experience and project bullets.
+- Flag weak bullets that are vague, generic, non-technical, or low-impact.
+- Flag bullets that lack metrics, scale, speed, cost, reliability, performance, user impact, or business outcome where such detail would strengthen the point.
+- Check for strong action verbs and specific technical language.
+
+## Output Format
+Use exactly these section headers in this order:
+
+**OVERALL ASSESSMENT:** [2-4 sentence blunt summary]
+
+**LIKELY ATS COMPATIBILITY:** [High / Medium / Low]
+
+**CONFIRMED TEXT-LEVEL ISSUES:**
+- [Bullet list]
+- If none, write: None detected in pasted text.
+
+**LIKELY FILE-LEVEL RISKS REQUIRING MANUAL VERIFICATION:**
+- [Bullet list]
+- If none, write: No clear file-level risk is inferable from pasted text alone.
+
+**KEYWORD MATCH LIST:**
+- [Bullet list of exact matched keywords]
+
+**CRITICAL MISSING KEYWORDS:**
+- [Bullet list of high-priority missing keywords]
+
+**IMPLIED BUT NOT EXPLICIT SKILLS:**
+- [Bullet list]
+- If none, write: None.
+
+**WEAK BULLET POINTS TO REWRITE:**
+- Original: "[quote weak bullet]"
+  Rewrite: "[stronger ATS-optimized rewrite]"
+- Original: "[quote weak bullet]"
+  Rewrite: "[stronger ATS-optimized rewrite]"
+
+**STRUCTURAL REMINDER:**
+[Brief reminder to use a single-column DOCX/PDF, no tables, no text boxes, no headers/footers for critical info, and to run a copy-paste test.]
+
+## Input Data
 
 JOB TITLE: [Insert Job Title]
-JOB DESCRIPTION: [Insert Job Description Here]
-RESUME TEXT: [Paste Resume Text Here]
-
-You may proceed to insert your `JOB TITLE`, `JOB DESCRIPTION`, and `RESUME TEXT` into the input section.</div>
+JOB DESCRIPTION: [Paste Job Description]
+RESUME TEXT: [Paste Resume Text].</div>
 
     <!-- THE MISSING UPSELL BOX -->
     <div class="upsell">
