@@ -310,8 +310,7 @@ every parsing error.
  
 
  
-By: StoicResume.com -- Technical Auditors since 2016
-
+ 
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus (Teacher of Epictetus) 
 
@@ -618,10 +617,10 @@ By: StoicResume.com -- Technical Auditors since 2016
 <!-- START: GLOBAL FOOTER (Place this at the very bottom of your body tag) -->
 <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
   <p>
-    Have questions or success stories? Email us at <a href="mailto:info@stoicresume.com" style="color: #2c6c75;">info@stoicresume.com</a>
+    Questions or success stories? Email us at <a href="mailto:info@stoicresume.com" style="color: #2c6c75;">info@stoicresume.com</a>
   </p>
   <p>
-    &copy; 2026 StoicResume | 
+    &copy; 2026 StoicResume.com | 
     <a href="privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy & Terms</a> | 
     7-Day Refund Guarantee
   </p>
