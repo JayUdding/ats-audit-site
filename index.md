@@ -17,9 +17,9 @@ An ATS is not artificial intelligence evaluating your worth. It is a database in
 
 3. **Retrieve** (recruiter searches). 
 
-Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and *carpe diem* another day with your name, experience, projects and skills intact and correctly bucketed. 
+Your goal is not to "impress" the machine (Stoics don't like flattery). Your goal is to *survive* the **Parse** stage and advance to human review with your name, experience, projects and skills intact and correctly bucketed. 
 
-But do not trust shortcuts. Automated "ATS checker" apps can be misleading. They simulate one generic parser and give you a false percentage score, while the real world runs fifty different systems. An app counts keywords; it cannot see the invisible table structures that actually destroy your application.
+Do not rely on automated ATS checkers. They offer a false sense of security. They simulate one generic parser and give you an arbitrary percentage score, while the real world runs fifty different systems. An app counts keywords; it cannot see the invisible table structure that actually destroys your application.
 
 You need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who performs the audit across multiple parsing scenarios, not an algorithm guessing at compatibility.
 
@@ -281,15 +281,15 @@ Violate any one of these, and you are gambling with  data integrity.
  
 ### Service Offered
 
-**Too much? Still unsure? Want a second opinion?**
+**The Alternative: Let Us Do It**
 
-**Use our service to conduct the audit for you and more!**
+**Your time is valuable. If you don't want to manually autopsy your own resume, let us do it.**
 
 **ATS Compliance Audit — \$20.00**
 Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for 
 every parsing error.
 
-**Bonus:** Also submit a job posting you plan to apply for. We analyze if your skills and experience are a good match: how to align your resume and better position yourself.
+**Includes Free Bonus:** Submit a target job posting with your resume. We will analyze the keywords and tell you exactly how to align your resume to match the recruiter's exact search queries. 
  
 ### How It Works
 
@@ -424,21 +424,8 @@ every parsing error.
       <span class="testimonial-author">- Claude</span>
     </div>
 
-    <!-- Testimonial 5 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "Your review here? "
-      </p>
-      <span class="testimonial-author">- You Hopefully</span>
-    </div>
-
-    <!-- Testimonial 6 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "The unexamined life is not worth living. Now get back to work!"
-      </p>
-      <span class="testimonial-author">- Aristotle</span>
-    </div>
+   
+ 
 
   </div>
 </div>
