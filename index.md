@@ -278,157 +278,32 @@ Violate any one of these, and you are gambling with  data integrity.
 
 ---
 
- 
-### Service Offered
+   ### Service Offered
 
 **The Alternative: Let Us Do It**
 
-**Your time is valuable. If you don't want to manually autopsy your own resume, let us do it.**
+The free AI prompt is a great diagnostic tool—it will tell you *if* your resume is broken. But if you want a human expert to tell you exactly *how to fix it*, and how to align your keywords to a specific job, let us do it.
 
-**ATS Compliance Audit — $20.00**
-Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for 
-every parsing error.
+**ATS Compliance Audit — \$20.00**
+Complete ATS compliance audit. You receive a detailed pass/fail report with specific fixes for every parsing error.
 
 **Includes Free Bonus:** Submit a target job posting with your resume. We will analyze the keywords and tell you exactly how to align your resume to match the recruiter's exact search queries. 
  
 ### How It Works
 
-1.  **Order:** Pay securely via Stripe ($20) or Bitcoin ($10).
-2.  **Submit:** Email your Resume (PDF/Word) and target Job Posting to [audit@stoicresume.com](mailto:audit@stoicresume.com)  (If paying via BTC, include your transaction ID).
+1.  **Order:** Pay securely via Stripe (\$20) or Bitcoin (\$10).
+2.  **Submit:** Email your Resume (PDF/Word) and target Job Posting to <a href="mailto:audit@stoicresume.com">audit@stoicresume.com</a> (If paying via BTC, include your transaction ID).
 3.  **Delivery:** Within 24 hours, receive your complete HIL diagnostic report. No flattery. Just facts.
 
- 
 <div style="background-color: #f8f9fa; border-left: 4px solid #4a90e2; padding: 15px; margin-top: 20px;">
   <h4 style="margin-top: 0;">🔒  Privacy & Guarantee -  StoicResume Promise</h4>
   <p><strong>Strict Privacy Promise:</strong> Fully encrypted services used. Your resume and email are <strong>permanently deleted 7 days</strong> after delivery. Zero data retention. We never sell or share your data.</p>
   <p><strong>7-Day Refund:</strong> If our audit doesn't meet your expectations for any reason, email us within 7 days for a full, no-questions-asked refund.</p>
 </div>
 
-
-
-
- 
-
- 
- 
 **Theory is good but practice is better. It is the test of theory, the confirmation of it.**
 -- Musonius Rufus (Teacher of Epictetus) 
 
-
-<!-- TESTIMONIALS CSS (HORIZONTAL SCROLL) -->
-<style>
-  .testimonials-section {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #2E7D8C; /* Kept your custom border! */
-  }
-  
-  /* This container handles the horizontal scrolling */
-  .testimonials-scroll {
-    display: flex;
-    gap: 1.5rem;
-    overflow-x: auto; /* Enables horizontal scrolling */
-    padding-bottom: 1.5rem; /* Leaves room so your dark shadow doesn't get cut off */
-    scroll-snap-type: x mandatory; /* Makes the cards snap into place */
-    -webkit-overflow-scrolling: touch; /* Smooth momentum scrolling on iPhones */
-  }
-
-  .testimonial-card {
-    flex: 0 0 300px; /* Forces every card to stay exactly 300px wide */
-    scroll-snap-align: start; /* Tells the scroll where to "snap" */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Pushes the author name to the bottom */
-    background: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #eff0f1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); /* Kept your bold shadow! */
-  }
-
-  .testimonial-text {
-    margin: 0 0 1rem 0; /* Adds space below the quote */
-    font-style: italic;
-   color: #2E7D8C; /* Matches the new stoic blue */
-    font-size: 0.95rem; /* Slightly smaller text to fit columns nicely */
-    line-height: 1.5;
-  }
-
-  .testimonial-author {
-    display: block;
-    font-weight: bold;
-    font-style: normal;
-    color: #2E7D8C; /* Matches the new stoic blue */
-    font-size: 0.9rem;
-  }
-
-  /* Styles the scrollbar to make it look clean and modern */
-  .testimonials-scroll::-webkit-scrollbar {
-    height: 8px;
-  }
-  .testimonials-scroll::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-    border-radius: 4px;
-  }
-  .testimonials-scroll::-webkit-scrollbar-thumb {
-    background: #d1d5da; 
-    border-radius: 4px;
-  }
-  .testimonials-scroll::-webkit-scrollbar-thumb:hover {
-    background: #a3a8ae; 
-  }
-
-  /* On small phones, slightly reduce width so the next card "peeks" out to hint that you can scroll */
-  @media (max-width: 500px) {
-    .testimonial-card {
-      flex: 0 0 85%; 
-    }
-  }
-</style>
-
-<!-- TESTIMONIALS HTML -->
-<div class="testimonials-section">
-  <h3>What People Are Saying</h3>
-
-  <div class="testimonials-scroll">
-    
-    <!-- Testimonial 1 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "Solid review. Glad I got my resume correct."
-      </p>
-      <span class="testimonial-author">- ML, Graduate Student </span>
-    </div>
-
-    <!-- Testimonial 2 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "Thanks for the 'brutal' truth but I can handle it. Fixed a key error."
-      </p>
-      <span class="testimonial-author">- DM, Student</span>
-    </div>
-
-    <!-- Testimonial 3 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "5 stars for you! Very useful."
-      </p>
-      <span class="testimonial-author">- KF, Engineer </span>
-    </div>
-
-    <!-- Testimonial 4 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "This document is incredibly useful. In fact it is absolute gold."
-      </p>
-      <span class="testimonial-author">- Claude</span>
-    </div>
-
-   
- 
-
-  </div>
-</div>
 <!-- === MAIN CALL-TO-ACTION SECTION === -->
 <div class="action-buttons-wrapper">
 
@@ -440,20 +315,6 @@ every parsing error.
     </div>
     <div class="btn-sub-text" style="color: #e0e0e0;">Secure checkout via Stripe (\$20)</div>
   </a>
-
-    /* --- Stripe Button Specifics --- */
-  .stripe-promo-btn {
-    background-color: #2c6c75;
-    color: white;
-    border: 2px solid #2c6c75;
-    box-shadow: 0 4px 10px rgba(44, 108, 117, 0.2);
-  }
-  .stripe-promo-btn:hover {
-    background-color: #1f4f56;
-    border-color: #1f4f56;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 15px rgba(44, 108, 117, 0.3);
-  }
   
   <!-- 1. The Bitcoin Button (Primary) -->
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
@@ -476,12 +337,11 @@ every parsing error.
 </div>
 
 <!-- === THE BITCOIN FALLBACK MODAL === -->
-<!-- (Keep your exact modal HTML here, no changes needed) -->
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> $10 USD worth of Bitcoin</strong> to this address:</p>
+    <p>Please Send <strong> \$10 USD worth of Bitcoin</strong> to this address:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     <div class="btc-address-box">
       <code id="btc-address">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
@@ -494,25 +354,24 @@ every parsing error.
   </div>
 </div>
 
-
 <!-- === ALL CSS STYLES === -->
 <style>
   /* --- Layout Wrapper (Controls the side-by-side and spacing) --- */
   .action-buttons-wrapper {
     display: flex;
-    flex-direction: row;         /* Puts them side by side */
-    flex-wrap: wrap;             /* Allows stacking on small screens */
-    justify-content: center;     /* Centers them on the page */
-    align-items: stretch;        /* Forces them to be the exact same height */
-    gap: 25px;                   /* Space BETWEEN the buttons */
-    margin-top: 50px;            /* ADDED SPACE above the buttons */
-    margin-bottom: 60px;         /* ADDED SPACE below the buttons */
+    flex-direction: row;         
+    flex-wrap: wrap;             
+    justify-content: center;     
+    align-items: stretch;        
+    gap: 25px;                   
+    margin-top: 50px;            
+    margin-bottom: 60px;         
     padding: 0 20px;
     font-family: Arial, sans-serif;
   }
 
   /* --- General Button Styles --- */
-  .btc-promo-btn, .free-prompt-btn {
+  .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -521,9 +380,23 @@ every parsing error.
     padding: 16px 24px;
     border-radius: 8px;
     transition: all 0.2s ease;
-    width: 320px;                /* Made slightly wider so text fits on one line */
+    width: 320px;                
     box-sizing: border-box;
     text-align: center;
+  }
+
+  /* --- Stripe Button Specifics --- */
+  .stripe-promo-btn {
+    background-color: #2c6c75;
+    color: white;
+    border: 2px solid #2c6c75;
+    box-shadow: 0 4px 10px rgba(44, 108, 117, 0.2);
+  }
+  .stripe-promo-btn:hover {
+    background-color: #1f4f56;
+    border-color: #1f4f56;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(44, 108, 117, 0.3);
   }
 
   /* --- Bitcoin Button Specifics --- */
@@ -590,12 +463,12 @@ every parsing error.
   /* --- Mobile Responsiveness --- */
   @media (max-width: 700px) {
     .action-buttons-wrapper {
-      flex-direction: column;      /* Stacks them on mobile */
+      flex-direction: column;      
       align-items: center;
       gap: 15px;
     }
-    .btc-promo-btn, .free-prompt-btn {
-      width: 100%;                 /* Takes up full width on mobile */
+    .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
+      width: 100%;                 
       max-width: 320px;
     }
   }
