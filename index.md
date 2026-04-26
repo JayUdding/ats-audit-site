@@ -128,7 +128,7 @@ Post-extraction, the parser attempts to map text to database fields:
 
 **1. Special Characters & Encoding**
 *   **Bullet Points:** Use standard hyphen `-` or ASCII asterisk `*`. Avoid Unicode bullets (•, ○, ●) which may render as � or be stripped entirely.
-*   **Accents:** José, résumé are generally safe in UTF-8, but verify the PDF embedding (some fonts subset poorly).
+*   **Accents:** Names and places such as José, Zoë, São Paulo, and München are generally safe in UTF-8, but verify PDF embedding (some fonts subset poorly).
 *   **Symbols:** The "en dash" (–) in date ranges is safer than "em dash" (—) which can trigger line-break errors.
 *   **Math Symbols:** Avoid using ≥, ≤, →, ⇒ in skills sections. Write "Proficient in Python" not "Python ⇒ Expert".
 
