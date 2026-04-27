@@ -16,10 +16,7 @@ $body-link-color: #2c6c75;
   opacity: 1 !important;
 }
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 500;
-}
+ 
 
 strong, b {
   color: #2c6c75;
@@ -112,6 +109,26 @@ strong, b {
 
 .project-tagline {
   font-weight: 400 !important;
+}
+
+/* Restore lighter, more elegant homepage hero */
+.project-name {
+  font-weight: 400 !important;
+  letter-spacing: -1px;
+}
+
+.project-tagline {
+  font-weight: 400 !important;
+}
+
+/* Keep content headings refined but not too heavy */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  font-weight: 500 !important;
 }
 
 /* Horizontal rules */
