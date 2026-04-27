@@ -117,18 +117,38 @@
     }
 
     .back-link {
-      display: inline-block;
-      margin-top: 28px;
-      font-weight: bold;
-      font-size: 14px;
-      color: #2c6c75;
-      text-decoration: none;
-    }
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c6c75;
+  text-decoration: none;
+}
 
-    .back-link:hover {
-      text-decoration: underline;
-    }
+.back-link:hover {
+  text-decoration: underline;
+  color: #24575f;
+}
 
+.footer-link {
+  color: #666;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: #2c6c75;
+  text-decoration: underline;
+}
+
+.email-link {
+  color: #2c6c75;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #24575f;
+}
     footer {
       max-width: 800px;
       margin: 40px auto 0;
@@ -139,16 +159,7 @@
       color: #666;
     }
 
-    footer a {
-      color: #666;
-      text-decoration: underline;
-    }
-
-    footer a.email-link {
-      color: #2c6c75;
-      text-decoration: none;
-    }
-
+    
     @media (max-width: 600px) {
       .container {
         padding: 24px;
@@ -321,16 +332,17 @@ RESUME TEXT: [Paste Resume Text]</div>
     
   </div>
 
+  
  <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
   <p>
     Questions or success stories? Email us at
-    <a href="mailto:info@stoicresume.com" style="color: #2c6c75; text-decoration: none;">info@stoicresume.com</a>
+    <a href="mailto:info@stoicresume.com" class="email-link">info@stoicresume.com</a>
   </p>
   <p>
     &copy; 2026 StoicResume.com |
-    <a href="/faq.html" style="color: #666; text-decoration: underline;">FAQ</a> |
-    <a href="/privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy</a> |
-    <a href="/terms.html" style="color: #666; text-decoration: underline;">Terms of Service</a>
+    <a href="/faq.html" class="footer-link">FAQ</a> |
+    <a href="/privacy.html" class="footer-link">Privacy Policy</a> |
+    <a href="/terms.html" class="footer-link">Terms of Service</a>
   </p>
 </footer>
 
