@@ -44,31 +44,39 @@
     a:hover { 
       text-decoration: underline; color: #24575f 
     }
-    .back-link { 
-      display: inline-block; 
-      margin-bottom: 20px; 
-      font-weight: bold; 
-      font-size: 14px; 
-    }
+    .back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c6c75;
+  text-decoration: none;
+}
 
-     .back-link:hover {
+.back-link:hover {
+  text-decoration: underline;
+  color: #24575f;
+}
+
+.footer-link {
+  color: #666;
   text-decoration: underline;
 }
-    footer {
-      margin-top: 50px; 
-      padding-top: 20px; 
-      border-top: 1px solid #eaeaea; 
-      text-align: center; 
-      font-size: 13px; 
-      color: #666;
-    }
-    .lead {
-      color: #555;
-      margin-bottom: 24px;
-    }
-    .faq-block {
-      margin-bottom: 28px;
-    }
+
+.footer-link:hover {
+  color: #2c6c75;
+  text-decoration: underline;
+}
+
+.email-link {
+  color: #2c6c75;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #24575f;
+}
   </style>
 </head>
 <body>
@@ -179,19 +187,19 @@
   </div>
 
   
-    <a href="/" class="back-link">&larr; Back to StoicResume</a>
- 
-  <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
-    <p>
-      Questions or success stories? Email us at
-      <a href="mailto:info@stoicresume.com" style="color: #2c6c75; text-decoration: none;">info@stoicresume.com</a>
-    </p>
-    <p>
-      &copy; 2026 StoicResume.com |
-      <span style="color: #666; font-weight: 600;">FAQ</span> |
-      <a href="/privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy</a> |
-      <a href="/terms.html" style="color: #666; text-decoration: underline;">Terms of Service</a>
-    </p>
-  </footer>
+   <a href="/" class="back-link">&larr; Back to StoicResume</a>
+
+<footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
+  <p>
+    Questions or success stories? Email us at
+    <a href="mailto:info@stoicresume.com" class="email-link">info@stoicresume.com</a>
+  </p>
+  <p>
+    &copy; 2026 StoicResume.com |
+    <span style="color: #666; font-weight: 600;">FAQ</span> |
+    <a href="/privacy.html" class="footer-link">Privacy Policy</a> |
+    <a href="/terms.html" class="footer-link">Terms of Service</a>
+  </p>
+</footer>
 </body>
 </html>
