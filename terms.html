@@ -27,21 +27,38 @@
     }
     a { color: #2c6c75; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .back-link { display: inline-block; margin-bottom: 20px; font-weight: bold; font-size: 14px; }
-    footer {
-      margin-top: 50px; 
-      padding-top: 20px; 
-      border-top: 1px solid #eaeaea; 
-      text-align: center; 
-      font-size: 13px; 
-      color: #666;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    .back-link:hover {
+   .back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c6c75;
+  text-decoration: none;
+}
+
+.back-link:hover {
   text-decoration: underline;
-      color: #24575f;
+  color: #24575f;
+}
+
+.footer-link {
+  color: #666;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: #2c6c75;
+  text-decoration: underline;
+}
+
+.email-link {
+  color: #2c6c75;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #24575f;
 }
   
   </style>
@@ -85,16 +102,16 @@
 
    
     <a href="/" class="back-link">&larr; Back to StoicResume</a>
-  
- <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
-   <p>
-      Questions or success stories? Email us at
-      <a href="mailto:info@stoicresume.com" style="color: #2c6c75; text-decoration: none;">info@stoicresume.com</a>
-    </p>
+
+<footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
+  <p>
+    Questions or success stories? Email us at
+    <a href="mailto:info@stoicresume.com" class="email-link">info@stoicresume.com</a>
+  </p>
   <p>
     &copy; 2026 StoicResume.com |
-    <a href="/faq.html" style="color: #666; text-decoration: underline;">FAQ</a> |
-    <a href="/privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy</a> |
+    <a href="/faq.html" class="footer-link">FAQ</a> |
+    <a href="/privacy.html" class="footer-link">Privacy Policy</a> |
     <span style="color: #666; font-weight: 600;">Terms of Service</span>
   </p>
 </footer>
