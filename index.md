@@ -503,15 +503,19 @@ Use the audit if you want an objective verdict.
 </div>
 
 <style>
-  /* --- Layout Wrapper Fix --- */
+  /* --- Layout Wrapper (The Fix: Added more bottom padding) --- */
   .action-buttons-wrapper {
     display: flex;
+    flex-direction: row;         
     flex-wrap: wrap;             
     justify-content: center;     
-    gap: 20px;                   
-    margin: 60px 0;            
-    padding: 20px;               /* Added padding to prevent clipping */
+    align-items: stretch;        
+    gap: 25px;                   
+    margin-top: 50px;            
+    margin-bottom: 80px;         /* Increased margin */
+    padding: 20px 20px 40px 20px; /* Extra 40px at bottom to prevent clipping */
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
   }
 
   /* --- General Button Styles --- */
@@ -524,68 +528,80 @@ Use the audit if you want an objective verdict.
     padding: 20px 24px;
     border-radius: 10px;
     transition: all 0.2s ease-in-out;
-    width: 300px;                
-    box-sizing: border-box;
+    width: 320px;                
+    box-sizing: border-box;      /* Ensures border is included in width/height */
     text-align: center;
-    border: 2px solid transparent;
+    margin-bottom: 10px;         /* Gives breathing room if buttons stack */
   }
 
-  /* --- Stripe Button (Stoic Teal) --- */
+  /* --- Stripe Button --- */
   .stripe-promo-btn {
     background-color: #2E7D8C;
     color: white !important;
+    border: 2px solid #2E7D8C;
   }
   .stripe-promo-btn:hover {
     background-color: #245e69;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(46, 125, 140, 0.25);
+    box-shadow: 0 8px 15px rgba(46, 125, 140, 0.2);
   }
 
-  /* --- Bitcoin Button (Classic Gold) --- */
+  /* --- Bitcoin Button --- */
   .btc-promo-btn {
     background-color: #F7931A;
     color: white !important;
+    border: 2px solid #F7931A;
   }
   .btc-promo-btn:hover {
     background-color: #e08316;
     transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(247, 147, 26, 0.25);
+    box-shadow: 0 8px 15px rgba(247, 147, 26, 0.2);
   }
 
-  /* --- Free Prompt Button (Elegant Outline) --- */
+  /* --- Free Prompt Button (The one in your screenshot) --- */
   .free-prompt-btn {
-    background-color: white;
+    background-color: #f0f7f8;   /* Very light teal tint for elegance */
     color: #2E7D8C !important;
-    border: 2px solid #2E7D8C;
+    border: 2px solid #2E7D8C !important; /* Force the border to show */
   }
   .free-prompt-btn:hover {
-    background-color: #f0f7f8;
+    background-color: #ffffff;
     transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(46, 125, 140, 0.1);
   }
 
   .btn-main-text {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 4px;
   }
 
-  .btn-sub-text {
-    font-size: 13px;
+  .btn-sub-text, .free-btn-sub {
+    font-size: 14px;
     font-weight: 400;
-    opacity: 0.85;
+    opacity: 0.8;
   }
 
   /* --- Modal Styles --- */
-  .btc-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(28, 40, 51, 0.9); }
-  .btc-modal-content { background-color: #fff; padding: 30px; border-radius: 15px; text-align: center; max-width: 400px; margin: 8% auto; position: relative; }
-  .btc-modal-close { position: absolute; right: 20px; top: 10px; font-size: 28px; color: #aaa; cursor: pointer; }
-  .btc-address-box { background-color: #f4f6f8; padding: 12px; border-radius: 8px; display: flex; align-items: center; gap: 10px; margin-top: 10px; border: 1px solid #dcdfe3; }
-  .copy-btn { background-color: #1C2833; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; font-size: 12px; }
+  .btc-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); }
+  .btc-modal-content { background-color: #fff; padding: 30px; border-radius: 12px; text-align: center; max-width: 400px; margin: 10% auto; color: #333; }
+  .btc-modal-close { float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+  .btc-address-box { background-color: #f4f4f4; padding: 12px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px; }
+  .copy-btn { background-color: #F7931A; color: white; border: none; padding: 8px 14px; border-radius: 5px; cursor: pointer; font-weight: bold; }
 
-  /* Mobile */
+  /* --- Mobile Responsiveness --- */
   @media (max-width: 700px) {
-    .action-buttons-wrapper { flex-direction: column; align-items: center; }
-    .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn { width: 100%; max-width: 320px; }
+    .action-buttons-wrapper {
+      flex-direction: column;      
+      align-items: center;
+    }
+    .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
+      width: 100%;                 
+      max-width: 320px;
+    }
   }
 </style>
 
