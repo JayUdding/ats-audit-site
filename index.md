@@ -1,191 +1,180 @@
----
-layout: default
----
 
-> "Theory is good but practice is better. It is the test of theory, the confirmation of it." 
-> — **Musonius Rufus**
-
-### I. Mechanical Reality
-
-In April 2026, the barrier between you and a career is not a person—it is a parser. Most Applicant Tracking Systems (ATS) fail to read resumes correctly. They misinterpret dates, scramble skill sets into gibberish, and discard entire profiles due to invisible formatting artifacts.
-
-**This is not a conspiracy. It is mechanics.**
-
-An ATS is a database ingestion pipeline. Your objective is not to "impress" the machine; Stoicism rejects flattery. Your objective is to **survive the Parse** so your experience reaches a human with its integrity intact.
-
-Do not rely on "ATS Score Checkers." They simulate a single generic parser and offer an arbitrary percentage of success. The real world uses fifty different systems with fifty different failure modes. A software checker cannot see the invisible table structures that actually destroy your application.
-
-### II. Defensive Architecture
-
-Because there is no universal standard among systems like Taleo, Workday, or iCIMS, you must optimize for the **lowest common denominator.** You must build defensively.
-
-This requires a **single-column linear text flow** with **zero floating objects.** 
-
-> "Do nothing, not even the smallest thing, randomly or carelessly."
-> — **Marcus Aurelius**
-
----
-
-### III. Technical Specifications
-
-#### 1. The File Format
-*   **DOCX:** Use Office Open XML (.docx). Avoid legacy .doc files.
-*   **PDF:** Export via **"Save As PDF"** or **"Export."** Never use "Print to PDF," which flattens the text into an unreadable image.
-*   **Verification:** If you cannot highlight a single word in your PDF, the machine cannot read it.
-
-#### 2. Structural Constraints
-*   **The Single Column:** Multi-column layouts cause "Column Bleed," where the machine reads across both columns, creating scrambled text.
-*   **Table Prohibition:** Never use tables for layout. Parsers read row-by-row. A table for contact info often merges your phone and email into a single, invalid string.
-*   **Header/Footer Danger:** Place all essential data (Name, Phone, Email) in the **Body** of the document. Many systems strip headers to save space.
-
-#### 3. Content Encoding
-*   **The Pipe (|) Rule:** Use pipes only for metadata (e.g., `Title | Company | Date`). Never use them in bullet points or skills lists, as the machine may interpret them as table boundaries.
-*   **Standard Headers:** Use `EXPERIENCE`, `EDUCATION`, and `SKILLS`. Creative titles like "My Journey" or "Proficiencies" often fail to trigger the correct database mapping.
-*   **The Acronym Rule:** Use both the full name and the acronym: `Amazon Web Services (AWS)`. This ensures a match regardless of the recruiter's search query.
-
----
-
-### IV. The Verification Protocol
-
-Perform the **Brutal Copy-Paste Test** before every submission:
-1.  **Select All** (Ctrl+A / ⌘+A).
-2.  **Copy and Paste** into a plain text editor (Notepad or TextEdit).
-3.  **Audit:** If the text is out of order, if dates are floating alone, or if contact info is missing, your resume has already failed.
-
----
-
-<div class="testimonials-section">
-  <h3>Community Feedback</h3>
-  <div class="testimonials-scroll">
-    <div class="testimonial-card">
-      <p class="testimonial-text">"Solid review. Glad I got my resume correct."</p>
-      <span class="testimonial-author">— ML, Graduate Student</span>
-    </div>
-    <div class="testimonial-card">
-      <p class="testimonial-text">"The brutal truth helped me fix a key error."</p>
-      <span class="testimonial-author">— DM, Student</span>
-    </div>
-    <div class="testimonial-card">
-      <p class="testimonial-text">"5 stars. Incredibly useful document."</p>
-      <span class="testimonial-author">— KF, Engineer</span>
-    </div>
-  </div>
 </div>
-
 <!-- === MAIN CALL-TO-ACTION SECTION === -->
 <div class="action-buttons-wrapper">
 
-  <!-- 0. Stripe Button -->
+  <!-- 0. The Stripe/Fiat Button (Primary Purchase) -->
   <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
     <div class="btn-main-text">
-      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-      Human Audit — \$20
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+      Order Full Audit — \$20
     </div>
-    <div class="btn-sub-text">Full Forensic Review</div>
+    <div class="btn-sub-text">Secure checkout via Stripe</div>
   </a>
 
-  <!-- 1. Bitcoin Button -->
+  <!-- 1. The Bitcoin Button (Discount Purchase) -->
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="BTC" width="18" height="18" style="margin-right: 8px;">
-      Bitcoin Audit — \$10 
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
+      Order Full Audit — \$10 
     </div>
-    <div class="btn-sub-text">50% Stoic Discount</div>
+    <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
 
-  <!-- 2. Free Button -->
+  <!-- 2. The Free Download Button (Secondary) -->
   <a href="./free-prompt.html" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
     <div class="btn-main-text">
-      <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24" style="margin-right: 8px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-      Free AI Prompt
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      Get the Free Prompt
     </div>
-    <div class="btn-sub-text">Self-Diagnostic Tool</div>
+    <div class="btn-sub-text">Test your own resume in ChatGPT</div>
   </a>
 </div>
 
-<!-- === THE BITCOIN MODAL === -->
+<!-- === THE BITCOIN FALLBACK MODAL === -->
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #1C2833;">Pay with Bitcoin</h2>
-    <p>Send <strong>\$10 USD worth of BTC</strong> to:</p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="QR" style="margin: 15px 0;">
+    <p>Please Send <strong>\$10 USD worth of Bitcoin</strong> to:</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     <div class="btc-address-box">
-      <code id="btc-address">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
+      <code id="btc-address" style="font-size: 10px;">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
       <button onclick="copyAddress()" class="copy-btn">Copy</button>
     </div>
-    <p style="font-size: 13px; color: #666; margin-top: 15px;">Email resume + TXID to: <strong>audit@stoicresume.com</strong></p>
+    <p style="font-size: 13px; color: #666; margin-top: 15px;">
+      After sending, email your resume + transaction ID to:<br>
+      <strong style="color: #2E7D8C;">audit@stoicresume.com</strong>
+    </p>
   </div>
 </div>
 
 <style>
-  /* Layout Wrapper: Optimized for 3-across */
+  /* --- Layout Wrapper (The Fix: Added more bottom padding) --- */
   .action-buttons-wrapper {
     display: flex;
+    flex-direction: row;         
     flex-wrap: wrap;             
     justify-content: center;     
-    gap: 15px;                   
-    margin: 80px 0;            
-    padding: 20px;
+    align-items: stretch;        
+    gap: 25px;                   
+    margin-top: 50px;            
+    margin-bottom: 80px;         /* Increased margin */
+    padding: 20px 20px 40px 20px; /* Extra 40px at bottom to prevent clipping */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     box-sizing: border-box;
   }
 
+  /* --- General Button Styles --- */
   .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 18px 10px;
-    border-radius: 8px;
-    transition: all 0.2s ease;
-    width: 250px;                /* Adjusted to fit 3-across on desktop */
-    box-sizing: border-box;
+    padding: 20px 24px;
+    border-radius: 10px;
+    transition: all 0.2s ease-in-out;
+    width: 320px;                
+    box-sizing: border-box;      /* Ensures border is included in width/height */
     text-align: center;
-    border: 2px solid transparent;
+    margin-bottom: 10px;         /* Gives breathing room if buttons stack */
   }
 
-  .stripe-promo-btn { background-color: #2E7D8C; color: white !important; }
-  .btc-promo-btn { background-color: #F7931A; color: white !important; }
-  .free-prompt-btn { background-color: #ffffff; color: #2E7D8C !important; border: 2px solid #2E7D8C; }
+  /* --- Stripe Button --- */
+  .stripe-promo-btn {
+    background-color: #2E7D8C;
+    color: white !important;
+    border: 2px solid #2E7D8C;
+  }
+  .stripe-promo-btn:hover {
+    background-color: #245e69;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(46, 125, 140, 0.2);
+  }
 
-  .stripe-promo-btn:hover, .btc-promo-btn:hover { transform: translateY(-3px); box-shadow: 0 8px 15px rgba(0,0,0,0.1); }
-  .free-prompt-btn:hover { background-color: #f0f7f8; transform: translateY(-3px); }
+  /* --- Bitcoin Button --- */
+  .btc-promo-btn {
+    background-color: #F7931A;
+    color: white !important;
+    border: 2px solid #F7931A;
+  }
+  .btc-promo-btn:hover {
+    background-color: #e08316;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(247, 147, 26, 0.2);
+  }
 
-  .btn-main-text { font-size: 16px; font-weight: 600; margin-bottom: 4px; display: flex; align-items: center; }
-  .btn-sub-text { font-size: 12px; opacity: 0.8; }
+  /* --- Free Prompt Button (The one in your screenshot) --- */
+  .free-prompt-btn {
+    background-color: #f0f7f8;   /* Very light teal tint for elegance */
+    color: #2E7D8C !important;
+    border: 2px solid #2E7D8C !important; /* Force the border to show */
+  }
+  .free-prompt-btn:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(46, 125, 140, 0.1);
+  }
 
-  /* Testimonials */
-  .testimonials-section { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #ebedef; }
-  .testimonials-scroll { display: flex; gap: 1rem; overflow-x: auto; padding-bottom: 1rem; }
-  .testimonial-card { flex: 0 0 280px; background: #f8f9fa; padding: 1.2rem; border-radius: 8px; border: 1px solid #ebedef; }
-  .testimonial-text { font-style: italic; font-size: 0.9rem; color: #444; }
-  .testimonial-author { font-size: 0.8rem; font-weight: 600; color: #2E7D8C; }
+  .btn-main-text {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+  }
 
-  /* Modal */
-  .btc-modal { display: none; position: fixed; z-index: 9999; left: 0; top: 0; width: 100%; height: 100%; background: rgba(28, 40, 51, 0.9); }
-  .btc-modal-content { background: white; padding: 30px; border-radius: 12px; max-width: 400px; margin: 10% auto; text-align: center; position: relative; }
-  .btc-modal-close { position: absolute; right: 15px; top: 10px; font-size: 24px; cursor: pointer; color: #aaa; }
-  .btc-address-box { background: #f4f6f8; padding: 10px; border-radius: 6px; display: flex; align-items: center; gap: 10px; border: 1px solid #ddd; }
-  .btc-address-box code { font-size: 9px; word-break: break-all; }
-  .copy-btn { background: #1C2833; color: white; border: none; padding: 6px 10px; border-radius: 4px; cursor: pointer; }
+  .btn-sub-text, .free-btn-sub {
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 0.8;
+  }
 
-  @media (max-width: 850px) {
-    .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn { width: 100%; max-width: 350px; }
+  /* --- Modal Styles --- */
+  .btc-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); }
+  .btc-modal-content { background-color: #fff; padding: 30px; border-radius: 12px; text-align: center; max-width: 400px; margin: 10% auto; color: #333; }
+  .btc-modal-close { float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
+  .btc-address-box { background-color: #f4f4f4; padding: 12px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px; }
+  .copy-btn { background-color: #F7931A; color: white; border: none; padding: 8px 14px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+
+  /* --- Mobile Responsiveness --- */
+  @media (max-width: 700px) {
+    .action-buttons-wrapper {
+      flex-direction: column;      
+      align-items: center;
+    }
+    .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
+      width: 100%;                 
+      max-width: 320px;
+    }
   }
 </style>
 
 <script>
-  function handleBitcoinClick(e) { e.preventDefault(); document.getElementById('btc-modal').style.display = 'block'; }
+  function handleBitcoinClick(event) {
+    event.preventDefault(); // Prevents the link from firing immediately
+    document.getElementById('btc-modal').style.display = 'block';
+  }
   function closeModal() { document.getElementById('btc-modal').style.display = 'none'; }
   function copyAddress() {
-    navigator.clipboard.writeText(document.getElementById('btc-address').innerText);
-    alert('Address Copied');
+    var address = document.getElementById('btc-address').innerText;
+    navigator.clipboard.writeText(address);
+    alert('Address copied!');
   }
-  window.onclick = function(e) { if (e.target.className === 'btc-modal') closeModal(); }
+  window.onclick = function(event) {
+    if (event.target == document.getElementById('btc-modal')) { closeModal(); }
+  }
 </script>
 
-<footer style="margin-top: 100px; padding: 40px 0; border-top: 1px solid #ebedef; text-align: center; font-size: 13px; color: #888;">
-  <p>Questions? <a href="mailto:info@stoicresume.com" style="color: #2E7D8C; text-decoration: none;">info@stoicresume.com</a></p>
-  <p>&copy; 2026 StoicResume.com | <a href="/faq.html">FAQ</a> | <a href="/privacy.html">Privacy</a></p>
+<!-- === GLOBAL FOOTER === -->
+<footer style="margin-top: 80px; padding: 40px 20px; border-top: 1px solid #ebedef; text-align: center; font-size: 13px; color: #666; line-height: 1.6;">
+  <p>Questions or success stories? <a href="mailto:info@stoicresume.com" style="color: #2E7D8C; text-decoration: none; font-weight: 600;">info@stoicresume.com</a></p>
+  <p style="opacity: 0.8;">
+    &copy; 2026 StoicResume.com |
+    <a href="/faq.html" class="footer-link">FAQ</a> |
+    <a href="/privacy.html" class="footer-link">Privacy Policy</a> |
+    <a href="/terms.html" class="footer-link">Terms of Service</a>
+  </p>
 </footer>
