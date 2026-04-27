@@ -485,16 +485,67 @@ Use the audit if you want an objective verdict.
 </div>
 
 <!-- === THE BITCOIN FALLBACK MODAL === -->
+<style>
+  .btc-modal {
+    /* Add your existing modal styles here */
+  }
+  
+  .btc-modal-content {
+    /* Add your existing modal content styles here */
+  }
+  
+  .btc-address-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    background: #f5f5f5;
+    padding: 12px;
+    border-radius: 8px;
+    max-width: 100%;
+  }
+
+  .btc-address {
+    font-size: 12px;
+    display: block;
+    flex: 1 1 100%;
+    min-width: 0;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.4;
+    background: transparent;
+    text-align: center;
+  }
+
+  .copy-btn {
+    flex: 1 1 100%;
+    padding: 10px 20px;
+    background: #e89a1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .copy-btn:hover {
+    background: #d18917;
+  }
+</style>
+
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #1C2833;">Pay with Bitcoin</h2>
-    <p>Please Send <strong>$10 USD worth of Bitcoin</strong> to:</p>
+    <p>Please Send <strong>\$10 USD worth of Bitcoin</strong> to:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
+    
     <div class="btc-address-box">
-      <code id="btc-address" style="font-size: 10px;">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
+      <code class="btc-address" id="btc-address">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
       <button onclick="copyAddress()" class="copy-btn">Copy</button>
     </div>
+    
     <p style="font-size: 13px; color: #666; margin-top: 15px;">
       After sending, email your resume + transaction ID to:<br>
       <strong style="color: #2E7D8C;">audit@stoicresume.com</strong>
