@@ -163,59 +163,12 @@ It will essentially describe what it sees visually, not what an ATS parser would
       </div>
     </div>
 
-    <div class="faq-item">
-      <button class="faq-question">What is your turnaround time?</button>
-      <div class="faq-answer">
-        <p><strong>24 hours.</strong> We deliver the full audit report within one business day of receiving your resume and job description.</p>
-      </div>
-    </div>
+  
 
-    <div class="faq-item">
-      <button class="faq-question">What do you need from me?</button>
-      <div class="faq-answer">
-        <p>Three things:</p>
-        <ol>
-          <li>Your current resume (PDF or .DOCX).</li>
-          <li>The job description you're targeting.</li>
-          <li>The email address you used for payment (or your Bitcoin transaction ID).</li>
-        </ol>
-        <p>Send them to <strong>audit@stoicresume.com</strong> after payment.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="faq-section">
-    <h2>Pricing & Guarantee</h2>
-
-    <div class="faq-item">
-      <button class="faq-question">How much does it cost?</button>
-      <div class="faq-answer">
-        <p>The full forensic audit is <strong>\$20 USD</strong>. Given the manual, HIL work involved, this is likely underpriced. The price may increase.</p>
-        <p>You may also pay with Bitcoin for a 50% discount (\$10 USD equivalent).</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">What is your refund policy?</button>
-      <div class="faq-answer">
-        <p><strong>7-Day Refund. No questions asked.</strong> If the audit does not meet your expectations, email us within 7 days of delivery for a full refund.</p>
-      </div>
-    </div>
-
-    <div class="faq-item">
-      <button class="faq-question">What is your privacy policy?</button>
-      <div class="faq-answer">
-        <p>Your resume and email are permanently deleted from our systems 7 days after we deliver your audit report. We do not retain, sell, or share your data.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="faq-cta">
-    <p><strong>The Choice</strong><br>
-    Use the <a href="./free-prompt.html">free prompt</a> if you trust your own judgment.<br>
-    Use the <a href="#order">audit</a> if you want an objective verdict.</p>
-    <p><em>As Epictetus observed: "It is impossible for a man to learn what he thinks he already knows."</em></p>
-  </div>
+  
+   
+ 
+ 
 
 </div>
 
