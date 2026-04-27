@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Free ATS Tester Prompt | StoicResume</title>
+  <meta name="description" content="Use the StoicResume ATS Stress Test Prompt to test your resume for likely ATS risks, keyword gaps, and weak bullets.">
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -24,9 +25,10 @@
     }
 
     h1 {
-      color: #347b85;
+      color: #2c6c75;
       margin-top: 0;
       line-height: 1.15;
+      font-size: 32px;
     }
 
     .intro-box {
@@ -44,7 +46,7 @@
 
     .instructions {
       font-size: 16px;
-      margin: 0 0 16px 0;
+      margin: 0 0 12px 0;
     }
 
     .important-note {
@@ -68,7 +70,7 @@
     }
 
     .copy-btn {
-      background-color: #347b85;
+      background-color: #2c6c75;
       color: white;
       border: none;
       padding: 14px 28px;
@@ -84,7 +86,7 @@
     }
 
     .copy-btn:hover {
-      background-color: #275e66;
+      background-color: #24575f;
       transform: translateY(-2px);
     }
 
@@ -99,17 +101,51 @@
     .upsell h3 {
       margin-top: 0;
       color: #333;
+      font-size: 20px;
     }
 
     .upsell-link {
       color: #F7931A;
       font-weight: bold;
-      font-size: 18px;
+      font-size: 17px;
       text-decoration: none;
     }
 
     .upsell-link:hover {
       text-decoration: underline;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 28px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #2c6c75;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      max-width: 800px;
+      margin: 40px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #eaeaea;
+      text-align: center;
+      font-size: 13px;
+      color: #666;
+    }
+
+    footer a {
+      color: #666;
+      text-decoration: underline;
+    }
+
+    footer a.email-link {
+      color: #2c6c75;
+      text-decoration: none;
     }
 
     @media (max-width: 600px) {
@@ -118,7 +154,7 @@
       }
 
       h1 {
-        font-size: 2rem;
+        font-size: 28px;
       }
 
       .copy-btn {
@@ -134,7 +170,7 @@
 
     <div class="intro-box">
       <p>
-        <strong>The Great Resume Irony:</strong> Modern AI can read a resume scribbled in crayon on a wrinkled napkin. But legacy ATS software can reject you for one invisible text box. This prompt forces the AI to read your resume like a rigid, failure-prone ATS parser. If your resume survives this test, it is far less likely to fail a real one.
+        <strong>The Great Resume Irony:</strong> Modern AI can read a resume scribbled in crayon on a wrinkled napkin. But legacy ATS software can reject you over one invisible text box. This prompt pushes the AI to evaluate your resume more like a rigid, failure-prone ATS parser. If your resume survives this test, it is less likely to fail a real one.
       </p>
     </div>
 
@@ -143,7 +179,7 @@
     <p class="instructions"><strong>Step 3:</strong> Open your resume, select all text, copy it, and paste it directly beneath the prompt in the AI chat.</p>
 
     <p class="important-note">
-      <strong>Important:</strong> Do not upload an image or screenshot of your resume. Paste the full plain text instead. This allows the prompt to detect many common ATS risks—such as scrambled order, broken headers, special characters, and suspicious formatting patterns—but not all file-level issues. For best results, also run the Brutal Copy-Paste Test on your original document.
+      <strong>Important:</strong> Do not upload an image or screenshot of your resume. Paste the full plain text instead. This prompt can catch many common ATS risks — such as scrambled order, broken headers, special characters, and suspicious formatting patterns — but not all file-level issues. For best results, also run the Brutal Copy-Paste Test on your original document.
     </p>
 
     <button class="copy-btn" id="copyBtn" onclick="copyPrompt()">
@@ -274,10 +310,26 @@ RESUME TEXT: [Paste Resume Text]</div>
 
     <div class="upsell">
       <h3>Knowing the problem is not the same as fixing it.</h3>
-      <p>Found parsing errors, weak bullets, or missing keywords? Every issue flagged can cost interviews. ATS software does not give second chances. Knowing what is wrong is useful. Fixing it correctly is what matters.</p>
-      <a href="index.html" class="upsell-link">← Go back and get the full human-led ATS audit</a>
+      <p>Finding parsing errors, weak bullets, or missing keywords is useful. Fixing them correctly is what matters.</p>
+      <p>ATS software does not give second chances.</p>
+      <a href="/" class="upsell-link">&larr; Go back and get the full human-led ATS audit</a>
     </div>
+
+    <a href="/" class="back-link">&larr; Back to StoicResume</a>
   </div>
+
+  <footer>
+    <p>
+      Questions or success stories? Email us at
+      <a href="mailto:info@stoicresume.com" class="email-link">info@stoicresume.com</a>
+    </p>
+    <p>
+      &copy; 2026 StoicResume.com |
+      <a href="/faq.html">FAQ</a> |
+      <a href="/privacy.html">Privacy Policy</a> |
+      <a href="/terms.html">Terms of Service</a>
+    </p>
+  </footer>
 
   <script>
     function copyPrompt() {
@@ -290,27 +342,12 @@ RESUME TEXT: [Paste Resume Text]</div>
 
         setTimeout(function () {
           btn.innerHTML = '<svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>Copy Prompt to Clipboard';
-          btn.style.backgroundColor = "#347b85";
+          btn.style.backgroundColor = "#2c6c75";
         }, 3000);
       }).catch(function () {
         alert("Copy failed. Please select the prompt manually and copy it.");
       });
     }
   </script>
-
-    <a href="/" style="display: inline-block; margin-bottom: 20px; font-weight: bold; font-size: 14px; color: #2c6c75; text-decoration: none;">&larr; Back to StoicResume</a>
-
-  <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
-    <p>
-      Questions or success stories? Email us at 
-      <a href="mailto:info@stoicresume.com" style="color: #2c6c75; text-decoration: none;">info@stoicresume.com</a>
-    </p>
-    <p>
-      &copy; 2026 StoicResume.com |
-      <a href="/faq.html" style="color: #666; text-decoration: underline;">FAQ</a> |
-      <a href="/privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy</a> |
-      <a href="/terms.html" style="color: #666; text-decoration: underline;">Terms of Service</a>
-    </p>
-  </footer>
 </body>
 </html>
