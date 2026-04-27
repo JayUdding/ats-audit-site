@@ -672,14 +672,14 @@ code {
 <!-- START: GLOBAL FOOTER -->
 <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
   <p>
-    Questions or success stories? Email us at 
-    <a href="mailto:info@stoicresume.com" style="color: #2c6c75; text-decoration: none;">info@stoicresume.com</a>
+    Questions or success stories? Email us at
+    <a href="mailto:info@stoicresume.com" class="email-link">info@stoicresume.com</a>
   </p>
   <p>
     &copy; 2026 StoicResume.com |
-    <a href="/faq.html" style="color: #666; text-decoration: underline;">FAQ</a> |
-    <a href="/privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy</a> |
-    <a href="/terms.html" style="color: #666; text-decoration: underline;">Terms of Service</a>
+    <a href="/faq.html" class="footer-link">FAQ</a> |
+    <a href="/privacy.html" class="footer-link">Privacy Policy</a> |
+    <a href="/terms.html" class="footer-link">Terms of Service</a>
   </p>
 </footer>
 <!-- END: GLOBAL FOOTER -->
