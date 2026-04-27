@@ -1,52 +1,55 @@
-/* Stoic Theme: Deep Slate & Charcoal */
+---
+---
+
+/* Stoic Theme Variables */
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
-
 $section-headings-color: #2E7D8C;
 $body-link-color: #2E7D8C;
-strong, b { color: #2E7D8C; }
 
-/* Import the Cayman theme to apply these changes */
+/* Import the Cayman theme */
 @import "{{ site.theme }}";
 
-/* --- HERO SECTION REFINEMENT --- */
+/* 1. FORCE DARK SLATE GRADIENT (Overriding the green/blue) */
+.page-header {
+  background-color: $header-bg-color !important;
+  background-image: linear-gradient(120deg, #1C2833, #566573) !important;
+  padding: 5rem 6rem !important;
+}
 
-/* This targets the main title "Survival Before Optimization" */
+/* 2. MAKE HERO TITLE ELEGANT & THIN */
 .project-name {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 300 !important; /* This creates the elegant, thin look */
-  letter-spacing: -1px;        /* Tighter tracking for a professional feel */
-  margin-bottom: 0.5rem;
+  font-weight: 200 !important;      /* Extra Light for maximum elegance */
+  letter-spacing: -1.5px !important; /* Slightly tighter for a high-end look */
+  -webkit-font-smoothing: antialiased; /* Makes the font look thinner/sharper */
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 0.5rem !important;
 }
 
-/* This targets the tagline "Your Guide to ATS Compliance" */
+/* 3. HERO TAGLINE REFINEMENT */
 .project-tagline {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 300 !important;
   color: #ffffff !important;
-  opacity: 0.8 !important;     /* Slightly lowered opacity makes it look more refined */
+  opacity: 0.7 !important;           /* Softens the white text */
+  -webkit-font-smoothing: antialiased;
 }
 
-/* --- MAIN CONTENT REFINEMENT --- */
-
-/* Keep your original elegant heading treatment for the body */
+/* 4. MAIN CONTENT HEADINGS */
 .main-content h1, 
 .main-content h2, 
 .main-content h3, 
 .main-content h4, 
 .main-content h5, 
 .main-content h6 {
+  color: #2E7D8C !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 500 !important; 
   letter-spacing: -0.5px; 
 }
 
-/* Darker, more readable code/example blocks */
-.main-content pre,
-.main-content code,
-.main-content tt {
-  font-family: Consolas, Monaco, monospace;
-}
+/* 5. CODE BLOCKS & LINKS */
+strong, b { color: #2E7D8C; }
 
 .main-content pre {
   background-color: #f4f6f8;
@@ -55,55 +58,30 @@ strong, b { color: #2E7D8C; }
   border-radius: 8px;
   padding: 16px 18px;
   line-height: 1.65;
-  overflow-x: auto;
 }
 
-.main-content code,
-.main-content tt {
+.main-content code {
   background-color: #f4f6f8;
   color: #2b3a42;
-  padding: 1px 4px;
+  padding: 2px 4px;
   border-radius: 3px;
-  font-size: 0.95em;
+  font-size: 0.9em;
 }
 
 /* Shared hover/link styles */
-.back-link,
-.footer-link,
-.email-link {
-  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+.back-link, .footer-link, .email-link {
+  transition: color 0.2s ease;
+  color: #2c6c75;
 }
 
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: bold;
-  font-size: 14px;
-  color: #2c6c75;
   text-decoration: none;
 }
 
-.back-link:hover {
-  text-decoration: underline;
-  color: #24575f;
-}
-
-.footer-link {
-  color: #666;
-  text-decoration: underline;
-}
-
-.footer-link:hover {
-  color: #2c6c75;
-  text-decoration: underline;
-}
-
-.email-link {
-  color: #2c6c75;
-  text-decoration: none;
-}
-
-.email-link:hover {
+.back-link:hover, .footer-link:hover, .email-link:hover {
   text-decoration: underline;
   color: #24575f;
 }
