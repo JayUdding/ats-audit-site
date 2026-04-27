@@ -1,75 +1,35 @@
- ---
+---
 ---
 
 /* Stoic Theme: Deep Slate & Charcoal */
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
-$section-headings-color: #2c6c75;
-$body-link-color: #2c6c75;
+
+$section-headings-color: #2E7D8C;
+$body-link-color: #2E7D8C;
+strong, b { color: #2E7D8C; }
 
 /* Import the Cayman theme to apply these changes */
 @import "{{ site.theme }}";
 
-/* Banner / hero */
-.project-name {
-  font-weight: 400 !important;
-  letter-spacing: -1px;
-}
-
 .project-tagline {
   color: #ffffff !important;
   opacity: 1 !important;
-  font-weight: 400 !important;
 }
 
-/* Main typography */
-.main-content {
-  font-size: 18px;
-  line-height: 1.7;
-}
-
-.main-content,
-.main-content p,
-.main-content li,
-.main-content ul,
-.main-content ol,
-.main-content blockquote {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  color: #333;
-  line-height: 1.8;
-}
-
-strong,
-b {
-  color: #2c6c75;
-  font-weight: 600;
-}
-
-/* Headings */
-.main-content h1,
-.main-content h2,
-.main-content h3,
-.main-content h4,
-.main-content h5,
+/* Keep your original elegant heading treatment */
+.main-content h1, 
+.main-content h2, 
+.main-content h3, 
+.main-content h4, 
+.main-content h5, 
 .main-content h6 {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 500 !important;
-  color: #2c6c75;
+  font-weight: 600 !important; 
+  letter-spacing: -0.5px; 
 }
 
-.main-content h1 {
-  font-size: 2rem;
-}
-
-.main-content h2 {
-  font-size: 1.55rem;
-}
-
-.main-content h3 {
-  font-size: 1.2rem;
-}
-
-/* Code and example blocks */
+/* Darker, more readable code/example blocks */
 .main-content pre,
 .main-content code,
 .main-content tt {
@@ -95,19 +55,13 @@ b {
   font-size: 0.95em;
 }
 
-/* Main content links */
-.main-content a {
-  color: #2c6c75;
-}
-
-/* Shared link transitions */
+/* Shared hover/link styles */
 .back-link,
 .footer-link,
 .email-link {
   transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-/* Back link */
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
@@ -122,7 +76,6 @@ b {
   color: #24575f;
 }
 
-/* Footer links */
 .footer-link {
   color: #666;
   text-decoration: underline;
@@ -133,7 +86,6 @@ b {
   text-decoration: underline;
 }
 
-/* Email link */
 .email-link {
   color: #2c6c75;
   text-decoration: none;
@@ -142,15 +94,4 @@ b {
 .email-link:hover {
   text-decoration: underline;
   color: #24575f;
-}
-
-/* Horizontal rules */
-.main-content hr {
-  border: 0;
-  border-top: 1px solid #eaeaea;
-}
-
-.page-header {
-  background-image: none !important;
-  background-color: #1C2833 !important;
 }
