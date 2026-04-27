@@ -131,6 +131,40 @@ strong, b {
   font-weight: 500 !important;
 }
 
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #2c6c75;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: #24575f;
+}
+
+.footer-link {
+  color: #666;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
+  color: #2c6c75;
+  text-decoration: underline;
+}
+
+.email-link {
+  color: #2c6c75;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: #24575f;
+}
+
 /* Horizontal rules */
 .main-content hr {
   border: 0;
