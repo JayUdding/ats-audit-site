@@ -1,87 +1,124 @@
 ---
 ---
 
-/* Stoic Theme Variables */
+/* 
+   Stoic Theme: Deep Slate & Charcoal 
+   Refined for maximum elegance and readability
+*/
+
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
-$section-headings-color: #2E7D8C;
+$section-headings-color: #2E7D8C; 
 $body-link-color: #2E7D8C;
 
-/* Import the Cayman theme */
+/* Import the Cayman theme base */
 @import "{{ site.theme }}";
 
-/* 1. FORCE DARK SLATE GRADIENT (Overriding the green/blue) */
+/* --- 1. HERO SECTION (Header) --- */
+
 .page-header {
+  /* Forces the Slate to Charcoal gradient */
   background-color: $header-bg-color !important;
   background-image: linear-gradient(120deg, #1C2833, #566573) !important;
   padding: 5rem 6rem !important;
 }
 
-/* 2. MAKE HERO TITLE ELEGANT & THIN */
 .project-name {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 400 !important;      /* Extra Light for maximum elegance */
-  letter-spacing: -1.5px !important; /* Slightly tighter for a high-end look */
-  -webkit-font-smoothing: antialiased; /* Makes the font look thinner/sharper */
+  font-weight: 400 !important;       /* Ultra-thin elegant weight */
+  letter-spacing: -1.5px !important;  /* Modern tight tracking */
+  -webkit-font-smoothing: antialiased; /* Sharper rendering */
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0.5rem !important;
 }
 
-/* 3. HERO TAGLINE REFINEMENT */
 .project-tagline {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 300 !important;
   color: #ffffff !important;
-  opacity: 0.7 !important;           /* Softens the white text */
+  opacity: 0.7 !important;            /* Softer white for elegance */
   -webkit-font-smoothing: antialiased;
 }
 
-/* 4. MAIN CONTENT HEADINGS */
+/* --- 2. MAIN CONTENT BODY --- */
+
+.main-content {
+  color: #444;                        /* Softer black for better reading flow */
+  line-height: 1.7;                   /* Spaced out for a premium feel */
+}
+
+/* Headings: The only place Teal is used in the body */
 .main-content h1, 
 .main-content h2, 
 .main-content h3, 
 .main-content h4, 
 .main-content h5, 
 .main-content h6 {
-  color: #2E7D8C !important;
+  color: $section-headings-color !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 500 !important; 
-  letter-spacing: -0.5px; 
+  font-weight: 600 !important; 
+  letter-spacing: -0.2px; 
+  margin-top: 2em !important;         /* More space above sections */
 }
 
-/* 5. CODE BLOCKS & LINKS */
-strong, b { color: #2E7D8C; }
-
-.main-content pre {
-  background-color: #f4f6f8;
-  color: #1f2933;
-  border: 1px solid #d8dee4;
-  border-radius: 8px;
-  padding: 16px 18px;
-  line-height: 1.65;
+/* Bold Text: Switched to Deep Charcoal (prevents teal overload) */
+strong, b { 
+  color: #24292e !important; 
+  font-weight: 600;
 }
 
+/* --- 3. CODE & TECHNICAL ELEMENTS --- */
+
+/* Inline code (e.g., date formats) */
 .main-content code {
-  background-color: #f4f6f8;
-  color: #2b3a42;
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-size: 0.9em;
+  background-color: #f6f8fa;
+  color: #3e4c59;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.88em;
+  border: 1px solid #ebedef;          /* Subtle border instead of heavy gray box */
+  font-family: Consolas, Monaco, "Courier New", monospace;
 }
 
-/* Shared hover/link styles */
+/* Large code blocks */
+.main-content pre {
+  background-color: #f8f9fa;
+  color: #1f2933;
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 18px;
+  line-height: 1.6;
+  overflow-x: auto;
+}
+
+/* --- 4. LINKS & INTERACTION --- */
+
+.main-content a {
+  color: $body-link-color;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.main-content a:hover {
+  text-decoration: none;
+  border-bottom: 1px solid $body-link-color;
+}
+
+/* Back/Footer links */
 .back-link, .footer-link, .email-link {
   transition: color 0.2s ease;
   color: #2c6c75;
+  text-decoration: none;
 }
 
 .back-link {
   display: inline-block;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-decoration: none;
+  margin-bottom: 25px;
+  font-weight: 600;
 }
 
 .back-link:hover, .footer-link:hover, .email-link:hover {
+  color: #1C2833;
   text-decoration: underline;
-  color: #24575f;
 }
