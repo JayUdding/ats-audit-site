@@ -669,7 +669,7 @@ code {
     if (event.target == modal) { modal.style.display = 'none'; }
   }
 </script>
-<!-- START: GLOBAL FOOTER -->
+[<!-- START: GLOBAL FOOTER -->
 <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
   <p>
     Questions or success stories? Email us at 
@@ -683,3 +683,4 @@ code {
   </p>
 </footer>
 <!-- END: GLOBAL FOOTER -->
+](https://stoicresume.com/terms.html)
