@@ -26,7 +26,6 @@ strong, b {
   font-weight: 600;
 }
 
-/* Main content typography */
 .main-content,
 .main-content p,
 .main-content li,
@@ -35,8 +34,7 @@ strong, b {
 .main-content blockquote {
   font-family: Arial, sans-serif !important;
   color: #333;
-  font-size: 15px;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .main-content h1,
@@ -47,7 +45,6 @@ strong, b {
 .main-content h6 {
   font-family: Arial, sans-serif !important;
   font-weight: 600 !important;
-  letter-spacing: 0;
   color: #2c6c75;
 }
 
