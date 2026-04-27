@@ -669,17 +669,17 @@ code {
     if (event.target == modal) { modal.style.display = 'none'; }
   }
 </script>
-
-<!-- START: GLOBAL FOOTER (Place this at the very bottom of your body tag) -->
+<!-- START: GLOBAL FOOTER -->
 <footer style="margin-top: 50px; padding-top: 20px; border-top: 1px solid #eaeaea; text-align: center; font-size: 13px; color: #666;">
   <p>
-    Questions or success stories? Email us at <a href="mailto:info@stoicresume.com" style="color: #2c6c75;">info@stoicresume.com</a>
+    Questions or success stories? Email us at 
+    <a href="mailto:info@stoicresume.com" style="color: #2c6c75; text-decoration: none;">info@stoicresume.com</a>
   </p>
   <p>
-    &copy; 2026 StoicResume.com | 
-    <a href="{{ site.baseurl }}/faq" style="color: #666; text-decoration: underline;">FAQ</a> | 
-    <a href="{{ site.baseurl }}/privacy" style="color: #666; text-decoration: underline;">Privacy Policy & Terms</a> | 
-    7-Day Refund Guarantee
+    &copy; 2026 StoicResume.com |
+    <a href="/faq.html" style="color: #666; text-decoration: underline;">FAQ</a> |
+    <a href="/privacy.html" style="color: #666; text-decoration: underline;">Privacy Policy</a> |
+    <a href="/terms.html" style="color: #666; text-decoration: underline;">Terms of Service</a>
   </p>
 </footer>
 <!-- END: GLOBAL FOOTER -->
