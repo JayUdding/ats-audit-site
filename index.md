@@ -341,21 +341,27 @@ Use the audit if you want an objective verdict.
 
 
 
-
 ---
-
 
 <style>
   .testimonials-section {
-    margin-top: 3rem;
-    padding-top: 2rem;
-    border-top: 1px solid #2E7D8C;
+    margin-top: 3.5rem;
+    padding-top: 2.25rem;
+    border-top: 1px solid #dbe3e8;
   }
 
- .testimonials-scroll {
-  scrollbar-width: thin;
-  scrollbar-color: #d1d5da #f1f1f1;
-}
+  .testimonials-section h3 {
+    color: #24313D;
+    font-weight: 760;
+    letter-spacing: -0.02em;
+    margin-bottom: 1.25rem;
+  }
+
+  .testimonials-scroll {
+    scrollbar-width: thin;
+    scrollbar-color: #c8d1d8 #f3f6f8;
+  }
+
   .testimonials-scroll {
     display: flex;
     gap: 1.5rem;
@@ -364,52 +370,61 @@ Use the audit if you want an objective verdict.
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
+
   .testimonial-card {
-    flex: 0 0 300px;
+    flex: 0 0 320px;
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: #ffffff;
-    padding: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #eff0f1;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(180deg, #fffdfa 0%, #fcfbf8 100%);
+    padding: 1.6rem;
+    border-radius: 12px;
+    border: 1px solid #e4eaef;
+    box-shadow: 0 8px 22px rgba(36, 49, 61, 0.10);
+    min-height: 210px;
   }
+
   .testimonial-text {
-    margin: 0 0 1rem 0;
+    margin: 0 0 1.25rem 0;
     font-style: italic;
-    color: #2E7D8C;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    color: #33586a;
+    font-size: 1.02rem;
+    line-height: 1.65;
+    font-weight: 500;
   }
+
   .testimonial-author {
     display: block;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
-    color: #2E7D8C;
-    font-size: 0.9rem;
+    color: #3f4b59;
+    font-size: 0.98rem;
+    margin-top: auto;
   }
+
   .testimonials-scroll::-webkit-scrollbar {
     height: 8px;
   }
+
   .testimonials-scroll::-webkit-scrollbar-track {
-    background: #f1f1f1;
+    background: #f3f6f8;
     border-radius: 4px;
   }
+
   .testimonials-scroll::-webkit-scrollbar-thumb {
-    background: #d1d5da;
+    background: #c8d1d8;
     border-radius: 4px;
   }
+
   .testimonials-scroll::-webkit-scrollbar-thumb:hover {
-    background: #a3a8ae;
+    background: #a5b1bb;
   }
+
   @media (max-width: 500px) {
     .testimonial-card {
       flex: 0 0 85%;
     }
-
-   
   }
 </style>
 
@@ -460,7 +475,7 @@ Use the audit if you want an objective verdict.
   <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
     <div class="btn-main-text">
       <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-      Order Full Audit — $20
+      Order Full Audit — \$20
     </div>
     <div class="btn-sub-text">Secure checkout via Stripe</div>
   </a>
@@ -469,7 +484,7 @@ Use the audit if you want an objective verdict.
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      Order Full Audit — $10
+      Order Full Audit — \$10
     </div>
     <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
@@ -487,11 +502,27 @@ Use the audit if you want an objective verdict.
 <!-- === THE BITCOIN FALLBACK MODAL === -->
 <style>
   .btc-modal {
-    /* Add your existing modal styles here */
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 40, 51, 0.72);
+    backdrop-filter: blur(2px);
   }
   
   .btc-modal-content {
-    /* Add your existing modal content styles here */
+    background-color: #fffdfa;
+    padding: 30px;
+    border-radius: 14px;
+    text-align: center;
+    max-width: 420px;
+    margin: 8% auto;
+    color: #2f3a45;
+    border: 1px solid #dfe6eb;
+    box-shadow: 0 16px 40px rgba(36, 49, 61, 0.18);
   }
   
   .btc-address-box {
@@ -499,10 +530,11 @@ Use the audit if you want an objective verdict.
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    background: #f5f5f5;
+    background: #f4f7f9;
     padding: 12px;
     border-radius: 8px;
     max-width: 100%;
+    border: 1px solid #d8e1e8;
   }
 
   .btc-address {
@@ -516,29 +548,32 @@ Use the audit if you want an objective verdict.
     line-height: 1.4;
     background: transparent;
     text-align: center;
+    color: #405466;
   }
 
   .copy-btn {
     flex: 1 1 100%;
     padding: 10px 20px;
-    background: #e89a1e;
+    background: #d98a1f;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 700;
+    transition: background 0.2s ease, transform 0.2s ease;
   }
 
   .copy-btn:hover {
-    background: #d18917;
+    background: #c57d1b;
+    transform: translateY(-1px);
   }
 </style>
 
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
-    <h2 style="margin-top: 0; color: #1C2833;">Pay with Bitcoin</h2>
-    <p>Please Send <strong>$10 USD worth of Bitcoin</strong> to:</p>
+    <h2 style="margin-top: 0; color: #24313D;">Pay with Bitcoin</h2>
+    <p>Please Send <strong>\$10 USD worth of Bitcoin</strong> to:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
@@ -546,25 +581,25 @@ Use the audit if you want an objective verdict.
       <button onclick="copyAddress()" class="copy-btn">Copy</button>
     </div>
     
-    <p style="font-size: 13px; color: #666; margin-top: 15px;">
+    <p style="font-size: 13px; color: #66727D; margin-top: 15px;">
       After sending, email your resume + transaction ID to:<br>
-      <strong style="color: #2E7D8C;">audit@stoicresume.com</strong>
+      <strong style="color: #446B7A;">audit@stoicresume.com</strong>
     </p>
   </div>
 </div>
 
 <style>
-  /* --- Layout Wrapper (The Fix: Added more bottom padding) --- */
+  /* --- Layout Wrapper --- */
   .action-buttons-wrapper {
     display: flex;
-    flex-direction: row;         
-    flex-wrap: wrap;             
-    justify-content: center;     
-    align-items: stretch;        
-    gap: 25px;                   
-    margin-top: 50px;            
-    margin-bottom: 80px;         /* Increased margin */
-    padding: 20px 20px 40px 20px; /* Extra 40px at bottom to prevent clipping */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 26px;
+    margin-top: 52px;
+    margin-bottom: 84px;
+    padding: 20px 20px 40px 20px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     box-sizing: border-box;
   }
@@ -576,82 +611,98 @@ Use the audit if you want an objective verdict.
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 20px 24px;
-    border-radius: 10px;
-    transition: all 0.2s ease-in-out;
-    width: 320px;                
-    box-sizing: border-box;      /* Ensures border is included in width/height */
+    padding: 22px 26px;
+    border-radius: 12px;
+    transition: all 0.22s ease-in-out;
+    width: 352px;
+    min-height: 116px;
+    box-sizing: border-box;
     text-align: center;
-    margin-bottom: 10px;         /* Gives breathing room if buttons stack */
+    margin-bottom: 10px;
   }
 
   /* --- Stripe Button --- */
   .stripe-promo-btn {
-    background-color: #2E7D8C;
+    background: linear-gradient(180deg, #3f8598 0%, #36778a 100%);
     color: white !important;
-    border: 2px solid #2E7D8C;
+    border: 1px solid #36778a;
+    box-shadow: 0 10px 24px rgba(54, 119, 138, 0.18);
   }
+
   .stripe-promo-btn:hover {
-    background-color: #245e69;
+    background: linear-gradient(180deg, #36778a 0%, #2f6777 100%);
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(46, 125, 140, 0.2);
+    box-shadow: 0 14px 28px rgba(54, 119, 138, 0.22);
   }
 
   /* --- Bitcoin Button --- */
   .btc-promo-btn {
-    background-color: #F7931A;
+    background: linear-gradient(180deg, #f0a13a 0%, #e39126 100%);
     color: white !important;
-    border: 2px solid #F7931A;
-  }
-  .btc-promo-btn:hover {
-    background-color: #e08316;
-    transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(247, 147, 26, 0.2);
+    border: 1px solid #e39126;
+    box-shadow: 0 10px 24px rgba(227, 145, 38, 0.18);
   }
 
-  /* --- Free Prompt Button (The one in your screenshot) --- */
-  .free-prompt-btn {
-    background-color: #f0f7f8;   /* Very light teal tint for elegance */
-    color: #2E7D8C !important;
-    border: 2px solid #2E7D8C !important; /* Force the border to show */
-  }
-  .free-prompt-btn:hover {
-    background-color: #ffffff;
+  .btc-promo-btn:hover {
+    background: linear-gradient(180deg, #e39126 0%, #d1831c 100%);
     transform: translateY(-3px);
-    box-shadow: 0 8px 15px rgba(46, 125, 140, 0.1);
+    box-shadow: 0 14px 28px rgba(227, 145, 38, 0.22);
+  }
+
+  /* --- Free Prompt Button --- */
+  .free-prompt-btn {
+    background: linear-gradient(180deg, #f8fbfc 0%, #f1f6f8 100%);
+    color: #3f7c90 !important;
+    border: 2px solid #3f7c90 !important;
+    box-shadow: 0 8px 20px rgba(63, 124, 144, 0.08);
+  }
+
+  .free-prompt-btn:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(63, 124, 144, 0.12);
   }
 
   .btn-main-text {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 700;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
+    line-height: 1.3;
   }
 
   .btn-sub-text, .free-btn-sub {
     font-size: 14px;
-    font-weight: 400;
-    opacity: 0.8;
+    font-weight: 500;
+    opacity: 0.92;
+    line-height: 1.4;
   }
 
   /* --- Modal Styles --- */
-  .btc-modal { display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.7); }
-  .btc-modal-content { background-color: #fff; padding: 30px; border-radius: 12px; text-align: center; max-width: 400px; margin: 10% auto; color: #333; }
-  .btc-modal-close { float: right; font-size: 28px; font-weight: bold; cursor: pointer; }
-  .btc-address-box { background-color: #f4f4f4; padding: 12px; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-top: 10px; }
-  .copy-btn { background-color: #F7931A; color: white; border: none; padding: 8px 14px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+  .btc-modal-close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #66727D;
+  }
+
+  .btc-modal-close:hover {
+    color: #24313D;
+  }
 
   /* --- Mobile Responsiveness --- */
   @media (max-width: 700px) {
     .action-buttons-wrapper {
-      flex-direction: column;      
+      flex-direction: column;
       align-items: center;
     }
+
     .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
-      width: 100%;                 
-      max-width: 320px;
+      width: 100%;
+      max-width: 340px;
     }
   }
 </style>
@@ -673,9 +724,9 @@ Use the audit if you want an objective verdict.
 </script>
 
 <!-- === GLOBAL FOOTER === -->
-<footer style="margin-top: 80px; padding: 40px 20px; border-top: 1px solid #ebedef; text-align: center; font-size: 13px; color: #666; line-height: 1.6;">
-  <p>Questions or success stories? <a href="mailto:info@stoicresume.com" style="color: #2E7D8C; text-decoration: none; font-weight: 600;">info@stoicresume.com</a></p>
-  <p style="opacity: 0.8;">
+<footer style="margin-top: 80px; padding: 40px 20px; border-top: 1px solid #dfe6eb; text-align: center; font-size: 13px; color: #66727D; line-height: 1.7; background: #FCFCFA;">
+  <p>Questions or success stories? <a href="mailto:info@stoicresume.com" style="color: #446B7A; text-decoration: none; font-weight: 700;">info@stoicresume.com</a></p>
+  <p style="opacity: 0.9;">
     &copy; 2026 StoicResume.com |
     <a href="/faq.html" class="footer-link">FAQ</a> |
     <a href="/privacy.html" class="footer-link">Privacy Policy</a> |
