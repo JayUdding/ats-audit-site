@@ -70,6 +70,7 @@ body {
 .main-content h2 {
   color: #1F2C38!important;
   font-weight: 790 !important;
+  margin-bottom: 0.7rem;
 }
 
 .main-content h3,
@@ -78,6 +79,7 @@ body {
 .main-content h6 {
   color: #263542 !important;
   font-weight: 730 !important;
+  margin-bottom: 0.65rem;
 }
 
 /* 6. BOLD / EMPHASIS */
@@ -202,7 +204,7 @@ pre code {
 /* 12. HORIZONTAL RULES */
 .main-content hr {
   border: 0;
-  border-top: 2px solid #CDD6DE;
+  border-top: 2px solid #C3CED8;
   margin: 2.5rem 0;
 }
 
