@@ -5,7 +5,7 @@
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
 $section-headings-color: #4A5568;
-$body-link-color: #2E7D8C;
+$body-link-color: #556B78;
 
 /* Import the Cayman theme */
 @import "{{ site.theme }}";
@@ -20,8 +20,8 @@ $body-link-color: #2E7D8C;
 /* 2. MAKE HERO TITLE ELEGANT & THIN */
 .project-name {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 200 !important;      /* Extra Light for maximum elegance */
-  letter-spacing: -1.5px !important; /* Slightly tighter for a high-end look */
+  font-weight: 400 !important;      /* Extra Light for maximum elegance */
+  letter-spacing: -0.5px !important; /* Slightly tighter for a high-end look */
   -webkit-font-smoothing: antialiased; /* Makes the font look thinner/sharper */
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0.5rem !important;
@@ -42,7 +42,7 @@ $body-link-color: #2E7D8C;
 .main-content h4, 
 .main-content h5, 
 .main-content h6 {
-  color: #2E7D8C !important;
+  color: #4A5568 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
   font-weight: 300 !important; 
   letter-spacing: -0.5px; 
@@ -86,6 +86,18 @@ strong, b { color: #2E7D8C; }
   color: #24575f;
 }
 
+/* 5. Body text readability */
+body {
+  color: #2F3A40 !important;
+}
+
+/* Sometimes Cayman applies body styles to .main-content instead */
+.main-content {
+  color: #2F3A40 !important;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
 /* MAKE HEADERS THICKER */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700 !important; 
@@ -93,5 +105,27 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CHARCOAL BOLD TEXT */
 strong, b {
+  color: #36454F !important;
+}
+
+/* 6. Bold text */
+strong, b {
+  color: #36454F !important;
+  font-weight: 700 !important;
+}
+
+/* 7. Links */
+a {
+  color: #556B78 !important;
+}
+
+a:hover {
+  color: #36454F !important;
+  text-decoration: underline;
+}
+
+/* 8. Lists and emphasized section items */
+.main-content li strong,
+.main-content p strong {
   color: #36454F !important;
 }
