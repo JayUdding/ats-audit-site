@@ -4,128 +4,199 @@
 /* Stoic Theme Variables */
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
-$section-headings-color: #4A5568;
-$body-link-color: #556B78;
+$section-headings-color: #3F4B59;
+$body-link-color: #3F7C90;
 
 /* Import the Cayman theme */
 @import "{{ site.theme }}";
 
-/* 1. FORCE DARK SLATE GRADIENT (Overriding the green/blue) */
+/* 1. PAGE HEADER / HERO */
 .page-header {
   background-color: $header-bg-color !important;
   background-image: linear-gradient(120deg, #1C2833, #566573) !important;
   padding: 5rem 6rem !important;
 }
 
-/* 2. MAKE HERO TITLE ELEGANT & THIN */
+/* 2. HERO TITLE */
 .project-name {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 400 !important;      /* Extra Light for maximum elegance */
-  letter-spacing: -0.5px !important; /* Slightly tighter for a high-end look */
-  -webkit-font-smoothing: antialiased; /* Makes the font look thinner/sharper */
+  font-weight: 500 !important;
+  letter-spacing: -0.6px !important;
+  line-height: 1.15 !important;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0.5rem !important;
 }
 
-/* 3. HERO TAGLINE REFINEMENT */
+/* 3. HERO TAGLINE */
 .project-tagline {
   font-weight: 300 !important;
-  color: #ffffff !important;
+  color: rgba(255, 255, 255, 0.92) !important;
   opacity: 1 !important;
   -webkit-font-smoothing: antialiased;
 }
 
-/* 4. MAIN CONTENT HEADINGS */
-.main-content h1, 
-.main-content h2, 
-.main-content h3, 
-.main-content h4, 
-.main-content h5, 
+/* 4. BODY TEXT */
+body {
+  color: #33404D !important;
+}
+
+.main-content {
+  color: #33404D !important;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+/* 5. MAIN CONTENT HEADINGS */
+.main-content h1,
+.main-content h2,
+.main-content h3,
+.main-content h4,
+.main-content h5,
 .main-content h6 {
-  color: #4A5568 !important;
+  color: #3F4B59 !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 300 !important; 
-  letter-spacing: -0.5px; 
+  font-weight: 700 !important;
+  letter-spacing: -0.02em !important;
+  line-height: 1.25 !important;
 }
 
-/* 5. CODE BLOCKS & LINKS */
-strong, b { color: #2E7D8C; }
-
-.main-content pre {
-  background-color: #f4f6f8;
-  color: #1f2933;
-  border: 1px solid #d8dee4;
-  border-radius: 8px;
-  padding: 16px 18px;
-  line-height: 1.65;
+/* Slight extra emphasis for larger section headers */
+.main-content h1,
+.main-content h2 {
+  font-weight: 700 !important;
+  color: #36454F !important;
 }
 
-.main-content code {
-  background-color: #f4f6f8;
-  color: #2b3a42;
-  padding: 2px 4px;
-  border-radius: 3px;
-  font-size: 0.9em;
+/* 6. BOLD / EMPHASIS */
+strong,
+b {
+  color: #36454F !important;
+  font-weight: 700 !important;
 }
 
-/* Shared hover/link styles */
-.back-link, .footer-link, .email-link {
+.main-content li strong,
+.main-content p strong {
+  color: #36454F !important;
+}
+
+/* 7. LINKS */
+a,
+.back-link,
+.footer-link,
+.email-link {
+  color: #3F7C90 !important;
   transition: color 0.2s ease;
-  color: #2c6c75;
+}
+
+a:hover,
+.back-link:hover,
+.footer-link:hover,
+.email-link:hover {
+  color: #2F6171 !important;
+  text-decoration: underline;
 }
 
 .back-link {
   display: inline-block;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
 }
 
-.back-link:hover, .footer-link:hover, .email-link:hover {
-  text-decoration: underline;
-  color: #24575f;
+/* 8. BLOCKQUOTES / STOIC QUOTES */
+blockquote {
+  color: #44515E !important;
+  background: #F7F5F2;
+  border-left: 4px solid #8A97A3;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  border-radius: 6px;
 }
 
-/* 5. Body text readability */
-body {
-  color: #2F3A40 !important;
+blockquote p {
+  margin-bottom: 0 !important;
+  font-weight: 500;
 }
 
-/* Sometimes Cayman applies body styles to .main-content instead */
-.main-content {
-  color: #2F3A40 !important;
-  font-size: 1.08rem;
-  line-height: 1.75;
+/* 9. INLINE CODE */
+.main-content code,
+code {
+  background-color: #F1F4F6 !important;
+  color: #425466 !important;
+  border: 1px solid #E2E8EE;
+  padding: 0.12em 0.35em;
+  border-radius: 4px;
+  font-size: 0.92em;
 }
 
-/* MAKE HEADERS THICKER */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700 !important; 
+/* 10. CODE BLOCKS */
+.main-content pre,
+pre {
+  background-color: #F6F8FA !important;
+  color: #425466 !important;
+  border: 1px solid #D8E0E7 !important;
+  border-radius: 8px;
+  padding: 1rem 1.1rem;
+  line-height: 1.65;
+  overflow-x: auto;
 }
 
-/* CHARCOAL BOLD TEXT */
-strong, b {
-  color: #36454F !important;
+.main-content pre code,
+pre code {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+  color: #425466 !important;
+  font-size: 0.95em;
 }
 
-/* 6. Bold text */
-strong, b {
-  color: #36454F !important;
-  font-weight: 700 !important;
+/* 11. LISTS */
+.main-content ul,
+.main-content ol {
+  color: #33404D !important;
 }
 
-/* 7. Links */
-a {
-  color: #556B78 !important;
+.main-content li {
+  margin-bottom: 0.35rem;
 }
 
-a:hover {
-  color: #36454F !important;
-  text-decoration: underline;
+/* 12. HORIZONTAL RULES */
+.main-content hr {
+  border: 0;
+  border-top: 1px solid #E2E8EE;
+  margin: 2rem 0;
 }
 
-/* 8. Lists and emphasized section items */
-.main-content li strong,
-.main-content p strong {
-  color: #36454F !important;
+/* 13. TABLES */
+.main-content table {
+  color: #33404D;
+  border: 1px solid #E2E8EE;
+}
+
+.main-content th {
+  background: #F6F8FA;
+  color: #36454F;
+  font-weight: 700;
+}
+
+.main-content td,
+.main-content th {
+  border: 1px solid #E2E8EE;
+}
+
+/* 14. FOOTER */
+.site-footer {
+  color: #5C6773 !important;
+  background: #FCFCFB;
+  border-top: 1px solid #E2E8EE !important;
+}
+
+.site-footer a {
+  color: #3F7C90 !important;
+}
+
+.site-footer a:hover {
+  color: #2F6171 !important;
 }
