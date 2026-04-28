@@ -39,8 +39,10 @@ $body-link-color: #446B7A;
 
 /* 4. BODY TEXT */
 body {
+  body {
   color: #2F3A45 !important;
-  background: #FCFCFA;
+  background: #FBFCFD;
+}
 }
 
 .main-content {
@@ -66,16 +68,16 @@ body {
 
 .main-content h1,
 .main-content h2 {
-  color: #22303C!important;
-  font-weight: 780 !important;
+  color: #1F2C38!important;
+  font-weight: 790 !important;
 }
 
 .main-content h3,
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-  color: #2B3946 !important;
-  font-weight: 720 !important;
+  color: #263542 !important;
+  font-weight: 730 !important;
 }
 
 /* 6. BOLD / EMPHASIS */
