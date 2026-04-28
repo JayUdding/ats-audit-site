@@ -4,7 +4,7 @@
 /* Stoic Theme Variables */
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
-$section-headings-color: #2E7D8C;
+$section-headings-color: #36454F;
 $body-link-color: #2E7D8C;
 
 /* Import the Cayman theme */
@@ -84,4 +84,14 @@ strong, b { color: #2E7D8C; }
 .back-link:hover, .footer-link:hover, .email-link:hover {
   text-decoration: underline;
   color: #24575f;
+}
+
+/* MAKE HEADERS THICKER */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600 !important; 
+}
+
+/* CHARCOAL BOLD TEXT */
+strong, b {
+  color: #36454F !important;
 }
