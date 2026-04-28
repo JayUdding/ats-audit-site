@@ -373,7 +373,7 @@ Use the audit if you want an objective verdict.
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: linear-gradient(180deg, #fffdfa 0%, #fcfbf8 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f8fbfd 100%);
     padding: 1.6rem;
     border-radius: 12px;
     border: 1px solid #e4eaef;
@@ -562,7 +562,7 @@ Use the audit if you want an objective verdict.
   }
 
   .btc-modal-content {
-    background-color: #fffdfa;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 14px;
     text-align: center;
@@ -590,7 +590,7 @@ Use the audit if you want an objective verdict.
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    background: #f4f7f9;
+    background: #f3f7fa;
     padding: 12px;
     border-radius: 8px;
     max-width: 100%;
