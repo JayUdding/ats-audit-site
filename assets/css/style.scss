@@ -58,18 +58,24 @@ body {
 .main-content h6 {
   color: #2F3E4E !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 760 !important;
-  letter-spacing: -0.03em !important;
-  line-height: 1.22 !important;
+  letter-spacing: -0.025em !important;
+  line-height: 1.24 !important;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
-/* Stronger hierarchy for larger headings */
 .main-content h1,
 .main-content h2 {
   color: #24313D !important;
-  font-weight: 800 !important;
+  font-weight: 760 !important;
+}
+
+.main-content h3,
+.main-content h4,
+.main-content h5,
+.main-content h6 {
+  color: #2F3E4E !important;
+  font-weight: 700 !important;
 }
 
 /* 6. BOLD / EMPHASIS */
@@ -210,6 +216,24 @@ pre code {
   color: #66727D !important;
   background: #FCFCFA !important;
   border-top: 1px solid #E1E6EB !important;
+}
+
+/* FOOTER HARD OVERRIDE */
+.site-footer,
+.site-footer *,
+.site-footer p,
+.site-footer span,
+.site-footer a,
+.site-footer strong,
+.site-footer .footer-link,
+.site-footer .email-link {
+  color: #66727D !important;
+}
+
+.site-footer a:hover,
+.site-footer .footer-link:hover,
+.site-footer .email-link:hover {
+  color: #3F4B59 !important;
 }
 
 .site-footer,
