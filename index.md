@@ -340,7 +340,6 @@ Use the audit if you want an objective verdict.
 
 
 
-
 ---
 
 <style>
@@ -360,9 +359,6 @@ Use the audit if you want an objective verdict.
   .testimonials-scroll {
     scrollbar-width: thin;
     scrollbar-color: #c8d1d8 #f3f6f8;
-  }
-
-  .testimonials-scroll {
     display: flex;
     gap: 1.5rem;
     overflow-x: auto;
@@ -421,129 +417,138 @@ Use the audit if you want an objective verdict.
     background: #a5b1bb;
   }
 
-  @media (max-width: 500px) {
-    .testimonial-card {
-      flex: 0 0 85%;
-    }
+  /* CTA buttons */
+  .action-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 26px;
+    margin-top: 52px;
+    margin-bottom: 84px;
+    padding: 20px 20px 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    box-sizing: border-box;
   }
-</style>
 
-<div class="testimonials-section">
-  <h3>What People Are Saying</h3>
-  <div class="testimonials-scroll">
+  .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+    padding: 22px 26px;
+    border-radius: 12px;
+    transition: all 0.22s ease-in-out;
+    width: 352px;
+    min-height: 116px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-bottom: 10px;
+  }
 
-    <!-- Testimonial 1 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "Solid review. Glad I got my resume correct."
-      </p>
-      <span class="testimonial-author">— ML, Graduate Student</span>
-    </div>
+  .stripe-promo-btn {
+    background: linear-gradient(180deg, #3f8598 0%, #36778a 100%);
+    color: #ffffff !important;
+    border: 1px solid #36778a;
+    box-shadow: 0 10px 24px rgba(54, 119, 138, 0.18);
+  }
 
-    <!-- Testimonial 2 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "Thanks for the 'brutal' truth but I can handle it. Fixed a key error."
-      </p>
-      <span class="testimonial-author">— DM, Student</span>
-    </div>
+  .stripe-promo-btn:hover {
+    background: linear-gradient(180deg, #36778a 0%, #2f6777 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(54, 119, 138, 0.22);
+  }
 
-    <!-- Testimonial 3 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "5 stars for you! Very useful."
-      </p>
-      <span class="testimonial-author">— KF, Engineer</span>
-    </div>
+  .btc-promo-btn {
+    background: linear-gradient(180deg, #f0a13a 0%, #e39126 100%);
+    color: #ffffff !important;
+    border: 1px solid #e39126;
+    box-shadow: 0 10px 24px rgba(227, 145, 38, 0.18);
+  }
 
-    <!-- Testimonial 4 -->
-    <div class="testimonial-card">
-      <p class="testimonial-text">
-        "This document is incredibly useful. In fact it is absolute gold."
-      </p>
-      <span class="testimonial-author">— Claude</span>
-    </div>
+  .btc-promo-btn:hover {
+    background: linear-gradient(180deg, #e39126 0%, #d1831c 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 28px rgba(227, 145, 38, 0.22);
+  }
 
-   
+  .free-prompt-btn {
+    background: linear-gradient(180deg, #f8fbfc 0%, #f1f6f8 100%);
+    color: #3f7c90 !important;
+    border: 2px solid #3f7c90 !important;
+    box-shadow: 0 8px 20px rgba(63, 124, 144, 0.08);
+  }
 
-  
-</div>
-<!-- === MAIN CALL-TO-ACTION SECTION === -->
-<div class="action-buttons-wrapper">
+  .free-prompt-btn:hover {
+    background: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(63, 124, 144, 0.12);
+  }
 
-.stripe-promo-btn,
-.stripe-promo-btn:visited,
-.stripe-promo-btn:hover,
-.stripe-promo-btn:active,
-.stripe-promo-btn:focus {
-  color: #ffffff !important;
-}
+  /* Force correct text/icon colors in all states */
+  .stripe-promo-btn,
+  .stripe-promo-btn:visited,
+  .stripe-promo-btn:hover,
+  .stripe-promo-btn:active,
+  .stripe-promo-btn:focus {
+    color: #ffffff !important;
+  }
 
-.stripe-promo-btn .btn-main-text,
-.stripe-promo-btn .btn-sub-text,
-.stripe-promo-btn svg {
-  color: #ffffff !important;
-  fill: currentColor !important;
-}
+  .stripe-promo-btn .btn-main-text,
+  .stripe-promo-btn .btn-sub-text,
+  .stripe-promo-btn svg {
+    color: #ffffff !important;
+    fill: currentColor !important;
+  }
 
-.btc-promo-btn,
-.btc-promo-btn:visited,
-.btc-promo-btn:hover,
-.btc-promo-btn:active,
-.btc-promo-btn:focus {
-  color: #ffffff !important;
-}
+  .btc-promo-btn,
+  .btc-promo-btn:visited,
+  .btc-promo-btn:hover,
+  .btc-promo-btn:active,
+  .btc-promo-btn:focus {
+    color: #ffffff !important;
+  }
 
-.btc-promo-btn .btn-main-text,
-.btc-promo-btn .btn-sub-text {
-  color: #ffffff !important;
-}
+  .btc-promo-btn .btn-main-text,
+  .btc-promo-btn .btn-sub-text {
+    color: #ffffff !important;
+  }
 
-.free-prompt-btn,
-.free-prompt-btn:visited,
-.free-prompt-btn:hover,
-.free-prompt-btn:active,
-.free-prompt-btn:focus {
-  color: #3F7C90 !important;
-}
+  .free-prompt-btn,
+  .free-prompt-btn:visited,
+  .free-prompt-btn:hover,
+  .free-prompt-btn:active,
+  .free-prompt-btn:focus {
+    color: #3F7C90 !important;
+  }
 
-.free-prompt-btn .btn-main-text,
-.free-prompt-btn .btn-sub-text,
-.free-prompt-btn svg {
-  color: #3F7C90 !important;
-  fill: currentColor !important;
-}
+  .free-prompt-btn .btn-main-text,
+  .free-prompt-btn .btn-sub-text,
+  .free-prompt-btn svg {
+    color: #3F7C90 !important;
+    fill: currentColor !important;
+  }
 
-  <!-- 0. The Stripe/Fiat Button (Primary Purchase) -->
-  <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
-    <div class="btn-main-text">
-      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-      Order Full Audit — $20
-    </div>
-    <div class="btn-sub-text">Secure checkout via Stripe</div>
-  </a>
+  .btn-main-text {
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 6px;
+    line-height: 1.3;
+  }
 
-  <!-- 1. The Bitcoin Button (Discount Purchase) -->
-  <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
-    <div class="btn-main-text">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      Order Full Audit — $10
-    </div>
-    <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
-  </a>
+  .btn-sub-text, .free-btn-sub {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0.92;
+    line-height: 1.4;
+  }
 
-  <!-- 2. The Free Download Button (Secondary) -->
-  <a href="./free-prompt.html" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
-    <div class="btn-main-text">
-      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
-      Get the Free Prompt
-    </div>
-    <div class="btn-sub-text">Test your own resume in ChatGPT</div>
-  </a>
-</div>
-
-<!-- === THE BITCOIN FALLBACK MODAL === -->
-<style>
+  /* Modal */
   .btc-modal {
     display: none;
     position: fixed;
@@ -555,7 +560,7 @@ Use the audit if you want an objective verdict.
     background-color: rgba(28, 40, 51, 0.72);
     backdrop-filter: blur(2px);
   }
-  
+
   .btc-modal-content {
     background-color: #fffdfa;
     padding: 30px;
@@ -567,7 +572,19 @@ Use the audit if you want an objective verdict.
     border: 1px solid #dfe6eb;
     box-shadow: 0 16px 40px rgba(36, 49, 61, 0.18);
   }
-  
+
+  .btc-modal-close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #66727D;
+  }
+
+  .btc-modal-close:hover {
+    color: #24313D;
+  }
+
   .btc-address-box {
     display: flex;
     flex-wrap: wrap;
@@ -610,13 +627,124 @@ Use the audit if you want an objective verdict.
     background: #c57d1b;
     transform: translateY(-1px);
   }
+
+  @media (max-width: 700px) {
+    .action-buttons-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
+      width: 100%;
+      max-width: 340px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .testimonial-card {
+      flex: 0 0 85%;
+    }
+  }
+
+  .footer-link {
+    color: #66727D !important;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .footer-link:hover {
+    color: #3F4B59 !important;
+    text-decoration: underline;
+  }
+
+  .email-link {
+    color: #446B7A !important;
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  .email-link:hover {
+    color: #2E5361 !important;
+    text-decoration: underline;
+  }
 </style>
 
+<div class="testimonials-section">
+  <h3>What People Are Saying</h3>
+  <div class="testimonials-scroll">
+
+    <!-- Testimonial 1 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Solid review. Glad I got my resume correct."
+      </p>
+      <span class="testimonial-author">— ML, Graduate Student</span>
+    </div>
+
+    <!-- Testimonial 2 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "Thanks for the 'brutal' truth but I can handle it. Fixed a key error."
+      </p>
+      <span class="testimonial-author">— DM, Student</span>
+    </div>
+
+    <!-- Testimonial 3 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "5 stars for you! Very useful."
+      </p>
+      <span class="testimonial-author">— KF, Engineer</span>
+    </div>
+
+    <!-- Testimonial 4 -->
+    <div class="testimonial-card">
+      <p class="testimonial-text">
+        "This document is incredibly useful. In fact it is absolute gold."
+      </p>
+      <span class="testimonial-author">— Claude</span>
+    </div>
+
+  </div>
+</div>
+
+<!-- === MAIN CALL-TO-ACTION SECTION === -->
+<div class="action-buttons-wrapper">
+
+  <!-- 0. The Stripe/Fiat Button (Primary Purchase) -->
+  <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
+    <div class="btn-main-text">
+      <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+      Order Full Audit — $20
+    </div>
+    <div class="btn-sub-text">Secure checkout via Stripe</div>
+  </a>
+
+  <!-- 1. The Bitcoin Button (Discount Purchase) -->
+  <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
+    <div class="btn-main-text">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
+      Order Full Audit — $10
+    </div>
+    <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
+  </a>
+
+  <!-- 2. The Free Download Button (Secondary) -->
+  <a href="./free-prompt.html" target="_blank" rel="noopener noreferrer" class="free-prompt-btn">
+    <div class="btn-main-text">
+      <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+      Get the Free Prompt
+    </div>
+    <div class="btn-sub-text">Test your own resume in ChatGPT</div>
+  </a>
+</div>
+
+<!-- === THE BITCOIN FALLBACK MODAL === -->
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #24313D;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> $10 worth of Bitcoin</strong> to:</p>
+    <p>Please Send <strong> 10 USD worth of Bitcoin</strong> to:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
@@ -631,144 +759,29 @@ Use the audit if you want an objective verdict.
   </div>
 </div>
 
-<style>
-  /* --- Layout Wrapper --- */
-  .action-buttons-wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    gap: 26px;
-    margin-top: 52px;
-    margin-bottom: 84px;
-    padding: 20px 20px 40px 20px;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    box-sizing: border-box;
-  }
-
-  /* --- General Button Styles --- */
-  .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 22px 26px;
-    border-radius: 12px;
-    transition: all 0.22s ease-in-out;
-    width: 352px;
-    min-height: 116px;
-    box-sizing: border-box;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  /* --- Stripe Button --- */
-  .stripe-promo-btn {
-    background: linear-gradient(180deg, #3f8598 0%, #36778a 100%);
-    color: white !important;
-    border: 1px solid #36778a;
-    box-shadow: 0 10px 24px rgba(54, 119, 138, 0.18);
-  }
-
-  .stripe-promo-btn:hover {
-    background: linear-gradient(180deg, #36778a 0%, #2f6777 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(54, 119, 138, 0.22);
-  }
-
-  /* --- Bitcoin Button --- */
-  .btc-promo-btn {
-    background: linear-gradient(180deg, #f0a13a 0%, #e39126 100%);
-    color: white !important;
-    border: 1px solid #e39126;
-    box-shadow: 0 10px 24px rgba(227, 145, 38, 0.18);
-  }
-
-  .btc-promo-btn:hover {
-    background: linear-gradient(180deg, #e39126 0%, #d1831c 100%);
-    transform: translateY(-3px);
-    box-shadow: 0 14px 28px rgba(227, 145, 38, 0.22);
-  }
-
-  /* --- Free Prompt Button --- */
-  .free-prompt-btn {
-    background: linear-gradient(180deg, #f8fbfc 0%, #f1f6f8 100%);
-    color: #3f7c90 !important;
-    border: 2px solid #3f7c90 !important;
-    box-shadow: 0 8px 20px rgba(63, 124, 144, 0.08);
-  }
-
-  .free-prompt-btn:hover {
-    background: #ffffff;
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(63, 124, 144, 0.12);
-  }
-
-  .btn-main-text {
-    font-size: 18px;
-    font-weight: 700;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 6px;
-    line-height: 1.3;
-  }
-
-  .btn-sub-text, .free-btn-sub {
-    font-size: 14px;
-    font-weight: 500;
-    opacity: 0.92;
-    line-height: 1.4;
-  }
-
-  /* --- Modal Styles --- */
-  .btc-modal-close {
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #66727D;
-  }
-
-  .btc-modal-close:hover {
-    color: #24313D;
-  }
-
-  /* --- Mobile Responsiveness --- */
-  @media (max-width: 700px) {
-    .action-buttons-wrapper {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .stripe-promo-btn, .btc-promo-btn, .free-prompt-btn {
-      width: 100%;
-      max-width: 340px;
-    }
-  }
-</style>
-
 <script>
   function handleBitcoinClick(event) {
-    event.preventDefault(); // Prevents the link from firing immediately
+    event.preventDefault();
     document.getElementById('btc-modal').style.display = 'block';
   }
-  function closeModal() { document.getElementById('btc-modal').style.display = 'none'; }
+  function closeModal() {
+    document.getElementById('btc-modal').style.display = 'none';
+  }
   function copyAddress() {
     var address = document.getElementById('btc-address').innerText;
     navigator.clipboard.writeText(address);
     alert('Address copied!');
   }
   window.onclick = function(event) {
-    if (event.target == document.getElementById('btc-modal')) { closeModal(); }
+    if (event.target == document.getElementById('btc-modal')) {
+      closeModal();
+    }
   }
 </script>
 
 <!-- === GLOBAL FOOTER === -->
 <footer style="margin-top: 80px; padding: 40px 20px; border-top: 1px solid #dfe6eb; text-align: center; font-size: 13px; color: #66727D; line-height: 1.7; background: #FCFCFA;">
-  <p>Questions or success stories? <a href="mailto:info@stoicresume.com" style="color: #446B7A; text-decoration: none; font-weight: 700;">info@stoicresume.com</a></p>
+  <p>Questions or success stories? <a href="mailto:info@stoicresume.com" class="email-link">info@stoicresume.com</a></p>
   <p style="opacity: 0.9;">
     &copy; 2026 StoicResume.com |
     <a href="/faq.html" class="footer-link">FAQ</a> |
