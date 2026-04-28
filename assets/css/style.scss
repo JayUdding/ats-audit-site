@@ -4,8 +4,8 @@
 /* Stoic Theme Variables */
 $header-bg-color: #1C2833;
 $header-bg-color-secondary: #566573;
-$section-headings-color: #3F4B59;
-$body-link-color: #3F7C90;
+$section-headings-color: #2F3E4E;
+$body-link-color: #446B7A;
 
 /* Import the Cayman theme */
 @import "{{ site.theme }}";
@@ -20,9 +20,10 @@ $body-link-color: #3F7C90;
 /* 2. HERO TITLE */
 .project-name {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 500 !important;
-  letter-spacing: -0.6px !important;
-  line-height: 1.15 !important;
+  font-weight: 560 !important;
+  letter-spacing: -0.7px !important;
+  line-height: 1.12 !important;
+  color: #ffffff !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin-bottom: 0.5rem !important;
@@ -30,7 +31,7 @@ $body-link-color: #3F7C90;
 
 /* 3. HERO TAGLINE */
 .project-tagline {
-  font-weight: 300 !important;
+  font-weight: 340 !important;
   color: rgba(255, 255, 255, 0.92) !important;
   opacity: 1 !important;
   -webkit-font-smoothing: antialiased;
@@ -38,13 +39,14 @@ $body-link-color: #3F7C90;
 
 /* 4. BODY TEXT */
 body {
-  color: #33404D !important;
+  color: #2F3A45 !important;
+  background: #FCFCFA;
 }
 
 .main-content {
-  color: #33404D !important;
-  font-size: 1.08rem;
-  line-height: 1.75;
+  color: #2F3A45 !important;
+  font-size: 1.1rem;
+  line-height: 1.78;
 }
 
 /* 5. MAIN CONTENT HEADINGS */
@@ -54,30 +56,32 @@ body {
 .main-content h4,
 .main-content h5,
 .main-content h6 {
-  color: #3F4B59 !important;
+  color: #2F3E4E !important;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-  font-weight: 700 !important;
-  letter-spacing: -0.02em !important;
-  line-height: 1.25 !important;
+  font-weight: 760 !important;
+  letter-spacing: -0.03em !important;
+  line-height: 1.22 !important;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-/* Slight extra emphasis for larger section headers */
+/* Stronger hierarchy for larger headings */
 .main-content h1,
 .main-content h2 {
-  font-weight: 700 !important;
-  color: #36454F !important;
+  color: #24313D !important;
+  font-weight: 800 !important;
 }
 
 /* 6. BOLD / EMPHASIS */
 strong,
 b {
-  color: #36454F !important;
-  font-weight: 700 !important;
+  color: #2E3944 !important;
+  font-weight: 760 !important;
 }
 
 .main-content li strong,
 .main-content p strong {
-  color: #36454F !important;
+  color: #2E3944 !important;
 }
 
 /* 7. LINKS */
@@ -85,7 +89,7 @@ a,
 .back-link,
 .footer-link,
 .email-link {
-  color: #3F7C90 !important;
+  color: #446B7A !important;
   transition: color 0.2s ease;
 }
 
@@ -93,7 +97,7 @@ a:hover,
 .back-link:hover,
 .footer-link:hover,
 .email-link:hover {
-  color: #2F6171 !important;
+  color: #2E5361 !important;
   text-decoration: underline;
 }
 
@@ -104,43 +108,58 @@ a:hover,
   text-decoration: none;
 }
 
-/* 8. BLOCKQUOTES / STOIC QUOTES */
+/* 8. BLOCKQUOTES / STOIC QUOTES - MORE DRAMA */
 blockquote {
-  color: #44515E !important;
-  background: #F7F5F2;
-  border-left: 4px solid #8A97A3;
-  padding: 1rem 1.25rem;
-  margin: 1.5rem 0;
+  color: #2E3944 !important;
+  background: linear-gradient(180deg, #F8F5EF 0%, #F4F0E8 100%);
+  border-left: 5px solid #6E7C88;
+  padding: 1.2rem 1.4rem;
+  margin: 2rem 0;
   font-style: italic;
-  border-radius: 6px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(36, 49, 61, 0.06);
 }
 
 blockquote p {
   margin-bottom: 0 !important;
-  font-weight: 500;
+  font-weight: 560;
+  font-size: 1.08em;
+  line-height: 1.7;
+}
+
+/* Optional subtle quote mark feel */
+blockquote::before {
+  content: "“";
+  display: block;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: #8A97A3;
+  margin-bottom: 0.35rem;
+  font-style: normal;
 }
 
 /* 9. INLINE CODE */
 .main-content code,
 code {
-  background-color: #F1F4F6 !important;
-  color: #425466 !important;
-  border: 1px solid #E2E8EE;
-  padding: 0.12em 0.35em;
-  border-radius: 4px;
+  background-color: #EEF2F5 !important;
+  color: #405466 !important;
+  border: 1px solid #D7DFE6;
+  padding: 0.14em 0.38em;
+  border-radius: 5px;
   font-size: 0.92em;
 }
 
-/* 10. CODE BLOCKS */
+/* 10. CODE BLOCKS / CALLOUT BOXES */
 .main-content pre,
 pre {
-  background-color: #F6F8FA !important;
-  color: #425466 !important;
-  border: 1px solid #D8E0E7 !important;
-  border-radius: 8px;
-  padding: 1rem 1.1rem;
-  line-height: 1.65;
+  background-color: #F4F7F9 !important;
+  color: #405466 !important;
+  border: 1px solid #D3DCE4 !important;
+  border-radius: 10px;
+  padding: 1rem 1.15rem;
+  line-height: 1.68;
   overflow-x: auto;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6);
 }
 
 .main-content pre code,
@@ -148,55 +167,62 @@ pre code {
   background: transparent !important;
   border: none !important;
   padding: 0 !important;
-  color: #425466 !important;
-  font-size: 0.95em;
+  color: #405466 !important;
+  font-size: 0.96em;
 }
 
 /* 11. LISTS */
 .main-content ul,
 .main-content ol {
-  color: #33404D !important;
+  color: #2F3A45 !important;
 }
 
 .main-content li {
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.45rem;
 }
 
 /* 12. HORIZONTAL RULES */
 .main-content hr {
   border: 0;
-  border-top: 1px solid #E2E8EE;
-  margin: 2rem 0;
+  border-top: 1px solid #E1E6EB;
+  margin: 2.5rem 0;
 }
 
 /* 13. TABLES */
 .main-content table {
-  color: #33404D;
-  border: 1px solid #E2E8EE;
+  color: #2F3A45;
+  border: 1px solid #E1E6EB;
 }
 
 .main-content th {
-  background: #F6F8FA;
-  color: #36454F;
-  font-weight: 700;
+  background: #F3F6F8;
+  color: #2E3944;
+  font-weight: 760;
 }
 
 .main-content td,
 .main-content th {
-  border: 1px solid #E2E8EE;
+  border: 1px solid #E1E6EB;
 }
 
 /* 14. FOOTER */
 .site-footer {
-  color: #5C6773 !important;
-  background: #FCFCFB;
-  border-top: 1px solid #E2E8EE !important;
+  color: #66727D !important;
+  background: #FCFCFA !important;
+  border-top: 1px solid #E1E6EB !important;
 }
 
-.site-footer a {
-  color: #3F7C90 !important;
+.site-footer,
+.site-footer *,
+.site-footer a,
+.site-footer .footer-link,
+.site-footer .email-link {
+  color: #66727D !important;
 }
 
-.site-footer a:hover {
-  color: #2F6171 !important;
+.site-footer a:hover,
+.site-footer .footer-link:hover,
+.site-footer .email-link:hover {
+  color: #3F4B59 !important;
+  text-decoration: underline;
 }
