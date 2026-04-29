@@ -39,15 +39,13 @@ $body-link-color: #446B7A;
 
 /* 4. BODY TEXT */
 body {
-  body {
   color: #2F3A45 !important;
   background: #FCFDFE;
-}
 }
 
 .main-content {
   color: #2F3A45 !important;
-  font-size: 1.08 rem;
+  font-size: 1.08rem;
   line-height: 1.66;
 }
 
@@ -274,4 +272,103 @@ pre code {
 .footer-link:hover {
   color: #3F4B59 !important;
   text-decoration: underline;
+}
+
+/* ============================================
+   15. TOP HERO CTA (Free Prompt Button)
+   ============================================ */
+.top-cta-wrapper {
+  text-align: center;
+  margin: 0 0 2rem 0;
+}
+
+.top-cta-button {
+  display: inline-block;
+  background: linear-gradient(135deg, #446B7A 0%, #2E5361 100%);
+  color: #ffffff !important;
+  padding: 0.95rem 2rem;
+  font-size: 1.08rem;
+  font-weight: 640;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  text-decoration: none !important;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.18);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+.top-cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #4F7A8A 0%, #355F70 100%);
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+
+.top-cta-subtext {
+  margin-top: 0.55rem !important;
+  font-size: 0.9rem;
+  color: #66727D !important;
+  font-weight: 500;
+  letter-spacing: 0.1px;
+}
+
+/* ============================================
+   16. TL;DR BLOCK (60-Second Version)
+   ============================================ */
+.tldr-block {
+  background: linear-gradient(180deg, #F8F5EF 0%, #F4F0E8 100%);
+  border-left: 5px solid #6E7C88;
+  border-radius: 10px;
+  padding: 1.6rem 1.8rem;
+  margin: 0 0 2.5rem 0;
+  box-shadow: 0 6px 18px rgba(36, 49, 61, 0.06);
+}
+
+.tldr-block h2 {
+  margin-top: 0 !important;
+  font-size: 1.5rem !important;
+  color: #1F2C38 !important;
+}
+
+.tldr-block ul {
+  margin: 0.8rem 0 1.2rem 0;
+  padding-left: 1.2rem;
+}
+
+.tldr-block li {
+  margin-bottom: 0.4rem;
+  line-height: 1.55;
+}
+
+.tldr-ctas {
+  border-top: 1px solid #DDD5C5;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.tldr-ctas p {
+  margin-bottom: 0.5rem !important;
+  font-size: 0.98rem;
+}
+
+.tldr-inline-btn {
+  display: inline-block;
+  background: #ffffff;
+  color: #446B7A !important;
+  padding: 0.4rem 0.85rem;
+  font-weight: 640;
+  border: 1.5px solid #446B7A;
+  border-radius: 6px;
+  text-decoration: none !important;
+  transition: all 0.15s ease;
+  font-size: 0.94rem;
+  margin-left: 0.25rem;
+}
+
+.tldr-inline-btn:hover {
+  background: #446B7A;
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
