@@ -21,7 +21,7 @@ Your goal is not to "impress" the machine--Stoics don't like flattery. Your goal
 
 Do not rely on ATS score checkers. They offer a false sense of security. They simulate one generic parser and give you an arbitrary percentag—85% compatible!—but the real world runs fifty different systems with fifty different failure modes. An app counts keywords; it cannot see the invisible table structure that actually destroys your application.
 
-A well-designed diagnostic prompt can help you identify *likely* structural failures. But *diagnosis* is not the same as *judgment*. Knowing something might be wrong is not the same as knowing what to fix, what to ignore, and whether you will actually do it.
+A well-designed diagnostic prompt *such as the one we offer for free on the bottom of this page* can help you identify *likely* structural failures. But *diagnosis* is not the same as *judgment*. Knowing something might be wrong is not the same as knowing what to fix, what to ignore, and whether you will actually do it.
 
 For that, you need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who tests your resume across multiple parsing scenarios and tells you exactly what is broken and how to repair it.
 
@@ -287,9 +287,9 @@ While not parsing per se, ATS ingestion often uses filename OCR for initial rout
 
  
 
-### The Free Prompt
+### The Free Prompt - Your First Pass
 
-We offer a free diagnostic prompt you can run in any capable LLM. Upload your resume, paste the prompt, and it will likely flag ATS failures: tables, text boxes, header graveyards, column bleed, encoding errors. It works. It will catch real problems but it cannot make you act on these findings. Most people simply cannot audit their own resume objectively. AI models—*unless specifically instructed not to*—will flatter you.
+We offer a free diagnostic prompt you can run in any capable LLM. Upload your resume, paste the prompt, and it will likely flag ATS failures: tables, text boxes, header graveyards, column bleed, encoding errors. It works. It will catch real problems but of course it cannot make you act on these findings. Most people simply cannot audit their own resume objectively. AI models—*unless specifically instructed not to*—will flatter you (the sycophancy problem).
 
   
 ---
@@ -724,7 +724,7 @@ Use the audit if you want an objective verdict.
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      Order Full Audit — $20
+      Order Full Audit — $19
     </div>
     <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
@@ -744,7 +744,7 @@ Use the audit if you want an objective verdict.
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #24313D;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> 20 USD worth of Bitcoin</strong> to:</p>
+    <p>Please Send <strong> 19 USD worth of Bitcoin</strong> to:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
@@ -781,9 +781,9 @@ Use the audit if you want an objective verdict.
 
 <!-- === GLOBAL FOOTER === -->
 <footer style="margin-top: 80px; padding: 40px 20px; border-top: 1px solid #dfe6eb; text-align: center; font-size: 13px; color: #66727D; line-height: 1.7; background: #FCFCFA;">
-  <p>Questions or success stories? <a href="mailto:info@stoicresume.com" class="email-link">info@stoicresume.com</a></p>
+  <p>Questions or success stories? <a href="mailto:audit@stoicresume.com" class="email-link">audit@stoicresume.com</a></p>
   <p style="opacity: 0.9;">
-    &copy; 2026 StoicResume.com |
+    &copy; 2026 StoicResume.com | Technical Auditors since 2016 |
     <a href="/faq.html" class="footer-link">FAQ</a> |
     <a href="/privacy.html" class="footer-link">Privacy Policy</a> |
     <a href="/terms.html" class="footer-link">Terms of Service</a>
