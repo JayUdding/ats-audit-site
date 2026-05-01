@@ -8,4 +8,4 @@ I verify ATS compliance using the Brutal Copy-Paste Protocol.
 
 **Services:** ATS Compliance Audits for Software Engineers.
 
-📧 githubguru@proton.me
+📧 audit@stoicresume.com
