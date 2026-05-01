@@ -5,7 +5,7 @@ layout: default
  
  **The Mechanical Reality**
 
-Hard to believe in April 2026, but true: many Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you will never know about.  
+Hard to believe in May 2026, but true: many Applicant Tracking Systems (ATS) do not read your resume correctly. They misread dates, scramble your skills into gibberish, and discard entire sections because of invisible formatting errors you will never know about.  
 
 **This is not a conspiracy. Just mechanics.**
 
@@ -715,7 +715,7 @@ Use the audit if you want an objective verdict.
   <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
     <div class="btn-main-text">
       <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-      Order Full Audit — $20
+      Order Full Audit — $39
     </div>
     <div class="btn-sub-text">Secure checkout via Stripe</div>
   </a>
@@ -724,7 +724,7 @@ Use the audit if you want an objective verdict.
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      Order Full Audit — $10
+      Order Full Audit — $20
     </div>
     <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
@@ -744,7 +744,7 @@ Use the audit if you want an objective verdict.
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #24313D;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> 10 USD worth of Bitcoin</strong> to:</p>
+    <p>Please Send <strong> 20 USD worth of Bitcoin</strong> to:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
@@ -1509,7 +1509,7 @@ Use the audit if you want an objective verdict.
   <a href="YOUR_STRIPE_LINK_HERE" class="stripe-promo-btn">
     <div class="btn-main-text">
       <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24" style="vertical-align: middle; margin-right: 8px;"><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
-      Order Full Audit — $20
+      Order Full Audit — $39
     </div>
     <div class="btn-sub-text">Secure checkout via Stripe</div>
   </a>
@@ -1518,7 +1518,7 @@ Use the audit if you want an objective verdict.
   <a href="bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2?message=AuditATS" class="btc-promo-btn" id="btc-button" onclick="handleBitcoinClick(event)">
     <div class="btn-main-text">
       <img src="https://upload.wikimedia.org/wikipedia/commons/4/46/Bitcoin.svg" alt="Bitcoin Logo" width="20" height="20" style="vertical-align: middle; margin-right: 8px;">
-      Order Full Audit — $10
+      Order Full Audit — $20
     </div>
     <div class="btn-sub-text">Pay with Bitcoin & Save 50%</div>
   </a>
@@ -1538,7 +1538,7 @@ Use the audit if you want an objective verdict.
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #24313D;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> 10 USD worth of Bitcoin</strong> to:</p>
+    <p>Please Send <strong> 20 USD worth of Bitcoin</strong> to:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
