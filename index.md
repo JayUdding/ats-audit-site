@@ -738,13 +738,12 @@ Use the audit if you want an objective verdict.
     <div class="btn-sub-text">Test your own resume in ChatGPT</div>
   </a>
 </div>
-
 <!-- === THE BITCOIN FALLBACK MODAL === -->
 <div id="btc-modal" class="btc-modal">
   <div class="btc-modal-content">
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #24313D;">Pay with Bitcoin</h2>
-    <p>Please Send <strong> 19 USD worth of Bitcoin</strong> to:</p>
+    <p>Please Send <strong>19 USD worth of Bitcoin</strong> to:</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
@@ -759,19 +758,107 @@ Use the audit if you want an objective verdict.
   </div>
 </div>
 
+<style>
+/* === BITCOIN MODAL === */
+.btc-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.45);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  padding: 20px 12px;
+  box-sizing: border-box;
+}
+
+.btc-modal-content {
+  position: relative;
+  width: min(440px, 100%);
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 28px 24px;
+  box-sizing: border-box;
+  text-align: center;
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+}
+
+.btc-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 18px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #24313D;
+  line-height: 1;
+}
+
+.btc-modal-close:hover {
+  color: #000;
+}
+
+.btc-modal-content img {
+  max-width: 180px;
+  width: 100%;
+  height: auto;
+}
+
+.btc-address-box {
+  background: #f3f7fa;
+  border: 1px solid #d8e2ea;
+  border-radius: 8px;
+  padding: 12px;
+  box-sizing: border-box;
+}
+
+.btc-address {
+  display: block;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  font-size: 15px;
+  line-height: 1.45;
+  margin-bottom: 10px;
+  color: #24313D;
+}
+
+.copy-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #e19127;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.copy-btn:hover {
+  background: #c77d1f;
+}
+</style>
+
 <script>
   function handleBitcoinClick(event) {
     event.preventDefault();
     document.getElementById('btc-modal').style.display = 'block';
+    document.body.style.overflow = 'hidden';
   }
+  
   function closeModal() {
     document.getElementById('btc-modal').style.display = 'none';
+    document.body.style.overflow = '';
   }
+  
   function copyAddress() {
     var address = document.getElementById('btc-address').innerText;
     navigator.clipboard.writeText(address);
     alert('Address copied!');
   }
+  
   window.onclick = function(event) {
     if (event.target == document.getElementById('btc-modal')) {
       closeModal();
@@ -789,6 +876,3 @@ Use the audit if you want an objective verdict.
     <a href="/terms.html" class="footer-link">Terms of Service</a>
   </p>
 </footer>
-
-
- 
