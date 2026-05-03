@@ -23,7 +23,7 @@ Do not rely on ATS score checkers. They offer a false sense of security. They si
 
 A well-designed diagnostic prompt *such as the one we offer for free on the bottom of this page* can help you identify *likely* structural failures. But *diagnosis* is not the same as *judgment*. Knowing something might be wrong is not the same as knowing what to fix, what to ignore, and whether you will actually do it.
 
-For that, you need Human-in-the-Loop (HIL) verification: forensic analysis by a technical auditor who tests your resume across multiple parsing scenarios and tells you exactly what is broken and how to repair it.
+For that, you need Human-in-the-Loop (HITL) verification: forensic analysis by a technical auditor who tests your resume across multiple parsing scenarios and tells you exactly what is broken and how to repair it.
 
 ***Theory is good but practice is better. It is the test of theory, the confirmation of it.*** 
 -- Musonius Rufus (Teacher of Epictetus) 
