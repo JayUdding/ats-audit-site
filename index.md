@@ -747,7 +747,7 @@ Use the audit if you want an objective verdict.
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
-      <code class="btc-address" id="btc-address">bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2</code>
+      <code class="btc-address" id="btc-address">bc1qmcwu38wcu0ufacm24qtgu4a0y7xdwyhxe7zamj00gpea4ajrssdskh4vkh</code>
       <button onclick="copyAddress()" class="copy-btn">Copy</button>
     </div>
     
