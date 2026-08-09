@@ -744,7 +744,7 @@ Use the audit if you want an objective verdict.
     <span class="btc-modal-close" onclick="closeModal()">&times;</span>
     <h2 style="margin-top: 0; color: #24313D;">Pay with Bitcoin</h2>
     <p>Please Send <strong>19 USD worth of Bitcoin</strong> to:</p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qnrrvx2qp04mpq0jqmq0r59wwyn2qyw79c7plfl6akmxe3c4dnq5sjhjhm2" alt="Bitcoin QR Code" style="margin: 15px 0;">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=bitcoin:bc1qmcwu38wcu0ufacm24qtgu4a0y7xdwyhxe7zamj00gpea4ajrssdskh4vkh" alt="Bitcoin QR Code" style="margin: 15px 0;">
     
     <div class="btc-address-box">
       <code class="btc-address" id="btc-address">bc1qmcwu38wcu0ufacm24qtgu4a0y7xdwyhxe7zamj00gpea4ajrssdskh4vkh</code>
